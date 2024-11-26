@@ -47,12 +47,12 @@ const Characters = () => {
   };
 
   return (
-    <div>
+    <div className='play-arrors'>
         <div className=" transition-all duration-300 ease-in-out">
         <div>{renderComponent()}</div>
       </div>
 
-      <div className="flex justify-center items-center gap-[280px] pmx:gap-[310px] -mt-[315.5px] pmx:-mt-[410px] ">
+      <div className="flex justify-center items-center gap-[280px] pmx:gap-[310px] -mt-[315.5px] pmx:-mt-[410px] arror">
         {/* Left Arrow (only clickable when not on the first component) */}
         <button
           onClick={handleLeftArrowClick}

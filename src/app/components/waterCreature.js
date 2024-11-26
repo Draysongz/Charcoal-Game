@@ -79,9 +79,9 @@ const WaterCreature = () => {
         </div>
 
         <div className='w-[350px] pmx:w-[390px] ms-[12px] border-2 border-orange-600 rounded-xl p-2 mt-2 p4m:ms-5 spm:ms-5 pmx:ms-[12px]'>
-            <p className='text-orange-600 uppercase font-bold text-[12px] pmx:text-[18px]'>description</p>
+            <p className='text-orange-600 uppercase font-bold text-[12px] pmx:text-[18px] depH'>description</p>
             <div>
-                <p className='text-[11px] pmx:text-[14px]'>
+                <p className='text-[11px] pmx:text-[14px] depT'>
                   The Fire Creature is a majestic being adorned with fiery scales that flicker like flames. It thrives in volcanic regions, drawing strength from the heat of lava. Known for its fierce temperament, this creature can unleash devastating fire blasts that incinerate anything in their path. Legends say that when it roars, the ground shakes, and the skies turn red. The Fire Creature is fiercely loyal to its allies but will unleash its wrath on anyone who threatens its territory.
                 </p>
             </div>

@@ -42,52 +42,104 @@ h1 {
   line-height: 1.1;
 }
 
-@media (width: 414px) and (height: 789px) {
+@media (width: 414px) and (height: 736px) {
   .loading-page div {
-    margin-top: 320px;
+    margin-top: 300px;
   }
 
   .Land-fire-boy img { 
-    width: 350px;
-    height: 310px;
-    margin-left: 34px;
+    width: 295px;
+    height: 270px;
+    margin-left: 60px;
+    margin-top: -13px;
   }
 
   .lvs .borImg {
-    width: 180px;
-    margin-left: 120px;
+    width: 130px;
+    margin-left: 142px;
   }
 
   .lvs .coinBal {
-    top: 410px;
+    top: 363px;
   }
 
   .lvs .coinBal2 {
-    top: 398px;
+    top: 351px;
   }
   .lvs .coinBal3 {
-    top: 413px;
+    top: 364px;
   }
 
   .lvs .coinBal4 {
-    top: 400px;
+    top: 353px;
   }
   
   .lvs-arrors .arror {
-    margin-top: -550px;
-    gap: 160px;
+    margin-top: -520px;
+    gap: 110px;
   }
 
   .wallet img {
     width: 170px;
-    height: 120px;
+    height: 140px;
+  }
+
+  .wallet .texCon {
+    font-size: 18px;
+  }
+
+  .wallet h3 {
+    font-size: 25px;
+  }
+
+  .wallet .connet {
+    font-size: 12px;
   }
 
   .frens {
      margin-top: 10px;
   }
 
+  .frens .nums {
+    font-size: 70px;
+    margin-top: -20px;
+  }
+
   .play .Img img{
-    height: 150px;
+    height: 140px;
   } 
+
+  .play .depH {
+    font-size: 15px;
+  }
+
+  .play .depT {
+    font-size: 12px;
+  }
+
+  .play-arrors .arror {
+    margin-top: -365px;
+  }
+
+  .boost1 .ImgO {
+    width: 170px;
+    height: 140px;
+  }
+
+  .boost1 .ImgQ {
+    width: 170px;
+    height: 125px;
+  }
+
+  .boost1 .ImgI {
+    width: 170px;
+    height: 125px;
+    margin-left: 90px;
+  }
+
+  .boost1 .ImgN {
+    width: 170px;
+    height: 150px;
+    margin-left: 90px;
+  }
 }

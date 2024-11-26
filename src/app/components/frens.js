@@ -7,7 +7,7 @@ const Frends = () => {
     <div className='mt-20 uppercase p4m:ms-2 frens'>
         <div className='text-center text-white'>
             <h3 className='text-orange-600 pmx:text-[30px] spm:text-[30px]'>frens</h3>
-            <p className='text-[45px] pmx:text-[80px] spm:text-[80px]'>35</p>
+            <p className='text-[45px] pmx:text-[80px] spm:text-[80px] nums'>35</p>
             <p className='text-orange-600 pmx:text-[20px] spm:text-[20px]'>+50,000 coins for invite</p>
             <p className='text-[11px] mt-1 pmx:text-[13px] spm:text-[13px]'>you and your friends will earn 50,000 coins each<br /> upon successful registrtion.</p>
             <p className='text-[11px] mt-1 pmx:text-[13px] spm:text-[13px]'>win prizes every time your referral upgrades<br /> their creatures.</p>
