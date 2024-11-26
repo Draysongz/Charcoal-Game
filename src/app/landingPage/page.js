@@ -2,7 +2,6 @@
 
 import React from 'react'
 import Link from 'next/link';
-import NavBar from '../components/navBar';
 import Header from '../components/header';
 import { GoHome } from "react-icons/go";
 import { LiaDollarSignSolid } from "react-icons/lia";
@@ -40,6 +39,7 @@ const Landing = () => {
   if (loading) {
     return <LoadingPage />;
   }
+  
 
   return (
     <div className='min-h-screen' style={{backgroundImage: "url('/images/background1.png')", objectFit: "cover",}}>
@@ -68,7 +68,7 @@ const Landing = () => {
      </div>
 
      <div>
-        <div>
+        <div className='Land-fire-boy'>
             <img src='/images/fireboy.png' alt='fireboy' className='ms-[40px] h-72 pmx:ms-[6px] pmx:w-[400px] pmx:h-[400px] spm:w-[375px] spm:ms-[6px] spm:h-[400px] p4m:w-[400px] p4m:ms-[15px]' />
         </div>
         <button type='submit' className='bg-orange-600 text-white mt-3 ms-20 p-2 px-20 pmx:mt-7 pmx:ms-[110px] 

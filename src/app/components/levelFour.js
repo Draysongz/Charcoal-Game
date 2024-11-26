@@ -6,11 +6,11 @@ import { FaMedal } from "react-icons/fa";
 
 const LevelFour = () => {
   return (
-    <div className='mt-5 pmx:mt-10 spm:mt-10 p4m:ms-2'>
+    <div className='mt-5 pmx:mt-10 spm:mt-10 p4m:ms-2 lvs'>
         <div className='mb-2'>
             <div className='text-center'>
                 <h3 className='uppercase font-bold pmx:mb-1 spm:mb-1'>level 4</h3>
-                <div className='bg-orange-600 w-40 rounded-[40px] p-2 ms-[108px] pmx:w-[300px] pmx:ms-[58px] spm:w-[290px] spm:ms-[50px]'>
+                <div className='bg-orange-600 w-40 rounded-[40px] p-2 ms-[108px] pmx:w-[300px] pmx:ms-[58px] spm:w-[290px] spm:ms-[50px] borImg'>
                      <img src='/images/level1.png' alt='level one' className='w-36 rounded-[40px] pmx:w-[290px] spm:w-[280px]' />
                </div>
             </div>
@@ -28,8 +28,8 @@ const LevelFour = () => {
                 <div className='ms-3 p-[3px]'>
                     <p className='text-[14px] pmx:text-[16px]'>you currently rank at</p>
                     <img src='/images/CoinCNB.png' alt='coin' className='w-5 h-4 pmx:w-6 pmx:h-5' />
-                    <span className='absolute left-[70px] top-[342px] text-[12px] pmx:top-[520px] spm:top-[490px] p4m:top-[525px] p4m:left-[85px]'>100 coin</span>
-                    <span className='text-[12px] font-bold ms-[270px] absolute top-[330px] pmx:top-[509px] pmx:ms-[300px] spm:top-[480px] p4m:top-[515px]'>120</span>
+                    <span className='absolute left-[70px] top-[342px] text-[12px] pmx:top-[520px] spm:top-[490px] p4m:top-[525px] p4m:left-[85px] coinBal3'>100 coin</span>
+                    <span className='text-[12px] font-bold ms-[270px] absolute top-[330px] pmx:top-[509px] pmx:ms-[300px] spm:top-[480px] p4m:top-[515px] coinBal4'>120</span>
                 </div>
             </div>
 

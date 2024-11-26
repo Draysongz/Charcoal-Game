@@ -4,7 +4,7 @@ import { IoMdLink } from "react-icons/io";
 
 const Frends = () => {
   return (
-    <div className='mt-20 uppercase p4m:ms-2'>
+    <div className='mt-20 uppercase p4m:ms-2 frens'>
         <div className='text-center text-white'>
             <h3 className='text-orange-600 pmx:text-[30px] spm:text-[30px]'>frens</h3>
             <p className='text-[45px] pmx:text-[80px] spm:text-[80px]'>35</p>

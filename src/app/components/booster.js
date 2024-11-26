@@ -29,9 +29,9 @@ export const Booster = () => {
     // const btnRef = React.useRef()
 
   return (
-    <>
+    <div className=''>
 
-    <div className='mt-10 uppercase font-semibold spm:ms-2 spm:mt-14'>
+    <div className='mt-10 uppercase font-semibold spm:ms-2 spm:mt-14 pmx:ms-[1px]'>
         <h3 className='text-center font-bold text-[20px]'>free dialy boost</h3>
         <div className='p-4 w-[375px] pmx:w-[411px] text-[13px] flex gap-8 pmx:p-8'>
           <div className='bg-gray-800 rounded-full border-2 border-orange-600 p-3 flex w-40' onClick={onOpen1}>
@@ -64,7 +64,7 @@ export const Booster = () => {
             <div>
               <span className='text-orange-600 text-[14px]'>multi tap</span>
               <img src='/images/CoinCNB.png' className=' w-5 h-4 ' />
-              <span className='absolute left-[110px] pmx:left-[125px] top-[309px] text-[13px] pmx:top-[373px]
+              <span className='absolute left-[110px] pmx:left-[125px] top-[309px] text-[13px] pmx:top-[388px]
               spm:top-[325px] p4m:top-[389px]'>20k</span>
             </div>
               <div className='ms-[120px] mt-2 text-[14px] pmx:mt-2'>
@@ -79,7 +79,7 @@ export const Booster = () => {
             <div>
               <span className='text-orange-600 text-[14px]'>energy limit</span>
               <img src='/images/CoinCNB.png' className=' w-5 h-4 ' />
-              <span className='absolute left-[110px] pmx:left-[125px] top-[381px] text-[13px] pmx:top-[445px]
+              <span className='absolute left-[110px] pmx:left-[125px] top-[381px] text-[13px] pmx:top-[461px]
               spm:top-[398px] p4m:top-[461px]'>20k</span>
             </div>
               <div className='ms-[100px] mt-2 text-[14px] pmx:mt-2'>
@@ -94,7 +94,7 @@ export const Booster = () => {
             <div>
               <span className='text-orange-600 text-[14px]'>recharge</span>
               <img src='/images/CoinCNB.png' className=' w-5 h-4 ' />
-              <span className='absolute left-[110px] pmx:left-[125px] top-[452px] text-[13px] pmx:top-[517px]
+              <span className='absolute left-[110px] pmx:left-[125px] top-[452px] text-[13px] pmx:top-[533px]
               spm:top-[469px] p4m:top-[532px]'>20k</span>
             </div>
               <div className='ms-[120px] mt-2 text-[14px] pmx:mt-2'>
@@ -143,8 +143,8 @@ export const Booster = () => {
         <DrawerContent className='bg-black rounded-t-3xl p-4 h-[65vh] border-t-white border-t-4' >
         <DrawerCloseButton className='text-white text-[10px] rounded-full w-8 h-8 border-[2px] ms-72 pmx:ms-80 mt-3 font-bold'/>
            <div>
-             <div className='text-center text-white p-4'>
-                <img src='/images/NewLightningNB.png' alt='lightning' className='ms-[110px] pmx:ms-[90px] mt-2 pmx:w-[170px] pmx:mt-4 pmx:h-44 spm:w-[160px] spm:ms-[85px] spm:h-44 p4m:ms-[105px]' />
+             <div className='text-center text-white p-4 img'>
+                <img src='/images/NewLightningNB.png' alt='lightning' className='ms-[110px] pmx:ms-[90px] mt-2 pmx:w-[170px] pmx:mt-4 pmx:h-40 spm:w-[160px] spm:ms-[85px] spm:h-44 p4m:ms-[105px]' />
                 <h3 className='text-orange-600 text-[20px] uppercase font-bold pmx:text-[30px] spm:text-[30px]'>energy</h3>
                 <p className='text-[12px] pmx:text-[20px] spm:text-[20px]'>
                     increase your energy limit, so you<br />
@@ -175,7 +175,7 @@ export const Booster = () => {
         <DrawerCloseButton className='text-white text-[10px] rounded-full w-8 h-8 border-[2px] ms-72 pmx:ms-80 mt-3 font-bold'/>
            <div>
              <div className='text-center text-white p-4'>
-                <PiHandTap className='text-[100px] ms-[110px] pmx:ms-[110px] mt-2 pmx:w-[130px] pmx:mt-4 pmx:h-44 spm:w-[160px] spm:ms-[85px] spm:h-44 p4m:ms-[115px]' />
+                <PiHandTap className='text-[100px] ms-[110px] pmx:ms-[110px] mt-2 pmx:w-[130px] pmx:mt-4 pmx:h-40 spm:w-[160px] spm:ms-[85px] spm:h-44 p4m:ms-[115px]' />
                 <h3 className='text-orange-600 text-[20px] uppercase font-bold pmx:text-[30px] spm:text-[30px]'>multi tap</h3>
                 <p className='text-[12px] pmx:text-[20px] spm:text-[20px]'>
                     increase the amount of coins<br />
@@ -206,7 +206,7 @@ export const Booster = () => {
         <DrawerCloseButton className='text-white text-[10px] rounded-full w-8 h-8 border-[2px] ms-72 pmx:ms-80 mt-3 font-bold'/>
            <div>
              <div className='text-center text-white p-4'>
-                <BsFillLightningChargeFill className='text-indigo-400 text-[100px] ms-[110px] pmx:ms-[110px] mt-2 pmx:w-[140px] pmx:mt-4 pmx:h-44 spm:w-[160px] spm:ms-[85px] spm:h-44 p4m:ms-[115px]' />
+                <BsFillLightningChargeFill className='text-indigo-400 text-[100px] ms-[110px] pmx:ms-[110px] mt-2 pmx:w-[140px] pmx:mt-4 pmx:h-40 spm:w-[160px] spm:ms-[85px] spm:h-44 p4m:ms-[115px]' />
                 <h3 className='text-orange-600 text-[20px] uppercase font-bold pmx:text-[30px] spm:text-[30px]'>energy limit</h3>
                 <p className='text-[12px] pmx:text-[20px] spm:text-[20px]'>
                     increase your energy limit, so you<br />
@@ -254,7 +254,7 @@ export const Booster = () => {
            </div>
         </DrawerContent>
     </Drawer>
-    </>
+  </div>
 
   )
 }

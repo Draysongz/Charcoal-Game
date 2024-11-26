@@ -42,19 +42,52 @@ h1 {
   line-height: 1.1;
 }
 
-@media (min-width: 375px) {
-  .amaImg {
-    /* z-index: 1000;
-    width: 70px; height: 50px; */
+@media (width: 414px) and (height: 789px) {
+  .loading-page div {
+    margin-top: 320px;
   }
 
-  .amount {
-    /* background-color: orangered; */
-    /* position: relative; */
-    /* padding: 5px 40px 5px 10px; */
-    /* border-radius: 30px; */
-    /* top: -20px; */
-    /* z-index: 1; */
-    /* color: white; */
+  .Land-fire-boy img { 
+    width: 350px;
+    height: 310px;
+    margin-left: 34px;
   }
+
+  .lvs .borImg {
+    width: 180px;
+    margin-left: 120px;
+  }
+
+  .lvs .coinBal {
+    top: 410px;
+  }
+
+  .lvs .coinBal2 {
+    top: 398px;
+  }
+  .lvs .coinBal3 {
+    top: 413px;
+  }
+
+  .lvs .coinBal4 {
+    top: 400px;
+  }
+  
+  .lvs-arrors .arror {
+    margin-top: -550px;
+    gap: 160px;
+  }
+
+  .wallet img {
+    width: 170px;
+    height: 120px;
+  }
+
+  .frens {
+     margin-top: 10px;
+  }
+
+  .play .Img img{
+    height: 150px;
+  } 
 }

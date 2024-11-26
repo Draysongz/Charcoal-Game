@@ -3,7 +3,7 @@ import { IoMdCheckmarkCircle } from "react-icons/io";
 
 const RewardD1 = () => {
   return (
-    <div className='mt-14 pmx:mt-32 spm:mt-36 uppercase spm:ms-2 p4m:mt-40'>
+    <div className='mt-14 pmx:mt-32 pmx:ms-[0.5px] spm:mt-36 uppercase spm:ms-2 p4m:mt-40'>
         <div className='flex gap-4'>
             <div className='border-2 border-orange-600 rounded-2xl w-[160px] pmx:w-[180px] p-2 ms-[19.5px] bg-orange-800'>
               <div className='bg-white rounded-2xl text-black font-bold p-2 text-center'>

@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const IceCreature = () => {
   return (
-     <div >
+     <div className='play'>
         <div className='flex h-8 justify-around'>
         <Link href="/coin" className='relative'>
             <img src='/images/CoinCNB.png' alt='coin' className='z-1 w-14 absolute pmx:w-16'/>
@@ -35,7 +35,7 @@ const IceCreature = () => {
         </div>
      </div>
 
-        <div className='p-3 w-[350px] pmx:w-[390px] ms-[12px] rounded-lg mt-7 pmx:mt-10 p4m:ms-5 p4m:mt-14 spm:mt-14 spm:ms-5' style={{ background: "linear-gradient(to bottom, #6AE5F3, #1D4D53)" }}>
+        <div className='p-3 w-[350px] pmx:w-[390px] ms-[12px] rounded-lg mt-7 pmx:mt-10 p4m:ms-5 p4m:mt-14 spm:mt-14 spm:ms-5 pmx:ms-[12px]' style={{ background: "linear-gradient(to bottom, #6AE5F3, #1D4D53)" }}>
         <div className='flex uppercase text-[14px] pmx:text-[15px] font-bold bg-orange-600 p-[1px] spm:text-[15px]'>
             <img src='/images/targetNB.png' alt='target' className='w-6 h-6 mt-1 me-1 ms-4 pmx:ms-7' />
             <p className='mt-[4.7px] '>
@@ -43,16 +43,16 @@ const IceCreature = () => {
             </p> 
             <p className=' ms-40 pmx:ms-44 mt-1'>pwr 1/ 10</p> 
         </div>
-        <div>
+        <div className='Img'>
             <img src='/images/wolf.png' alt='ice creature' className='w-full h-[140px] pmx:h-[250px] spm:h-[250px] rounded-b-md' />
         </div>
         </div>
 
-        <div className='flex w-[350px] pmx:w-[390px] ms-[12px] bg-gray-700 mt-2 rounded-full p-1 pmx:p-2 p4m:ms-5 spm:ms-5'>
+        <div className='flex w-[350px] pmx:w-[390px] ms-[12px] bg-gray-700 mt-2 rounded-full p-1 pmx:p-2 p4m:ms-5 spm:ms-5 pmx:ms-[12px]'>
             <p className='font-bold ms-[117px] me-20 pmx:ms-[133px] pmx:me-28 text-orange-600 uppercase'>ice creature</p>
         </div>
 
-        <div className='flex w-[350px] pmx:w-[390px] ms-[12px] uppercase gap-7 pmx:gap-3 mt-2 p4m:ms-5 spm:ms-5'>
+        <div className='flex w-[350px] pmx:w-[390px] ms-[12px] uppercase gap-7 pmx:gap-3 mt-2 p4m:ms-5 spm:ms-5 pmx:ms-[12px]'>
             <div className='flex border-2 border-orange-600 rounded-full p-1 pmx:p-2 px-2 w-[160px] pmx:w-[189px]'>
                 <div className='ms-6 px-1 pmx:ms-10'>
                     <img src='/images/hourglassNB.png' alt='hour glass' className='w-6 h-6 pmx:w-7 pmx:h-7' />
@@ -67,7 +67,7 @@ const IceCreature = () => {
             </div>
         </div>
 
-        <div className='w-[350px] pmx:w-[390px] ms-[12px]  bg-gray-700 mt-2 rounded-full pmx:p-1 p4m:ms-5 spm:ms-5'>
+        <div className='w-[350px] pmx:w-[390px] ms-[12px]  bg-gray-700 mt-2 rounded-full pmx:p-1 p4m:ms-5 spm:ms-5 pmx:ms-[12px]'>
             <div className='flex justify-center items-center'>
                 <img src='/images/presentNB.png' alt='present' className='w-6 h-7 pmx:w-7 pmx:h-8' />
                 <p className='ms-1 me-1'>=</p>
@@ -77,7 +77,7 @@ const IceCreature = () => {
             </div>
         </div>
 
-        <div className='w-[350px] pmx:w-[390px] ms-[12px] border-2 border-orange-600 rounded-xl p-2 mt-2 p4m:ms-5 spm:ms-5'>
+        <div className='w-[350px] pmx:w-[390px] ms-[12px] border-2 border-orange-600 rounded-xl p-2 mt-2 p4m:ms-5 spm:ms-5 pmx:ms-[12px]'>
             <p className='text-orange-600 uppercase font-bold text-[12px] pmx:text-[18px]'>description</p>
             <div>
                 <p className='text-[11px] pmx:text-[14px]'>

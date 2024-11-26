@@ -64,7 +64,7 @@ const LeaderBoard = () => {
   };
 
   return (
-    <div className='min-h-screen bg-black'>
+    <div className='min-h-screen bg-black lvs-arrors'>
      <div className='mt- flex h-8 justify-around'>
         <Link href="/coin" className='relative'>
             <img src='/images/CoinCNB.png' alt='coin' className='z-1 w-14 absolute pmx:w-16'/>
@@ -95,7 +95,7 @@ const LeaderBoard = () => {
         <div>{renderComponent()}</div>
       </div>
 
-      <div className="flex justify-center items-center gap-36 pmx:gap-72 -mt-[460px] pmx:-mt-[600px] spm:-mt-[530px] spm:gap-[270px]">
+      <div className="flex justify-center items-center gap-36 pmx:gap-72 -mt-[460px] pmx:-mt-[600px] spm:-mt-[530px] spm:gap-[270px] arror">
         {/* Left Arrow (only clickable when not on the first component) */}
         <button
           onClick={handleLeftArrowClick}

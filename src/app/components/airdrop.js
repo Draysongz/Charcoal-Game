@@ -44,7 +44,7 @@ const Airdrop = () => {
         <DrawerOverlay className='backdrop-blur-md' />
         <DrawerContent className='bg-black rounded-t-3xl p-4 h-[65vh] border-t-white border-t-4' >
         <DrawerCloseButton className='text-white text-[10px] rounded-full w-8 h-8 border-[2px] ms-72 pmx:ms-80 mt-3 font-bold'/>
-           <div>
+           <div className='wallet'>
              <div className='text-center text-white p-4'>
                 <img src='/images/wallet.png' alt='wallet' className='ms-[93px] pmx:ms-[90px] mt-2 pmx:w-[170px] pmx:mt-4 pmx:h-44 w-[130px] spm:w-[160px] spm:ms-[90px] spm:h-44 p4m:ms-[109px]' />
                 <h3 className='text-orange-600 text-[20px] pmx:text-[30px] uppercase font-bold spm:text-[30px]'>connect your ton wallet</h3>
