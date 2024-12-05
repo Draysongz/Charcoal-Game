@@ -1,75 +1,63 @@
 "use client"
 
 import React from 'react'
-import { useState } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import FireCreature from '../components/FireCreature';
-import FrogKing from '../components/FrogKing';
-import WaterCreature from '../components/waterCreature';
-import EarthCreature from '../components/earthCreature';
-import AirCreature from '../components/airCreature';
-import ShadowCreature from '../components/shadowCreature';
-import LightningCreature from '../components/lightningCreature';
-import IceCreature from '../components/iceCreature';
-import NatureCreature from '../components/natureCreature';
-import MetalCreature from '../components/metalCreature';
+import Link from 'next/link';
+import { GoHome } from "react-icons/go";
+import { LiaDollarSignSolid } from "react-icons/lia";
+import { IoGameControllerOutline } from "react-icons/io5";
+import { HiMiniUserGroup } from "react-icons/hi2";
+import { BsShopWindow } from "react-icons/bs";
+import Creature from '../components/Creature';
 
 const Characters = () => {
-    const components = [
-        { name: "Frog KIng", component: <FrogKing /> },
-        { name: "Fire Creature", component: <FireCreature /> },
-        { name: "Water Creature", component: <WaterCreature /> },
-        { name: "Earth Creature", component: <EarthCreature /> },
-        { name: "Air Creature", component: <AirCreature /> },
-        { name: "Shadow Creature", component: <ShadowCreature /> },
-        { name: "Lightning Creature", component: <LightningCreature /> },
-        { name: "Ice Creature", component: <IceCreature /> },
-        { name: "Nature Creature", component: <NatureCreature /> },
-        { name: "Metal Creature", component: <MetalCreature /> },
-    ];
-
-    const [activeIndex, setActiveIndex] = useState(0);
-
-  const renderComponent = () => {
-    return components[activeIndex].component;
-  };
-
-  const handleLeftArrowClick = () => {
-    if (activeIndex > 0) {
-      setActiveIndex(activeIndex - 1);
-    }
-  };
-
-  const handleRightArrowClick = () => {
-    if (activeIndex < components.length - 1) {
-      setActiveIndex(activeIndex + 1);
-    }
-  };
-
   return (
-    <div className='play-arrors'>
-        <div className=" transition-all duration-300 ease-in-out">
-        <div>{renderComponent()}</div>
+    <div className='min-h-screen play-arrors'>
+      <div className='flex h-8 justify-around'>
+        <Link href="/coin" className='relative'>
+            <img src='/images/CoinCNB.png' alt='coin' className='z-1 w-14 absolute pmx:w-16'/>
+            <div className='rounded-e-full text-white bg-orange-600 z-10  mt-4 pmx:mt-5
+            ms-6 pmx:ms-8 text-[12px] pe-10 ps-6 py-[2px] flex-grow-1'>
+                500,000,000
+            </div>
+        </Link>
+
+        <div className='relative'>
+            <img src='/images/CharcoalNB.png' alt='charcoal' className='w-14 absolute pmx:w-16'/>
+            <div className='bg-orange-500 bg-opacity-10 px-3 py-[2px] pmx:mt-5
+            rounded-e-full text-[12px] mt-4 ms-8 pmx:ms-10 ps-5 text-orange-900'>
+                1,000+
+            </div>
+        </div>
+
+        <div className='relative'>
+            <img src='/images/EmberNB.png' alt='ember' className='w-14 h-14 absolute pmx:w-16 pmx:h-16'/>
+            <div className='bg-orange-500 bg-opacity-10 px-3 py-[2px] pmx:mt-5
+            rounded-e-full text-[12px] mt-4 ms-8 pmx:ms-10 ps-5 text-orange-900'>
+                1,000+
+            </div>
+        </div>
+     </div>
+
+      <div>
+        <Creature />
       </div>
 
-      <div className="flex justify-center items-center gap-[280px] pmx:gap-[310px] -mt-[315.5px] pmx:-mt-[410px] arror">
-        {/* Left Arrow (only clickable when not on the first component) */}
-        <button
-          onClick={handleLeftArrowClick}
-          disabled={activeIndex === 0} // Disable if on the first component
-          className={`cursor-pointer p-1 bg-orange-600 rounded-full hover:text-gray-700 ${activeIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
-        >
-          <FaChevronLeft size={16} />
-        </button>
-
-        {/* Right Arrow (only clickable when not on the last component) */}
-        <button
-          onClick={handleRightArrowClick}
-          disabled={activeIndex === components.length - 1} // Disable if on the last component
-          className={`cursor-pointer p-1 bg-orange-600 rounded-full hover:text-gray-700 ${activeIndex === components.length - 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
-        >
-          <FaChevronRight size={16} />
-        </button>
+      <div className='bg-black flex p-[16.7px] uppercase fixed bottom-0 w-screen justify-between'>
+       <div>
+         <Link href="/" className='text-white'> <GoHome className='text-[20px] ms-3'/> home</Link>
+       </div>
+       <div >
+         <Link href="/earn" className='text-white'> <LiaDollarSignSolid className='text-[20px] ms-3' /> earn</Link>
+       </div>
+       <div className='underline decoration-orange-600 decoration-4 underline-offset-[18px]'>
+         <Link href="/play" className='text-white'> <IoGameControllerOutline className='text-[20px] ms-2' /> play</Link>
+       </div>
+       <div>
+         <Link href="frens" className='text-white'> <HiMiniUserGroup className='text-[20px] ms-3' /> frens</Link>
+       </div>
+       <div>
+         <Link href="/shop" className='text-white'> <BsShopWindow className='text-[20px] ms-2' /> shop</Link>
+       </div>
       </div>
      </div>
   )

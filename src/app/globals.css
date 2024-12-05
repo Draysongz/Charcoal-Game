@@ -42,12 +42,199 @@ h1 {
   line-height: 1.1;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slot-image .stop {
+  animation: bounce 0.5s ease;
+}
+
+/* Add fade-in effect for the win message */
+#winni {
+  animation: fadeIn 1s ease-in-out;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Add hover and active states for the spin/stop button */
+button img {
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover img {
+  transform: scale(1.1);
+}
+
+button:active img {
+  transform: scale(0.95); /* Slightly shrink when clicked */
+}
+
+
+@keyframes spin {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+
+@media (width: 414px) and (height: 896px) {
+  #slot {
+    margin-top: 355px;
+    margin-right: 18px;
+  }
+
+  #slot #High {
+    height: 250px;
+    width: 70px;
+  }
+
+  #slot #spinImg, #Img {
+    width: 100px;
+    height: 150px;
+  }
+
+  #slot #spinImg {
+    height: 90px;
+  }
+
+  #slot #winni {
+    width: 200px;
+    margin-left: 105px;
+    height: 250px;
+    margin-top: -240px;
+    background-opacity: 30px;
+  }
+
+  #slot #winni #WinImg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .own-timer {
+    margin-left: 110px !important;
+  }
+
+  .level-timer {
+    margin-left: 120px !important;
+  }
+}
+
+@media (width: 390px) and (height: 844px) {
+  #slot {
+    margin-top: 335px;
+    margin-right: 13px;
+  }
+
+  #slot #High {
+    height: 250px;
+    width: 70px;
+  }
+
+  #slot #spinImg, #Img {
+    width: 100px;
+    height: 150px;
+  }
+
+  #slot #spinImg {
+    width: 90px;
+    height: 80px;
+  }
+
+  #slot #winni {
+    width: 185px;
+    margin-left: 98.4px;
+    height: 230px;
+    margin-top: -240px;
+    background-opacity: 30px;
+  }
+
+  #slot #winni #WinImg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .own-timer {
+    margin-left: 95px !important;
+  }
+
+  .level-timer {
+    margin-left: 110px !important;
+  }
+}
+
+@media (width: 430px) and (height: 932px) {
+  #slot {
+    margin-top: 375px;
+    margin-right: 17px;
+  }
+
+  #slot #High {
+    height: 250px;
+    width: 70px;
+  }
+
+  #slot #spinImg, #Img {
+    width: 100px;
+    height: 150px;
+  }
+
+  #slot #spinImg {
+    width: 100px;
+    height: 90px;
+  }
+
+  #slot #winni {
+    width: 200px;
+    margin-left: 110.5px;
+    height: 250px;
+    margin-top: -240px;
+    background-opacity: 30px;
+  }
+
+  #slot #winni #WinImg {
+    width: 75px;
+    height: 75px;
+  }
+
+  .own-timer {
+    margin-left: 117px !important;
+  }
+
+  .level-timer {
+    margin-left: 128px !important;
+  }
+}
+
 @media (width: 414px) and (height: 736px) {
-  .loading-page div {
+  #loading-page div {
     margin-top: 300px;
   }
 
-  .Land-fire-boy img { 
+  #scrollable {
+    height: vh;
+  }
+
+  #Land-fire-boy img { 
     width: 295px;
     height: 270px;
     margin-left: 60px;
@@ -79,34 +266,30 @@ h1 {
     gap: 110px;
   }
 
-  .wallet img {
+  #wallet img {
     width: 170px;
     height: 140px;
   }
 
-  .wallet .texCon {
+  #wallet #texCon {
     font-size: 18px;
   }
 
-  .wallet h3 {
+  #wallet h3 {
     font-size: 25px;
   }
 
-  .wallet .connet {
-    font-size: 12px;
-  }
-
-  .frens {
+  #frens {
      margin-top: 10px;
   }
 
-  .frens .nums {
+  #frens #nums {
     font-size: 70px;
     margin-top: -20px;
   }
 
   .play .Img img{
-    height: 140px;
+    height: 200px;
   } 
 
   .play .depH {
@@ -114,7 +297,7 @@ h1 {
   }
 
   .play .depT {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .play-arrors .arror {
@@ -141,5 +324,105 @@ h1 {
     width: 170px;
     height: 150px;
     margin-left: 90px;
+  }
+
+  .forest .Imgs {
+    height: 100px;
+  }
+
+  .forest .timer {
+     margin-top: -95px;
+  }
+
+  .forest .textH {
+    font-size: 15px;
+  }
+
+  .forest .textT {
+    font-size: 10px;
+  }
+
+  .forest .textB {
+    font-size: 10px;
+  }
+
+  .forest .textB img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-top: 4px;
+  }
+
+  .forest .textB .span1 {
+    margin-left: 10px;
+  }
+
+  .slot .winni {
+    top: 240px;
+  }
+
+  .slot .point1 {
+    top: 389px;
+  }
+
+  .slot .point2 {
+    top: 389px;
+  }
+
+  .slot .spinImg {
+    margin-top: 310px;
+  }
+
+  .slot .Pbar {
+    margin-top: 20px;
+  }
+
+  .slot .bar {
+    top: 538px;
+  }
+
+  .slot .bet-A {
+    margin-top: 27px;
+  }
+  
+  .slot .button {
+    top: 550px;
+  }
+
+  .slot .Blabel {
+    top: 485px;
+  }
+
+  #slot {
+    margin-top: 285px;
+    margin-right: 18px;
+    height: 200px;
+  }
+
+  #slot #High {
+    height: 207px;
+    width: 70px;
+  }
+
+  #slot #spinImg, #Img {
+    width: 100px;
+    height: 150px;
+  }
+
+  #slot #spinImg {
+    height: 75px;
+  }
+
+  #slot #winni {
+    width: 200px;
+    margin-left: 105px;
+    height: 250px;
+    margin-top: -240px;
+    background-opacity: 30px;
+  }
+
+  #slot #winni #WinImg {
+    width: 80px;
+    height: 80px;
   }
 }

@@ -7,11 +7,12 @@ import { BsShopWindow } from "react-icons/bs";
 import Link from 'next/link';
 import { Tabs, TabList, TabPanels, Tab, TabPanel, Icon } from '@chakra-ui/react'
 import PlayAll from '../components/playAll';
-import PlaySea from '../components/play.Sea';
+import PlaySea from '../components/playSea';
 import PlayForest from '../components/playForest';
 import PlayMount from '../components/playMount';
 import NavBar from '../components/navBar';
 import Header from '../components/header';
+import PlayAerial from '../components/playAerial';
 
 const Play = () => {
   return (
@@ -44,18 +45,19 @@ const Play = () => {
        
          <TabPanels>
            <TabPanel>
-             <Link href="/characters"><PlaySea /></Link>
+           <Link href="/characters"><PlayAll /></Link>
            </TabPanel>
            <TabPanel>
-             <PlayAll />
-           </TabPanel>
-           <TabPanel>
+             <PlaySea />
            </TabPanel>
            <TabPanel>
              <PlayForest />
            </TabPanel>
            <TabPanel>
-             <PlayMount /> 
+             <PlayMount />
+           </TabPanel>
+           <TabPanel>
+             <PlayAerial /> 
            </TabPanel>
          </TabPanels>
      </Tabs>

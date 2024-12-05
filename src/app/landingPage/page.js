@@ -68,7 +68,7 @@ const Landing = () => {
      </div>
 
      <div>
-        <div className='Land-fire-boy'>
+        <div id='Land-fire-boy'>
             <img src='/images/fireboy.png' alt='fireboy' className='ms-[40px] h-72 pmx:ms-[6px] pmx:w-[400px] pmx:h-[400px] spm:w-[375px] spm:ms-[6px] spm:h-[400px] p4m:w-[400px] p4m:ms-[15px]' />
         </div>
         <button type='submit' className='bg-orange-600 text-white mt-3 ms-20 p-2 px-20 pmx:mt-7 pmx:ms-[110px] 
@@ -90,9 +90,11 @@ const Landing = () => {
            </div>
         </div>
         
-        <div>
-            <img src='/images/furnace.png' alt='furnace' className='w-16 h-20 -mt-5 ms-3 pmx:w-20 pmx:h-24 spm:w-20 p4m:w-20 spm:h-24 p4m:h-24' />
-        </div>
+        <Link href="/SlotMachine2">
+          <div>
+              <img src='/images/furnace.png' alt='furnace' className='w-16 h-20 -mt-5 ms-3 pmx:w-20 pmx:h-24 spm:w-20 p4m:w-20 spm:h-24 p4m:h-24' />
+          </div>
+        </Link>
      </div>
      </div>
 
@@ -108,14 +110,14 @@ const Landing = () => {
        </div>
        <div>
          <Link href="frens" className='text-white'> <HiMiniUserGroup className='text-[20px] ms-3' /> frens</Link>
-       </div>
+       </div>       
        <div>
          <Link href="/shop" className='text-white'> <BsShopWindow className='text-[20px] ms-2' /> shop</Link>
        </div>
      </div>
 
      <Modal isOpen={isOpen1} onClose={onClose1} isCentered>
-        <ModalOverlay className='backdrop-blur-sm' />
+        <ModalOverlay className='backdrop-blur-pmx' />
         <ModalContent>
            <div className='bg-black ms-7 absolute z-50 text-white top-[220px] p-9 
             rounded-3xl w-80 pmx:w-[370px] pmx:ms-[20px] pmx:p-10 pmx:top-[300px]'>
@@ -136,7 +138,7 @@ const Landing = () => {
       </Modal>
 
       <Modal isOpen={isOpen2} onClose={onClose2} isCentered>
-         <ModalOverlay className='backdrop-blur-sm' />
+         <ModalOverlay className='backdrop-blur-pmx' />
          <ModalContent>
             <div className='bg-black ms-7 absolute z-50 text-white top-[220px] p-9 
              rounded-3xl w-80 pmx:w-[370px] pmx:ms-[20px] pmx:p-10 pmx:top-[300px]'>

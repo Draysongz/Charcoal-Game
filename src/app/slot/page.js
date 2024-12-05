@@ -9,15 +9,17 @@ import Header from '../components/header';
 
 const Slot = () => {
   return (
-    <div className='min-h-screen' style={{backgroundImage: "url('/images/SlotMachine.png')", objectFit: "cover", backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
+    <div className='min-h-screen' style={{backgroundImage: "url('/images/SlotMachine.png')", backgroundSize: "100% 100%"}}>
 
 
          <>
            <Header />
          </>
 
-         <div className='fixed bottom-24 left-28 pmx:left-[135px]'>
+         <div className='fixed bottom-20 left-28 pmx:left-[135px] spm:left-[122px] p4m:left-[143px]'>
+            <Link href="/slotMachine">
             <img src='/images/SLIN-remove.png' alt='slin' />
+            </Link>
          </div>
 
          <div className='bg-black flex p-[16.7px] uppercase fixed bottom-0 w-screen justify-between'>

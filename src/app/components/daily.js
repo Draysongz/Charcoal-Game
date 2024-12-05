@@ -14,7 +14,7 @@ const Daily = () => {
           <div>
             <span className='text-orange-600 text-[14px]'>follow our youtube</span>
             <img src='/images/CoinCNB.png' className=' w-5 h-4 ' />
-            <span className='absolute left-[75px] top-[124px] text-[13px] pmx:left-[95px] pmx:top-[126px]'>20k</span>
+            <span className='absolute left-[75px] top-[125px] text-[13px] pmx:left-[95px] pmx:top-[125.5px] spm:left-[85px] spm:top-[125px] p4m:left-[105px]'>20k</span>
           </div>
           <MdKeyboardArrowRight className='ms-[107px] mt-2 text-[20px]' />
         </div>
@@ -26,7 +26,7 @@ const Daily = () => {
           <div>
             <span className='text-orange-600 text-[14px]'>follow our twitter</span>
             <img src='/images/CoinCNB.png' className=' w-5 h-4 ' />
-            <span className='absolute left-[75px] top-[194px] text-[13px] pmx:left-[95px] pmx:top-[194px]'>20k</span>
+            <span className='absolute left-[75px] top-[194px] text-[13px] pmx:left-[95px] pmx:top-[193.5px] spm:left-[85px] spm:top-[194px] p4m:left-[105px]'>20k</span>
         </div>
           <MdKeyboardArrowRight className='ms-28 mt-2 text-[20px]' />
         </div>
@@ -38,7 +38,7 @@ const Daily = () => {
           <div>
             <span className='text-orange-600 text-[14px]'>follow our telegram</span>
             <img src='/images/CoinCNB.png' className=' w-5 h-4 ' />
-            <span className='absolute left-[75px] top-[263px] text-[13px] pmx:left-[95px] pmx:top-[262px]'>20k</span>
+            <span className='absolute left-[75px] top-[263px] text-[13px] pmx:left-[95px] pmx:top-[262.4px] spm:left-[85px] spm:top-[262px] p4m:left-[105px]'>20k</span>
         </div>
           <MdKeyboardArrowRight className='ms-[100px] mt-2 text-[20px]' />
         </div>
