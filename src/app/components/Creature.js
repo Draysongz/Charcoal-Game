@@ -2,86 +2,76 @@
 
 import React, { useState } from 'react'
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import FrogKing from './Creature';
-import FireCreature from './FireCreature';
-import WaterCreature from './waterCreature';
-import EarthCreature from './earthCreature';
-import AirCreature from './airCreature';
-import ShadowCreature from './shadowCreature';
-import LightningCreature from './lightningCreature';
-import IceCreature from './iceCreature';
-import NatureCreature from './natureCreature';
-import MetalCreature from './metalCreature';
 
 const Creature = () => {
   // List of components with their names, images, and JSX elements
   const components = [
     { 
       name: "Frog King", 
-      component: <FrogKing />, 
+      // component: <FrogKing />, 
       image: '/images/Frog2.png', 
       timer: "play",
       timerStyle: { backgroundColor: "#F15B06", color: "#FFF", border: "1px solid #FEFEFF" }
     },
     { 
       name: "Fire Creature", 
-      component: <FireCreature />, 
+      // component: <FireCreature />, 
       image: '/images/Flameexpand2.png', 
       timer: "level 10 required",
       timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF", width: "180px", marginLeft: "97px" }
     },
     { 
       name: "Water Creature", 
-      component: <WaterCreature />, 
+      // component: <WaterCreature />, 
       image: '/images/WaterFairy.png', 
       timer: "you own this creature",
       timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF", width: "200px", marginLeft: "88px" }
     },
     { 
       name: "Earth Creature", 
-      component: <EarthCreature />, 
+      // component: <EarthCreature />, 
       image: '/images/antenna.png', 
       timer: "you own this creature",
       timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF", width: "200px", marginLeft: "88px" }
     },
     { 
       name: "Air Creature", 
-      component: <AirCreature />, 
+      // component: <AirCreature />, 
       image: '/images/seadragon.png', 
       timer: "level 5 required",
       timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF", width: "170px", marginLeft: "105px" }
     },
     { 
       name: "Shadow Creature", 
-      component: <ShadowCreature />, 
+      // component: <ShadowCreature />, 
       image: '/images/ghost.png', 
       timer: "02:39:50",
       timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF" }
     },
     { 
       name: "Lightning Creature", 
-      component: <LightningCreature />, 
+      // component: <LightningCreature />, 
       image: '/images/sojo.png', 
       timer: "play",
       timerStyle: { backgroundColor: "#F15B06", color: "#FFF", border: "1px solid #FEFEFF" }
     },
     { 
       name: "Ice Creature", 
-      component: <IceCreature />, 
+      // component: <IceCreature />, 
       image: '/images/wolf.png', 
       timer: "level 10 required",
       timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF", width: "180px", marginLeft: "100px" }
     },
     { 
       name: "Nature Creature", 
-      component: <NatureCreature />, 
+      // component: <NatureCreature />, 
       image: '/images/EarthFairy.png', 
       timer: "level 2 required",
       timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF", width: "170px", marginLeft: "105px" }
     },
     { 
       name: "Metal Creature", 
-      component: <MetalCreature />, 
+      // component: <MetalCreature />, 
       image: '/images/batGurl.png', 
       timer: "02:39:50",
       timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF" }

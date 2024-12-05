@@ -425,4 +425,12 @@ button:active img {
     width: 80px;
     height: 80px;
   }
+
+  .own-timer {
+    margin-left: 110px !important;
+  }
+
+  .level-timer {
+    margin-left: 120px !important;
+  }
 }
