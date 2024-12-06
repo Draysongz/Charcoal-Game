@@ -230,7 +230,7 @@ const [reels, setReels] = useState([
 {/* Progress Bar */}
      <div>
         <img src='/images/PBar.png' alt='progress bar' className='mt-[15px] ms-[80px] pmx:mt-[20px] pmx:ms-[90px] pmx:w-[220px] spm:-mt-[1px] spm:w-[220px] p4m:mt-[26px] p4m:w-[238px] Pbar' />
-        <img src='/images/bar.png' alt='bar' className='absolute top-[486px] left-[137px] pmx:top-[657px] pmx:left-[160px] spm:top-[616.5px] spm:left-[148px] p4m:top-[684px] p4m:left-[170px] bar' />
+        <img src='/images/Bar.png' alt='bar' className='absolute top-[486px] left-[137px] pmx:top-[657px] pmx:left-[160px] spm:top-[616.5px] spm:left-[148px] p4m:top-[684px] p4m:left-[170px] bar' />
      </div>
 
      <div className='flex gap-[60px] ms-[70px] mt-[20px] pmx:mt-[43px] pmx:gap-[64px] spm:mt-[35px] spm:gap-[65px] p4m:mt-[45px] p4m:gap-[71px] bet-A'>
