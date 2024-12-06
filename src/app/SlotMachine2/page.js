@@ -126,7 +126,7 @@ const [reels, setReels] = useState([
   const randomIndex = () => Math.floor(Math.random() * items.length);
 
   return (
-    <div className='min-h-screen slot' style={{backgroundImage: "url('/images/SlotMachine2.png')", backgroundSize: "100% 91%", backgroundRepeat : 'no-repeat'}} >
+    <div className='min-h-screen slot' style={{backgroundImage: "url('/images/Slotmachine2.png')", backgroundSize: "100% 91%", backgroundRepeat : 'no-repeat'}} >
         <div className='mt- flex h-8 justify-around'>
         <Link href="/coin" className='relative'>
             <img src='/images/CoinCNB.png' alt='coin' className='z-1 w-14 absolute pmx:w-16'/>
@@ -154,7 +154,7 @@ const [reels, setReels] = useState([
      </div>
 
      <div className='absolute top-[225px] left-[130px] pmx:top-[300px] pmx:left-[130px] spm:top-[280px] spm:left-[120px] p4m:top-[310px] p4m:left-[130px] winni'>
-        <img src='/images/win.png' alt='win' className='h-[60px] pmx:h-[80px] spm:h-[80px] p4m:h-[90px]'  />
+        <img src='/images/WIN.png' alt='win' className='h-[60px] pmx:h-[80px] spm:h-[80px] p4m:h-[90px]'  />
      </div>
 
      <span>
