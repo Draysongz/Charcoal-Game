@@ -12,13 +12,13 @@ import { Box, Button, Text, Input, Image } from "@chakra-ui/react";
 
 const SlotMachine2 = () => {
 const items = [
-    { img: "../images/PotionForest.png", name: 'Potion Forest', payout: 4},
-    { img: "../images/CharcoalNB.png", name: 'Charcoal', payout: 4},
-    { img: "../images/CoinCNB.png", name: 'Coin', payout: 4},
-    { img: "../images/PotionMountain.png", name: 'Potion Mountain', payout: 4},
-    { img: "../images/PotionAerial.png", name: 'Potion Aerial', payout: 4},
-    { img: "../images/PotionSea.png", name: 'Potion Sea', payout: 4},
-    { img: "../images/EmberNB.png", name: 'Ember', payout: 4},
+    { img: "/images/PotionForest.png", name: 'Potion Forest', payout: 4},
+    { img: "/images/CharcoalNB.png", name: 'Charcoal', payout: 4},
+    { img: "/images/CoinCNB.png", name: 'Coin', payout: 4},
+    { img: "/images/PotionMountain.png", name: 'Potion Mountain', payout: 4},
+    { img: "/images/PotionAerial.png", name: 'Potion Aerial', payout: 4},
+    { img: "/images/PotionSea.png", name: 'Potion Sea', payout: 4},
+    { img: "/images/EmberNB.png", name: 'Ember', payout: 4},
 ];
 
 const [reels, setReels] = useState([
