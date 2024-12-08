@@ -38,13 +38,13 @@ const Coin = () => {
            </div>
          </div>
 
-        <div className='fixed bottom-[90px] pmx:bottom-[125px] spm:bottom-[100px]'>
-           <div className='flex flex-col items-center justify-center pmx:ms-7 ms-6 relative'>
-             <div className='absolute left-3 z-20'>
-                 <img src='/images/CoinCNB.png' alt='coin' className='w-[60px] pmx:w-[70px] pmx:-mt-2' />
+        <div className='fixed bottom-[90px] pmx:bottom-[125px] spm:bottom-[100px] w-full'>
+           <div className='flex flex-auto items-center justify-center relative'>
+             <div className=' z-20'>
+                 <img src='/images/CoinCNB.png' alt='coin' className='w-[65px] h-[65px] pmx:w-[70px] pmx:h-[65px] ' />
              </div>
              
-             <div className='relative mt-2 ms-9'>
+             <div className='-ms-9 relative mt-2'>
                 <div className='bg-black border-2 border-orange-600 rounded-full w-[260px] h-10 pmx:w-[290px] pmx:h-10'></div>
                 <div className='bg-orange-600 absolute rounded-full z-10 top-0 left-0 h-10 pmx:h-10 
                 text-[18px] pmx:text-[18px] px-7 '>

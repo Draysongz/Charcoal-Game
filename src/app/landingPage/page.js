@@ -354,35 +354,6 @@ const Landing = () => {
           </Box>
         </ModalContent>
       </Modal>
-
-      {/* <Modal isOpen={isOpen2} onClose={onClose2} isCentered>
-        <ModalOverlay className="backdrop-blur-pmx" />
-        <ModalContent>
-          <Box
-            className="bg-black ms-7 absolute z-50 text-white top-[220px] p-9 
-             rounded-3xl w-80 pmx:w-[370px] pmx:ms-[20px] pmx:p-10 pmx:top-[300px]"
-          >
-            <div className="flex justify-end text-[20px]">
-              <ModalCloseButton className="items-end border-2 rounded-full p-1 text-[9px]" />
-            </div>
-            <div className="flex justify-center mt-3">
-              <img src="/images/Cauldron.png" alt="cauldron" />
-            </div>
-            <div className="flex justify-center text-orange-600">CAULDRON</div>
-            <div className="flex justify-center text-[14px] mt-2">
-              Keep stacking boosters and
-              <br />
-              &nbsp; &nbsp; powering-up creatures
-            </div>
-            <div
-              className="flex justify-center px-7 py-1 border border-orange-600 text-[11px]
-            rounded-full text-orange-700 mt-3 uppercase"
-            >
-              we cooking!
-            </div>
-          </Box>
-        </ModalContent>
-      </Modal> */}
     </div>
   );
 };

@@ -157,7 +157,7 @@ const Shop = () => {
                 alignItems={"center"}
                 bg={"#FEFEFF33"}
                 h={"20px"}
-                w={"20vw"}
+                w={{base: "20vw", md: "18vw"}}
                 mt={1}
                 fontSize={"9px"}
                 fontWeight={"semibold"}
