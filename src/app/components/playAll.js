@@ -252,7 +252,7 @@ const PlayAll = () => {
         >
           <div className="relative">
             <img
-              src="/images/flameexpand2.png"
+              src="/images/Flameexpand2.png"
               alt="fire creature"
               className="rounded-md h-[98px] w-[150px] pmx:h-[130px] pmx:w-[170px] spm:h-[130px] spm:w-[170px] Imgs"
             />
