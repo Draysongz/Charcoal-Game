@@ -11,7 +11,7 @@ const Coin = () => {
     <div className='min-h-screen' style={{backgroundImage: "url('/images/Flameexpand1.png')", objectFit: "cover", backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
 
 
-         <div className='mt-1 ms-3 flex h-12 pmx:h-16 justify-start'>
+         <div className='mt-1 flex h-12 pmx:h-16 flex-auto justify-between'>
            <Link href="/coin" className='relative'>
                <img src='/images/CoinCNB.png' alt='coin' className='z-1 w-[90px] absolute pmx:w-[90px] pmx:h-20'/>
                <div className='rounded-e-full text-white z-10 top-5 mt-6
@@ -20,26 +20,26 @@ const Coin = () => {
                </div>
            </Link>
 
-           <div className='mt-1 ms-5'>
+           <div className='mt-1 me-3'>
                <div className='flex rounded-full px-2 py-1' style={{ background: "linear-gradient(to right, #470B04, #000000)" }}>
                    <img src='/images/NewLightningNB.png' alt='lightning' className='w-8 h-6' />
-                   <span className='font-bold pmx:text-[18px]'>500/1,000</span>
+                   <span className='font-bold pmx:text-[18px] text-white'>500/1,000</span>
                </div>
                <div className='flex mt-3 rounded-full px-2 py-1' style={{ background: "linear-gradient(to right, #470B04, #000000)" }}>
                    <img src='/images/targetNB.png' alt='target' className='w-7 h-6' />
-                   <span className='font-bold pmx:text-[18px]'>20,000,000</span>
+                   <span className='font-bold pmx:text-[18px] text-white'>20,000,000</span>
                </div>
            </div>
          </div>
    
          <div className='uppercase mt-10 pmx:mt-7'>
-           <div className='text-center text-[30px] pmx:text-[40px] py-1 pmx:py-2 px- p-3 rounded-xl font-bold' style={{ background: "linear-gradient(to right, #470B04, #000000)" }}>
+           <div className='text-center text-[30px] pmx:text-[40px] py-1 pmx:py-2 px- p-3 rounded-xl font-bold text-white' style={{ background: "linear-gradient(to right, #470B04, #000000)" }}>
                <p>frog king</p>
            </div>
          </div>
 
         <div className='fixed bottom-[90px] pmx:bottom-[125px] spm:bottom-[100px]'>
-           <div className='flex  pmx:ms-7 ms-6 relative'>
+           <div className='flex flex-col items-center justify-center pmx:ms-7 ms-6 relative'>
              <div className='absolute left-3 z-20'>
                  <img src='/images/CoinCNB.png' alt='coin' className='w-[60px] pmx:w-[70px] pmx:-mt-2' />
              </div>
@@ -56,7 +56,7 @@ const Coin = () => {
      
      
            <div className='fixed bottom-0 bg-[#F15B061A] py-1 pmx:py-2 w-full rounded-t-xl'>
-             <div className='mt-3 flex gap-3 ms-8 pmx:ms-6'>
+             <div className='mt-3 flex gap-3 flex-auto justify-center'>
                  <img src='/images/Inventory.png' alt='inventory' className='border-2 border-orange-800 rounded-full 
                  p-1 w-16 h-16 pmx:w-20 pmx:h-20 pmx:p-2' />
                  <span className='border-orange-800 border-e-2'></span>

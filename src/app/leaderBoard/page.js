@@ -64,7 +64,7 @@ const LeaderBoard = () => {
   };
 
   return (
-    <div className='min-h-screen bg-black lvs-arrors'>
+    <div className='min-h-screen bg-black lvs-arrors flex flex-col items-center text-white'>
      <div className='mt- flex h-8 justify-around'>
         <Link href="/coin" className='relative'>
             <img src='/images/CoinCNB.png' alt='coin' className='z-1 w-14 absolute pmx:w-16'/>
@@ -91,11 +91,11 @@ const LeaderBoard = () => {
         </div>
       </div>
 
-      <div className=" transition-all duration-300 ease-in-out">
-        <div>{renderComponent()}</div>
+      <div className=" transition-all duration-300 ease-in-out flex flex-col items-center">
+        <div className=' flex flex-col items-center'>{renderComponent()}</div>
       </div>
 
-      <div className="flex justify-center items-center gap-36 pmx:gap-72 -mt-[460px] pmx:-mt-[600px] spm:-mt-[530px] spm:gap-[270px] arror">
+      <div className="flex justify-between items-center w-[95%] -mt-[490px] pmx:-mt-[580px] spm:-mt-[550px] arror">
         {/* Left Arrow (only clickable when not on the first component) */}
         <button
           onClick={handleLeftArrowClick}

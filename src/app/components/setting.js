@@ -3,7 +3,7 @@ import React from 'react'
 
 const Settings = () => {
   return (
-    <div className='mt-20 p-5 pmx:mt-32'>
+    <div className='mt-20 p-5 pmx:mt-32 text-white'>
         <div className='border-2 border-orange-600 p-5 py-2'>
           <div class="grid grid-cols-1 uppercase border-white">
             <Link href="">

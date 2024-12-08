@@ -4,20 +4,20 @@ import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react'
 
 const PlayMount = () => {
   return (
-    <div className='mt-4 forest'>
+    <div className='mt-4 forest w-[100%] flex flex-col items-center'>
         <div className='flex space-x-3 spm:space-x-4 p4m:space-x-5'>
         <div className='rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]' style={{ background: "linear-gradient(to bottom, #D98480, #734644)" }}>
             <div className=''>
-                <img src='/images/antenna.png' alt='earth creature' className='rounded-md h-[98px] w-[150px] pmx:h-[130px] pmx:w-[170px] blur-sm spm:h-[130px] spm:w-[170px] Imgs' />
+                <img src='/images/antenna.png' alt='earth creature' className='rounded-md h-[98px] w-[150px] pmx:h-[130px] pmx:w-[170px] spm:h-[130px] spm:w-[170px] Imgs' />
             </div>
-            <div className='absolute -mt-24 ms-6 pmx:-mt-28 pmx:ms-9 spm:-mt-28 spm:ms-8 timer'>
+            {/* <div className='absolute -mt-24 ms-6 pmx:-mt-28 pmx:ms-9 spm:-mt-28 spm:ms-8 timer'>
                  <CircularProgress value={97} color='yellow' trackColor='#000003' thickness='5px' size='90px' label="30%" >
                  <CircularProgressLabel fontSize="14px">   
                   <MdOutlineTimer className='text-[22px] ms-[34px]' />
                     05:52:30
                  </CircularProgressLabel>
                  </CircularProgress>
-            </div>
+            </div> */}
         <div className='text-center text-orange-600 font-bold uppercase pmx:text-[20px] pmx:mb-1 spm:text-[20px] spm:mb-1 textH'>
             <p>earth</p>
             <p className='-mt-[8px]'>creature</p>
@@ -37,16 +37,16 @@ const PlayMount = () => {
 
         <div className='rounded-xl p-3 w-[170px] pmx:w-[190px]' style={{ background: "linear-gradient(to bottom, #D98480, #734644)" }}>
               <div className='rounded-md'>
-                  <img src='/images/seadragon.png' alt='air dragon' className='rounded-md h-[98px] pmx:h-[130px] w-[150px] pmx:w-[170px] blur-sm spm:h-[130px] spm:w-[170px] Imgs' />
+                  <img src='/images/seadragon.png' alt='air dragon' className='rounded-md h-[98px] pmx:h-[130px] w-[150px] pmx:w-[170px] spm:h-[130px] spm:w-[170px] Imgs' />
               </div>
-              <div className='absolute -mt-24 ms-6 pmx:-mt-28 pmx:ms-9 spm:-mt-28 spm:ms-8 timer'>
+              {/* <div className='absolute -mt-24 ms-6 pmx:-mt-28 pmx:ms-9 spm:-mt-28 spm:ms-8 timer'>
                  <CircularProgress value={97} color='yellow' trackColor='#000003' thickness='5px' size='90px' label="30%" >
                  <CircularProgressLabel fontSize="14px">   
                   <MdOutlineTimer className='text-[22px] ms-[34px]' />
                     05:52:30
                  </CircularProgressLabel>
                  </CircularProgress>
-              </div>
+              </div> */}
         <div className='text-center text-orange-600 font-bold uppercase pmx:text-[20px] pmx:mb-1 spm:text-[20px] spm:mb-1 textH'>
             <p>air</p>
             <p className='-mt-[8px]'>creature</p>
@@ -67,16 +67,16 @@ const PlayMount = () => {
 
         <div className='rounded-xl p-3 w-[170px] pmx:w-[190px] mt-2' style={{ background: "linear-gradient(to bottom, #D98480, #734644)" }}>
             <div className=''>
-                <img src='/images/batGurl.png' alt='metal creature' className='rounded-md h-[98px] w-[150px] pmx:h-[130px] pmx:w-[170px] blur-sm spm:h-[130px] spm:w-[170px] Imgs' />
+                <img src='/images/batGurl.png' alt='metal creature' className='rounded-md h-[98px] w-[150px] pmx:h-[130px] pmx:w-[170px] spm:h-[130px] spm:w-[170px] Imgs' />
             </div>
-            <div className='absolute -mt-24 ms-6 pmx:-mt-28 pmx:ms-9 spm:-mt-28 spm:ms-8 timer'>
+            {/* <div className='absolute -mt-24 ms-6 pmx:-mt-28 pmx:ms-9 spm:-mt-28 spm:ms-8 timer'>
                  <CircularProgress value={97} color='yellow' trackColor='#000003' thickness='5px' size='90px' label="30%" >
                  <CircularProgressLabel fontSize="14px">   
                   <MdOutlineTimer className='text-[22px] ms-[34px]' />
                     05:52:30
                  </CircularProgressLabel>
                  </CircularProgress>
-            </div>
+            </div> */}
         <div className='text-center text-orange-600 font-bold uppercase pmx:text-[20px] pmx:mb-1 spm:text-[20px] spm:mb-1 textH'>
             <p>metal</p>
             <p className='-mt-[8px]'>creature</p>

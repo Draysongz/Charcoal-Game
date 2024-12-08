@@ -19,8 +19,8 @@ const Play = () => {
     <div className='min-h-screen bg-black'>
      <Header />
 
-     <Tabs variant='unstyled' className='mt-10 pmx:mt-16 w-[350px] pmx:w-[394px] spm:w-[367px] ms-[12px] p4m:w-[405px]'>
-         <TabList className='bg-orange-400  bg-opacity-30 flex px-2 items-center justify-between'>
+     <Tabs variant='unstyled' className='mt-5'>
+         <TabList className='bg-orange-400  bg-opacity-30 flex items-center justify-evenly'>
            <Tab _selected={{ color: 'white', bg: '#ea580c', borderRadius: '' }} className=' font-bold uppercase flex flex-col p-2 spm:p-3 pmx:p-3 items-center justify-center text-center w-[100%]' >
              <IoGameControllerOutline aria-hidden="true" className='text-[17px]' /> 
                <span className='text-[13px]'>all</span>
@@ -37,14 +37,14 @@ const Play = () => {
               <HiMiniUserGroup aria-hidden="true" className='text-[17px] ' /> 
                 <span className='text-[13px]'>mountain</span>
            </Tab>
-           <Tab _selected={{ color: 'white', bg: '#ea580c', borderRadius: '' }} className=' text-white font-bold uppercase flex flex-col p-2 spm:p-3 pmx:p-3 items-center justify-center text-center w-[100%]' >
+           <Tab _selected={{ color: 'white', bg: '#ea580c', borderRadius: '' }} className='font-bold uppercase flex flex-col p-1 spm:p-3 pmx:p-3 items-center justify-center text-center w-[100%]' >
               <HiMiniUserGroup aria-hidden="true" className='text-[17px] ' />
                 <span className='text-[13px]'>aerial</span>
            </Tab>
          </TabList>
        
          <TabPanels>
-           <TabPanel>
+           <TabPanel px={1}>
            <Link href="/characters"><PlayAll /></Link>
            </TabPanel>
            <TabPanel>

@@ -27,6 +27,7 @@ Link:hover {
 }
 
 body {
+  font-family: 'Gotham';
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -97,7 +98,7 @@ button:active img {
 }
 
 
-@media (width: 414px) and (height: 896px) {
+/* @media (width: 414px) and (height: 896px) {
   #slot {
     margin-top: 355px;
     margin-right: 18px;
@@ -433,4 +434,18 @@ button:active img {
   .level-timer {
     margin-left: 120px !important;
   }
+} */
+
+
+/* media queries for spin */
+
+@media (width: 379px) and (height: 820px) {
+
 }
+
+
+/* .arror{
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
