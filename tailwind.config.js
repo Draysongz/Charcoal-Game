@@ -17,6 +17,7 @@ module.exports = {
         'spm': '390px',  // Small phones (e.g., iPhone SE, Galaxy A3)
         'p4m': '430px',  // Phones (e.g., iPhone 6, iPhone 7)
         'pmx': '414px',  // Medium phones (e.g., iPhone 12, iPhone 11)
+        'mxm': '428px'
       },
     },
   },

@@ -6,15 +6,18 @@ import { FaMedal } from "react-icons/fa";
 
 const LevelFifteen = () => {
   return (
-    <div className="flex flex-col items-center mt-5 pmx:mt-10 spm:mt-10 lvs">
+    <div
+      className="flex flex-col items-center mt-5 pmx:mt-10 spm:mt-10 lvs overflow-y-auto"
+      style={{ height: "calc(90vh - 80px)" }}
+    >
       <div className="mb-2 flex flex-col items-center">
         <div className="text-center">
           <h3 className="uppercase font-bold pmx:mb-1 spm:mb-1">level 15</h3>
-          <div className="bg-orange-600 w-32 rounded-[40px] p-2 pmx:w-[300px] spm:w-[290px] borImg">
+          <div className="bg-orange-600 w-40 rounded-[40px] p-2 pmx:w-[300px] spm:w-[290px] borImg">
             <img
               src="/images/Level3.png"
               alt="level one"
-              className="w-28 rounded-[40px] pmx:w-[290px] spm:w-[280px]"
+              className="w-38 rounded-[40px] pmx:w-[290px] spm:w-[280px]"
             />
           </div>
         </div>
@@ -27,7 +30,9 @@ const LevelFifteen = () => {
       </div>
 
       <div className="flex flex-col items-center w-[100%]">
-        <h3 className="uppercase text-center font-bold">goblet of eternal fire</h3>
+        <h3 className="uppercase text-center font-bold">
+          goblet of eternal fire
+        </h3>
         <div className="bg-orange-600 mt-3 w-[90%] rounded-full border-2 border-white flex items-center px-5 justify-between">
           <div className="p-[3px]">
             <p className="text-[14px] pmx:text-[16px]">you currently rank at</p>

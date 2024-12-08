@@ -7,7 +7,7 @@ import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
 const PlayAll = () => {
   return (
     <div
-      className="w-[100%] flex flex-col items-center overflow-y-auto"
+      className="w-[100%] flex flex-col items-center overflow-y-auto text-white"
       style={{ height: "calc(80vh - 80px)" }}
     >
       <div

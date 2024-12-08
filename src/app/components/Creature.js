@@ -102,24 +102,18 @@ const Creature = () => {
           className="p-3 w-[90%] rounded-lg mt-16"
           style={{ background: "linear-gradient(to bottom, #5FBB98, #2B5545)" }}
         >
-          <div className="flex uppercase text-[14px] pmx:text-[15px] font-bold bg-orange-600 p-[1px] spm:text-[15px]">
-            <img
-              src="/images/targetNB.png"
-              alt="target"
-              className="w-6 h-6 mt-1 me-1 ms-4 pmx:ms-7"
-            />
-            <p className="mt-[4.7px] ">20k</p>
-            <p className=" ms-40 pmx:ms-44 mt-1">pwr 1/ 10</p>
+          <div className="flex uppercase text-[14px] pmx:text-[15px] font-bold bg-orange-600 p-[1px] spm:text-[15px] text-white justify-between">
+            <div className='flex ms-6'>
+              <img
+                src="/images/targetNB.png"
+                alt="target"
+                className="w-6 h-6 mt-1 "
+              />
+              <p className="mt-[4.7px] ">20k</p>
+            </div>
+            <p className="mt-1 me-6">pwr 1/ 10</p>
           </div>
 
-          {/* Dynamically display the image based on selected index */}
-          {/* <div className="Img bg-red-500 ">
-            <img
-              src={components[selectedIndex].image}
-              alt={components[selectedIndex].name}
-              className="w-[50%] rounded-b-md"
-            />
-          </div> */}
           <Box
             bgImage={components[selectedIndex].image}
             bgRepeat={"no-repeat"}
@@ -135,7 +129,6 @@ const Creature = () => {
               },
               "@media (min-height: 840px) and (max-height: 844px)": {
                 h: "300px",
-              
               },
               "@media (min-height: 926px) and (max-height: 932px)": {
                 h: "360px",
@@ -241,7 +234,7 @@ const Creature = () => {
             description
           </p>
           <div>
-            <p className="text-[13px]">
+            <p className="text-[13px] text-white">
               {components[selectedIndex].name} is a mighty creature, full of
               power and potential. This creature thrives in its environment and
               brings forth elemental magic. Legends say that these creatures can

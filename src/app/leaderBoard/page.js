@@ -64,35 +64,55 @@ const LeaderBoard = () => {
   };
 
   return (
-    <div className='min-h-screen bg-black lvs-arrors flex flex-col items-center text-white'>
-     <div className='mt- flex h-8 justify-around'>
-        <Link href="/coin" className='relative'>
-            <img src='/images/CoinCNB.png' alt='coin' className='z-1 w-14 absolute pmx:w-16'/>
-            <div className='rounded-e-full text-white bg-orange-600 z-10  mt-4 pmx:mt-5
-            ms-6 pmx:ms-8 text-[12px] pe-10 ps-6 py-[2px] flex-grow-1'>
-                500,000,000
-            </div>
+    <div
+      className="min-h-screen bg-black lvs-arrors flex flex-col items-center text-white"
+    >
+      <div className="mt- flex h-8 justify-around">
+        <Link href="/coin" className="relative">
+          <img
+            src="/images/CoinCNB.png"
+            alt="coin"
+            className="z-1 w-14 absolute pmx:w-16"
+          />
+          <div
+            className="rounded-e-full text-white bg-orange-600 z-10  mt-4 pmx:mt-5
+            ms-6 pmx:ms-8 text-[12px] pe-10 ps-6 py-[2px] flex-grow-1"
+          >
+            500,000,000
+          </div>
         </Link>
 
-        <div className='relative'>
-            <img src='/images/CharcoalNB.png' alt='charcoal' className='w-14 absolute pmx:w-16'/>
-            <div className='bg-orange-500 bg-opacity-10 px-3 py-[2px] pmx:mt-5
-            rounded-e-full text-[12px] mt-4 ms-8 pmx:ms-10 ps-5 text-orange-600'>
-                1,000+
-            </div>
+        <div className="relative">
+          <img
+            src="/images/CharcoalNB.png"
+            alt="charcoal"
+            className="w-14 absolute pmx:w-16"
+          />
+          <div
+            className="bg-orange-500 bg-opacity-10 px-3 py-[2px] pmx:mt-5
+            rounded-e-full text-[12px] mt-4 ms-8 pmx:ms-10 ps-5 text-orange-600"
+          >
+            1,000+
+          </div>
         </div>
 
-        <div className='relative'>
-            <img src='/images/EmberNB.png' alt='ember' className='w-14 h-14 absolute pmx:w-16 pmx:h-16'/>
-            <div className='bg-orange-500 bg-opacity-10 px-3 py-[2px] pmx:mt-5
-            rounded-e-full text-[12px] mt-4 ms-8 pmx:ms-10 ps-5 text-orange-600'>
-                1,000+
-            </div>
+        <div className="relative">
+          <img
+            src="/images/EmberNB.png"
+            alt="ember"
+            className="w-14 h-14 absolute pmx:w-16 pmx:h-16"
+          />
+          <div
+            className="bg-orange-500 bg-opacity-10 px-3 py-[2px] pmx:mt-5
+            rounded-e-full text-[12px] mt-4 ms-8 pmx:ms-10 ps-5 text-orange-600"
+          >
+            1,000+
+          </div>
         </div>
       </div>
 
       <div className=" transition-all duration-300 ease-in-out flex flex-col items-center">
-        <div className=' flex flex-col items-center'>{renderComponent()}</div>
+        <div className=" flex flex-col items-center">{renderComponent()}</div>
       </div>
 
       <div className="flex justify-between items-center w-[95%] -mt-[490px] pmx:-mt-[580px] spm:-mt-[550px] arror">
@@ -100,7 +120,9 @@ const LeaderBoard = () => {
         <button
           onClick={handleLeftArrowClick}
           disabled={activeIndex === 0} // Disable if on the first component
-          className={`cursor-pointer p-4  rounded-full hover:text-gray-600 ${activeIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
+          className={`cursor-pointer p-4  rounded-full hover:text-gray-600 ${
+            activeIndex === 0 ? "opacity-50 cursor-not-allowed" : ""
+          }`}
         >
           <FaChevronLeft size={20} />
         </button>
@@ -109,31 +131,50 @@ const LeaderBoard = () => {
         <button
           onClick={handleRightArrowClick}
           disabled={activeIndex === components.length - 1} // Disable if on the last component
-          className={`cursor-pointer p-4 rounded-full hover:text-gray-600 ${activeIndex === components.length - 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
+          className={`cursor-pointer p-4 rounded-full hover:text-gray-600 ${
+            activeIndex === components.length - 1
+              ? "opacity-50 cursor-not-allowed"
+              : ""
+          }`}
         >
           <FaChevronRight size={20} />
         </button>
       </div>
 
-      <div className='bg-black flex p-[16.7px] uppercase fixed bottom-0 w-screen justify-between'>
-       <div className='underline decoration-orange-600 decoration-4 underline-offset-[18px]'>
-         <Link href="/" className='text-white'> <GoHome className='text-[20px] ms-3'/> home</Link>
-       </div>
-       <div>
-         <Link href="/earn" className='text-white'> <LiaDollarSignSolid className='text-[20px] ms-3' /> earn</Link>
-       </div>
-       <div>
-         <Link href="/play" className='text-white'> <IoGameControllerOutline className='text-[20px] ms-2' /> play</Link>
-       </div>
-       <div>
-         <Link href="frens" className='text-white'> <HiMiniUserGroup className='text-[20px] ms-3' /> frens</Link>
-       </div>
-       <div>
-         <Link href="/shop" className='text-white'> <BsShopWindow className='text-[20px] ms-2' /> shop</Link>
-       </div>
+      <div className="bg-black flex p-[16.7px] uppercase fixed bottom-0 w-screen justify-between">
+        <div className="underline decoration-orange-600 decoration-4 underline-offset-[18px]">
+          <Link href="/" className="text-white">
+            {" "}
+            <GoHome className="text-[20px] ms-3" /> home
+          </Link>
+        </div>
+        <div>
+          <Link href="/earn" className="text-white">
+            {" "}
+            <LiaDollarSignSolid className="text-[20px] ms-3" /> earn
+          </Link>
+        </div>
+        <div>
+          <Link href="/play" className="text-white">
+            {" "}
+            <IoGameControllerOutline className="text-[20px] ms-2" /> play
+          </Link>
+        </div>
+        <div>
+          <Link href="frens" className="text-white">
+            {" "}
+            <HiMiniUserGroup className="text-[20px] ms-3" /> frens
+          </Link>
+        </div>
+        <div>
+          <Link href="/shop" className="text-white">
+            {" "}
+            <BsShopWindow className="text-[20px] ms-2" /> shop
+          </Link>
+        </div>
+      </div>
     </div>
-    </div>
-  )
+  );
 }
 
 export default LeaderBoard

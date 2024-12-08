@@ -142,97 +142,36 @@ const Shop = () => {
               alt="menu board"
               className="w-42 h-40"
             />
-            <div className="absolute pmx:-ms-2 top-[33%] w-full left-[71%] pmx:left-[78%]">
+            <div className="absolute pmx:-ms-2 top-[33%] w-full left-[71%] pmx:left-[78%]" id="selecty">
               <img
                 src="/images/EmberNB.png"
                 alt="ember"
                 className="w-12 h-12 ms-3"
+                id="selectImg"
               />
               <Select
-                // className="bg-[#FEFEFF33]
-                // border-4 border-white bg-opacity-20 top-11 pmx:top-8 left-8 pmx:left-7 h-[10%]
-                // rounded-full text-[7px] p-2 mt-3 pmx:mt-5 ms-6 pmx:ms-10 text-white font-bold w-[10%]"
                 display={"flex"}
                 flexDirection={"inherit"}
                 alignItems={"center"}
                 bg={"#FEFEFF33"}
                 h={"20px"}
-                w={{base: "20vw", md: "18vw"}}
+                w={{base: "20vw", md: "17vw"}}
                 mt={1}
                 fontSize={"9px"}
                 fontWeight={"semibold"}
                 variant="outline"
                 color={"white"}
                 icon={<MdArrowDropDown className="" />}
-                id="options"
+                id="option"
               >
                 <option value="option 1">1,000</option>
                 <option value="option 2">2,000</option>
                 <option value="option 3">3,000</option>
               </Select>
-              {/* <div
-                className="bg-[#FEFEFF33] flex items-center justify-between absolute border-2 border-white top-14 left-[57px] h-[2%]
-                rounded text-[12px] p-3 w-[20%] text-white font-bold"
-              >
-                1,000
-                <MdArrowDropDown />
-              </div>*/}
             </div>
           </div>
         </div>
       </div>
-      {/* <Box 
-      position={"fixed"} 
-      bottom={20} 
-      display={"flex"}
-      justifyContent={"center"}
-      alignItems={"center"}
-      justify={"space-around"}
-      >
-        <Box
-          display={"flex"}
-          flexDirection={"colume"}
-          bgImage={"/images/today.png"}
-          bgRepeat={"no-repeat"}
-          bgSize={"100% 100%"}
-          position={"relative"}
-          top={"50%"}
-          left={"50%"}
-          w={"30%"}
-          transform="translate(-50%, -50%)"
-          bgPos={"center"}
-          justifyContent={"center"}
-          alignItems={"center"}
-        >
-          <Image
-            src="/images/Free.png"
-            w={"50%"}
-            h={"50%"}
-            transform="rotate(43deg)"
-          />
-          <Image src="/images/charcoalNB.png" w={"50%"} h={"50%"} />
-          <Text>1,000</Text>
-        </Box>
-
-        <Box
-          display={"flex"}
-          flexDirection={"colume"}
-          bgImage={"/images/Menu4.png"}
-          bgRepeat={"no-repeat"}
-          bgSize={"100% 100%"}
-          position={"relative"}
-          top={"50%"}
-          left={"50"}
-          w={"30%"}
-          transform="translate(-50%, -50%)"
-          bgPos={"center"}
-          justifyContent={"center"}
-          alignItems={"center"}
-        >
-          <Image src="/images/EmberNB.png" w={"50%"} h={"50%"} />
-          <Text>1,000</Text>
-        </Box>
-      </Box> */}
 
       <div className="bottom-24 pmx:bottom-[85px] fixed w-full">
         <div className="flex flex-auto justify-center items-center gap-2">
