@@ -85,7 +85,7 @@ const Landing = () => {
           >
             <Link
               href="/rewards"
-              className="bg-green-900 px-[8%] py-[1%] rounded-full"
+              className="bg-green-900 px-[3%] py-[1%] rounded-full"
             >
               daily reward
             </Link>
