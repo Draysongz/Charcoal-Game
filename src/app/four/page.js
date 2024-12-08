@@ -8,80 +8,128 @@ import Link from 'next/link';
 
 const PageFour = () => {
   return (
-    <div className='min-h-screen' style={{backgroundImage: "url('/images/Flameexpand1.png')", objectFit: "cover", backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
-
-
-     <div>
-       <div className='mt- flex h-12 pmx:h-16 justify-start'>
-          <div className='relative'>
-              <img src='/images/CoinCNB.png' alt='coin' className='z-1 w-12 absolute'/>
-              <div className='rounded-e-full text-white bg-orange-600 z-10 top-5 mt-3
-              ml-6 text-[12px] pe-11 ps-6 py-[2px] flex-grow-1'>
-                  500,000,000
-              </div>
+    <div
+      className="min-h-screen"
+      style={{
+        backgroundImage: "url('/images/Flameexpand1.png')",
+        objectFit: "cover",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="mt-1 flex h-12 pmx:h-16 flex-auto justify-between">
+        <Link href="/coin" className="relative">
+          <img
+            src="/images/CoinCNB.png"
+            alt="coin"
+            className="z-1 w-[90px] absolute pmx:w-[90px] pmx:h-20"
+          />
+          <div
+            className="rounded-e-full text-white z-10 top-5 mt-6
+               ms-14 text-[12px] pmx:text-[17px] pe-11 ps-6 py-[5px] pmx:py-[7px] pmx:top-7 pmx:ms-16 pmx:mt-6 flex-grow-1"
+            style={{
+              background: "linear-gradient(to right, #470B04, #000000)",
+            }}
+          >
+            500,000,000
           </div>
-       </div>
-  
-       <div className='flex uppercase gap-28 justify-around mt-5'>
-          <div className='bg-white text-orange-700 text-[20px] py-3 px-4 rounded-xl font-bold'>
-              frog<br />
-              king
-          </div>
-          <div className=''>
-              <div className='flex bg-white rounded-full px-2 py-1'>
-                  <img src='/images/NewLightningNB.png' alt='lightning' className='w-8 h-6' />
-                  <span className='ps-5 text-orange-700 font-bold'>500/1,000</span>
-              </div>
-              <div className='flex bg-white mt-3 rounded-full px-2 py-1'>
-                  <img src='/images/targetNB.png' alt='target' className='w-7 h-6' />
-                  <span className='ps-5 text-orange-700 font-bold'>20,000,000</span>
-              </div>
-          </div>
-       </div>
-  
-       <div className='flex mt-[305px]'>
-          <div>
-              <img src='/images/NewLightningNB.png' alt='lightning' className='w-12' />
-          </div>
-          
-          <div className='relative mt-2'>
-             <div className='bg-white bg-opacity-35 rounded-full w-72 h-5'></div>
-             <div className='bg-orange-600 absolute rounded-full z-20 top-0 left-0 h-5 
-             text-[12px] px-5  '>
-                <span className='-ps-5 text-white'>175,000/200,000</span>
-             </div>
-          </div>
-       </div>
-  
-  
-  
-       <div className='mt-3'>
-          <img src='/images/Inventory.png' alt='inventory' className='border-2 border-orange-800 rounded-full 
-          p-2 ' />
-       </div>
-     </div>
+        </Link>
 
+        <div className="mt-1 me-3">
+          <div
+            className="flex rounded-full px-2 py-1"
+            style={{
+              background: "linear-gradient(to right, #470B04, #000000)",
+            }}
+          >
+            <img
+              src="/images/NewLightningNB.png"
+              alt="lightning"
+              className="w-8 h-6"
+            />
+            <span className="font-bold pmx:text-[18px] text-white">
+              500/1,000
+            </span>
+          </div>
+          <div
+            className="flex mt-3 rounded-full px-2 py-1"
+            style={{
+              background: "linear-gradient(to right, #470B04, #000000)",
+            }}
+          >
+            <img src="/images/targetNB.png" alt="target" className="w-7 h-6" />
+            <span className="font-bold pmx:text-[18px] text-white">
+              20,000,000
+            </span>
+          </div>
+        </div>
+      </div>
 
+      <div className="uppercase mt-10 pmx:mt-7">
+        <div
+          className="text-center text-[30px] pmx:text-[40px] py-1 pmx:py-2 px- p-3 rounded-xl font-bold text-white"
+          style={{ background: "linear-gradient(to right, #470B04, #000000)" }}
+        >
+          <p>frog king</p>
+        </div>
+      </div>
 
-     <div className='bg-black flex p-[16.7px] uppercase fixed bottom-0 w-screen justify-between'>
-       <div className='underline decoration-orange-600 decoration-4 underline-offset-[18px]'>
-         <Link href="/" className='text-white'> <GoHome className='text-[20px] ms-3'/> home</Link>
-       </div>
-       <div>
-         <Link href="/earn" className='text-white'> <LiaDollarSignSolid className='text-[20px] ms-3' /> earn</Link>
-       </div>
-       <div>
-         <Link href="/play" className='text-white'> <IoGameControllerOutline className='text-[20px] ms-2' /> play</Link>
-       </div>
-       <div>
-         <Link href="friend" className='text-white'> <HiMiniUserGroup className='text-[20px] ms-5' /> friends</Link>
-       </div>
-       <div>
-         <Link href="/shop" className='text-white'> <BsShopWindow className='text-[20px] ms-2' /> shop</Link>
-       </div>
-     </div>
+      <div className="fixed bottom-[90px] pmx:bottom-[125px] spm:bottom-[100px] w-full">
+        <div className="flex flex-auto items-center justify-center relative">
+          <div className=" z-20">
+            <img
+              src="/images/CoinCNB.png"
+              alt="coin"
+              className="w-[65px] h-[65px] pmx:w-[70px] pmx:h-[65px] "
+            />
+          </div>
+
+          <div className="-ms-9 relative mt-2">
+            <div className="bg-black border-2 border-orange-600 rounded-full w-[260px] h-10 pmx:w-[290px] pmx:h-10"></div>
+            <div
+              className="bg-orange-600 absolute rounded-full z-10 top-0 left-0 h-10 pmx:h-10 
+                text-[18px] pmx:text-[18px] px-7 "
+            >
+              <span className="-ps-8 pmx:ps-3 text-white pmx:leading-10 leading-10 font-bold">
+                175,000/200,000
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="fixed bottom-0 bg-[#F15B061A] py-1 pmx:py-2 w-full rounded-t-xl">
+          <div className="mt-3 flex gap-3 flex-auto justify-center">
+            <img
+              src="/images/Inventory.png"
+              alt="inventory"
+              className="border-2 border-orange-800 rounded-full 
+                 p-1 w-16 h-16 pmx:w-20 pmx:h-20 pmx:p-2"
+            />
+            {/* <span className="border-orange-800 border-e-2"></span>
+            <img
+              src="/images/EmberNB.png"
+              alt="ember"
+              className="border-2 border-orange-800 rounded-full 
+                 p-1 w-16 h-16 pmx:w-20 pmx:h-20 pmx:p-2"
+            />
+            <img
+              src="/images/charcoalNB.png"
+              alt="charcoal"
+              className="border-2 border-orange-800 rounded-full 
+                 p-1 w-16 h-16 pmx:w-20 pmx:h-20 pmx:p-2"
+            />
+            <img
+              src="/images/NewLightningNB.png"
+              alt="lightning"
+              className="border-2 border-orange-800 rounded-full 
+                 p-1 w-16 h-16 pmx:w-20 pmx:h-20 pmx:p-2"
+            /> */}
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
 export default PageFour

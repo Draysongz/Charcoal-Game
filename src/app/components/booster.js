@@ -249,7 +249,7 @@ export const Booster = () => {
             fontWeight={"bold"}
           />
           <div className="boost1 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
-            <PiHandTap className="text-[100px] mt-2 pmx:w-[130px] pmx:mt-4 pmx:h-40 spm:w-[160px] spm:h-44 ImgI" />
+            <PiHandTap className="text-[100px] mt-2 pmx:w-[130px] pmx:mt-4 pmx:h-40 spm:w-[160px] spm:h-44 ImgI text-white" />
             <h3 className="text-orange-600 text-[20px] pmx:text-[30px] spm:text-[30px] uppercase font-bold">
               multi tap
             </h3>
