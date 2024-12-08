@@ -9,8 +9,8 @@ import { LiaDollarSignSolid } from "react-icons/lia";
 import { IoGameControllerOutline } from "react-icons/io5";
 import { HiMiniUserGroup } from "react-icons/hi2";
 import { BsShopWindow } from "react-icons/bs";
-import { useState, useEffect } from "react";
-import LoadingPage from "../components/loadingPage";
+// import { useState, useEffect } from "react";
+// import LoadingPage from "../components/loadingPage";
 
 // For Modal
 import {
