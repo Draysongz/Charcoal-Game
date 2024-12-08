@@ -34,19 +34,19 @@ const Landing = () => {
     onClose: onClose2,
   } = useDisclosure();
 
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 3000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
-  if (loading) {
-    return <LoadingPage />;
-  }
+  // if (loading) {
+  //   return <LoadingPage />;
+  // }
 
   return (
     <div
