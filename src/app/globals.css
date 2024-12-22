@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+Link {
+  font-weight: 500;
+  text-decoration: inherit;
+}
+Link:hover {
+  color: #535bf2;
+}
+
+body {
+  font-family: 'Gotham';
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  /* place-items: center;  */
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slot-image .stop {
+  animation: bounce 0.5s ease;
+}
+
+/* Add fade-in effect for the win message */
+#winni {
+  animation: fadeIn 1s ease-in-out;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Add hover and active states for the spin/stop button */
+button img {
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover img {
+  transform: scale(1.1);
+}
+
+button:active img {
+  transform: scale(0.95); /* Slightly shrink when clicked */
+}
+
+
+@keyframes spin {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+
+@media (min-width: 413px) and (max-width: 414px) {
+  #selecty {
+    left: 75.5%; 
+  }
+   #option {
+    width: 18vw;
+  }
+}
+@media (min-width: 426px) and (max-width: 428px) {
+  #selecty {
+    left: 76%; 
+  }
+   #option {
+    width: 18vw;
+  }
+}
+@media (min-width: 429px) and (max-width: 430px) {
+  #selecty {
+    left: 76%; 
+  }
+   #option {
+    width: 18vw;
+  }
+}
+@media (min-width: 479px) and (max-width: 480px) {
+  #metal {
+    margin-left: 24px;
+  }
+  #light {
+    margin-left: 24px;
+  }
+}
+@media (min-width: 818px) and (max-width: 820px) {
+  #selecty {
+    left: 87%; 
+  }
+  #option {
+    width: 10vw;
+  }
+  #metal {
+    margin-left: 24.5%;
+  }
+  #light {
+    margin-left: 24.5%;
+  }
+}
+
+
+
+/* .arror{
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
