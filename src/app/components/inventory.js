@@ -45,7 +45,7 @@ export const Inventory = () => {
             <div className="border border-gray-300 bg-neutral-800 w-3/12 rounded-xl" onClick={onOpen1}>
                 <p className='text-orange-600 text-xs text-center'>Charcoal Turbo</p>
                 <div className='flex justify-center'>
-                    <Image src={"/images/charcoalNB.png"} width={30} height={30} alt="image" />
+                    <Image src={"/images/CharcoalNB.png"} width={30} height={30} alt="image" />
                     <p className='text-xs mt-1 text-gray-300'>1000+</p>
                 </div>
             </div>
