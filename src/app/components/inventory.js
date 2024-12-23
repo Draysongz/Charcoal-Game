@@ -28,6 +28,10 @@ export const Inventory = () => {
     const { isOpen: isOpen4, onOpen: onOpen4, onClose: onClose4  } = useDisclosure()
 
     const { isOpen: isOpen5, onOpen: onOpen5, onClose: onClose5  } = useDisclosure()
+
+    const { isOpen: isOpen6, onOpen: onOpen6, onClose: onClose6  } = useDisclosure()
+
+    const { isOpen: isOpen7, onOpen: onOpen7, onClose: onClose7  } = useDisclosure()
     // const btnRef = React.useRef()
 
   return (
@@ -40,48 +44,47 @@ export const Inventory = () => {
           <div className='flex gap-4 justify-center'>
             <div className="border border-gray-300 bg-neutral-800 w-3/12 rounded-xl" onClick={onOpen1}>
                 <p className='text-orange-600 text-xs text-center'>Charcoal Turbo</p>
-                <div className='flex'>
+                <div className='flex justify-center'>
                     <Image src={"/images/charcoalNB.png"} width={30} height={30} alt="image" />
-                    <p className='text-xs'>1000+</p>
+                    <p className='text-xs mt-1 text-gray-300'>1000+</p>
                 </div>
             </div>
             <div className="border border-gray-300 bg-neutral-800 w-3/12 rounded-xl" onClick={onOpen2}>
-                <p className='text-orange-600 text-xs text-center'>Charcoal Turbo</p>
-                <div className='flex gap-1'>
+                <p className='text-orange-600 text-xs text-center'>Ember<br/> Burst</p>
+                <div className='flex gap-1 justify-center'>
                     <Image src={"/images/EmberNB.png"} width={22} height={22} alt="image" className='ml-1' />
-                    <p className='text-xs pt-1'>1000+</p>
+                    <p className='text-xs mt-1 text-gray-300'>1000+</p>
                 </div>
             </div>
             <div className="border border-gray-300 bg-neutral-800 w-3/12 rounded-xl" onClick={onOpen3}>
-                <p className='text-orange-600 text-xs text-center'>Charcoal Turbo</p>
-                <div className='flex'>
+                <p className='text-orange-600 text-xs text-center'>Energy Replenish</p>
+                <div className='flex justify-center'>
                     <Image src={"/images/NewLightningNB.png"} width={25} height={25} alt="image" />
-                    <p className='text-xs mt-1'>1000+</p>
+                    <p className='text-xs mt-1 text-gray-300'>1000+</p>
                 </div>
             </div>
           </div>
             <p className='text-center text-orange-600 mt-16'>Potions</p>
             <div className='flex gap-4 justify-center mt-8'>
-            <div className="border border-gray-300 bg-neutral-800 w-3/12 rounded-xl" onClick={onOpen1}>
-                <p className='text-orange-600 text-xs text-center'>Charcoal Turbo</p>
-                <div className='flex'>
-                    <Image src={"/images/charcoalNB.png"} width={30} height={30} alt="image" />
-                    <p className='text-xs'>1000+</p>
-                </div>
+            <div className="border border-gray-300 bg-neutral-800 w-2.5/12 rounded-xl" onClick={onOpen6}>
+                <p className='text-orange-600 text-xs text-center px-1'>Mountain</p>
+                <Image src={"/images/PotionMountain.png"} width={30} height={30} alt="image" className='flex justify-center mx-auto' />
+                <p className='text-xs text-center text-gray-300'>1000+</p>
             </div>
-            <div className="border border-gray-300 bg-neutral-800 w-3/12 rounded-xl" onClick={onOpen2}>
-                <p className='text-orange-600 text-xs text-center'>Charcoal Turbo</p>
-                <div className='flex gap-1'>
-                    <Image src={"/images/EmberNB.png"} width={22} height={22} alt="image" className='ml-1' />
-                    <p className='text-xs pt-1'>1000+</p>
-                </div>
+            <div className="border border-gray-300 bg-neutral-800 w-2/12 rounded-xl" onClick={onOpen5}>
+                <p className='text-orange-600 text-xs text-center'>Forest</p>
+                <Image src={"/images/PotionForest.png"} width={22} height={22} alt="image" className='flex justify-center mx-auto' />
+                <p className='text-xs pt-1 text-center text-gray-300'>1000+</p>
             </div>
-            <div className="border border-gray-300 bg-neutral-800 w-3/12 rounded-xl" onClick={onOpen3}>
-                <p className='text-orange-600 text-xs text-center'>Charcoal Turbo</p>
-                <div className='flex'>
-                    <Image src={"/images/NewLightningNB.png"} width={25} height={25} alt="image" />
-                    <p className='text-xs mt-1'>1000+</p>
-                </div>
+            <div className="border border-gray-300 bg-neutral-800 w-2/12 rounded-xl" onClick={onOpen4}>
+                <p className='text-orange-600 text-xs text-center'>Aerial</p>
+                <Image src={"/images/PotionAerial.png"} width={25} height={25} alt="image" className='flex justify-center mx-auto' />
+                <p className='text-xs mt-1 text-center text-gray-300'>1000+</p>
+            </div>
+            <div className="border border-gray-300 bg-neutral-800 w-2/12 rounded-xl" onClick={onOpen7}>
+                <p className='text-orange-600 text-xs text-center'>Sea</p>
+                <Image src={"/images/PotionSea.png"} width={25} height={25} alt="image" className='flex justify-center mx-auto' />
+                <p className='text-xs mt-1 text-center text-gray-300'>1000+</p>
             </div>
           </div>
           <div className='bottom-0 left-0 mt-48 flex justify-center'>
@@ -137,20 +140,11 @@ export const Inventory = () => {
               charcoal turbo
             </h3>
             <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white">
-              Give your creatures an instant boost
+              Multiply your tapping power for 10 seconds to power-up your creatures faster
             </p>
-            <p className="text-[12px] mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
-              +1 coin tap per level
+            <p className="text-[10px] mb-2 pmx:text-[12px] spm:text-[12px] spm:mb-2 spm:mt-2 text-gray-300">
+              Note: Can only be activated directly on the creatures tapping screen. Go to creatures page and open inventory
             </p>
-            <span className="text-[11px]">
-              <div className="border-2 border-orange-600 bg-gray-700 rounded-xl w-24 relative py-1 mb-5 flex gap-2">
-                <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6 mr-2" />
-                <span className=" text-[11px] text-white mt-1">30,000</span>
-              </div>
-            </span>
-            <div className="bg-orange-600 border-2 border-white px-32 h-10 rounded-full uppercase text-[13px] flex items-center text-white">
-              <div className="">get</div>
-            </div>
           </div>
           </Box>
         </ModalContent>
@@ -194,30 +188,19 @@ export const Inventory = () => {
           />
           <div className="boost1 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
             <img
-              src="/images/NewLightningNB.png"
+              src="/images/EmberNB.png"
               alt="lightning"
               className="mt-2 pmx:w-[170px] pmx:mt-4 pmx:h-44 spm:w-[160px] spm:h-44 ImgO"
             />
             <h3 className="text-orange-600 text-[20px] pmx:text-[24px] spm:text-[24px] uppercase font-bold">
-              energy boost
+              ember burst
             </h3>
             <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white">
-              increase your energy limit, so you
-              <br />
-              can combat the enemy more
+              Give your creatures an instant boost of fire to power it up faster
             </p>
-            <p className="text-[12px] mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
-              +500 energy per level
+            <p className="text-[10px] mb-2 pmx:text-[12px] spm:text-[12px] spm:mb-2 spm:mt-2 text-gray-300">
+              Note: Can only be activated directly on the creatures tapping screen. Go to creatures page and open inventory
             </p>
-            <span className="text-[11px]">
-              <div className="border-2 border-orange-600 rounded-xl bg-gray-700 w-24 relative py-2 mb-5 flex items-center justify-center">
-                <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6 mr-2" />
-                <span className=" text-[11px] text-white mt-1">4,000</span>
-              </div>
-            </span>
-            <div className="bg-orange-600 border-2 border-white px-32 h-10 rounded-full uppercase text-[13px] flex items-center text-white">
-              <div className="">get</div>
-            </div>
           </div>
           </Box>
         </ModalContent>
@@ -260,27 +243,20 @@ export const Inventory = () => {
             fontWeight={"bold"}
           />
           <div className="boost1 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
-            <PiHandTap className="text-[100px] mt-2 pmx:w-[130px] pmx:mt-4 pmx:h-40 spm:w-[160px] spm:h-44 ImgI text-white" />
-            <h3 className="text-orange-600 text-[20px] pmx:text-[24px] spm:text-[24px] uppercase font-bold">
-              multi tap
+            <img
+              src="/images/NewLightningNB.png"
+              alt="lightning"
+              className="mt-2 pmx:w-[170px] pmx:mt-4 pmx:h-44 spm:w-[160px] spm:h-44 ImgO"
+            />
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
+              energy recharge
             </h3>
-            <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white text-center">
-              increase the amount of coins
-              <br />
-              earned by tap
+            <p className="text-[12px] pmx:text-[16px] spm:text-[16px] spm:mt-2 text-white text-center">
+              Fully replenish your energy counter so you may continue to power up your creature
             </p>
-            <p className="text-[12px] mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
-              +1 coin tap per level
+            <p className="text-[10px] mb-2 pmx:text-[12px] spm:text-[12px] spm:my-3 text-gray-300">
+              Note: Can only be activated directly on the creatures tapping screen. Go to creatures page and open inventory
             </p>
-            <span className="text-[11px]">
-              <div className="border-2 border-orange-600 bg-gray-700 rounded-xl w-24 relative py-2 mb-5 flex items-center justify-center">
-                <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6 mr-2" />
-                <span className=" text-[11px] text-white mt-1">4,000</span>
-              </div>
-            </span>
-            <div className="bg-orange-600 border-2 border-white px-32 h-10 rounded-full uppercase text-[13px] flex items-center text-white">
-              <div className="">get</div>
-            </div>
           </div>
           </Box>
         </ModalContent>
@@ -323,27 +299,20 @@ export const Inventory = () => {
             fontWeight={"bold"}
           />
           <div className="boost1 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
-            <BsFillLightningChargeFill className="text-indigo-400 text-[100px] mt-2 pmx:w-[130px] pmx:mt-4 pmx:h-40 spm:w-[160px] spm:h-44 ImgI" />
-            <h3 className="text-orange-600 text-[20px] pmx:text-[24px] spm:text-[24px] uppercase font-bold">
-              energy limit
+            <img
+              src="/images/PotionAerial.png"
+              alt="lightning"
+              className="mt-2 pmx:w-[70px] pmx:mt-4 pmx:h-24 spm:w-[70px] spm:h-24"
+            />
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
+              aerial potion
             </h3>
-            <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white text-center">
-              increase your energy limit, so you
-              <br />
-              can combat the enemy more
+            <p className="text-[12px] pmx:text-[16px] spm:text-[16px] spm:mt-2 text-white text-center">
+              Use potions to rank up your creatures. The higher the rank the more prizes you will get
             </p>
-            <p className="text-[12px] mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
-              +500 energy per level
+            <p className="text-[10px] mb-2 pmx:text-[12px] spm:text-[12px] spm:my-3 text-gray-300">
+              Note: Can only be activated directly on the creatures tapping screen. Go to creatures page and open inventory
             </p>
-            <span className="text-[11px]">
-              <div className="border-2 border-orange-600 bg-gray-700 rounded-xl w-24 relative py-2 mb-5 flex items-center justify-center">
-                <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6 mr-2" />
-                <span className=" text-[11px] text-white mt-1">4,000</span>
-              </div>
-            </span>
-            <div className="bg-orange-600 border-2 border-white px-32 h-10 rounded-full uppercase text-[13px] flex items-center text-white">
-              <div className="">get</div>
-            </div>
           </div>
           </Box>
         </ModalContent>
@@ -386,25 +355,132 @@ export const Inventory = () => {
             fontWeight={"bold"}
           />
           <div className="boost1 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
-            <FcChargeBattery className="text-indigo-400 text-[100px] mt-2 pmx:w-[130px] pmx:mt-4 pmx:h-40 spm:w-[160px] spm:h-44 ImgN" />
-            <h3 className="text-orange-600 text-[20px] pmx:text-[24px] spm:text-[24px] uppercase font-bold">
-              recharge
+            <img
+              src="/images/PotionForest.png"
+              alt="lightning"
+              className="mt-2 pmx:w-[70px] pmx:mt-4 pmx:h-24 spm:w-[70px] spm:h-24"
+            />
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
+              forest potion
             </h3>
             <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white text-center">
-              Charge up your creature
+              Use potions to rank up your creatures. The higher the rank the more prizes you will get
             </p>
-            <p className="text-[12px] mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
-              +1 coin tap per level
+            <p className="text-[10px] mb-2 pmx:text-[12px] spm:text-[12px] spm:my-3 text-gray-300">
+              Note: Can only be activated directly on the creatures tapping screen. Go to creatures page and open inventory
             </p>
-            <span className="text-[11px]">
-              <div className="border-2 border-orange-600 bg-gray-700 rounded-xl w-24 relative py-2 mb-5 flex justify-center">
-                <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6 mr-2" />
-                <span className=" text-[11px] text-white mt-1">4,000</span>
-              </div>
-            </span>
-            <div className="bg-orange-600 border-2 border-white px-32 h-10 rounded-full uppercase text-[13px] flex items-center text-white">
-              <div className="">get</div>
-            </div>
+          </div>
+          </Box>
+        </ModalContent>
+      </Modal>
+      <Modal
+        isOpen={isOpen6}
+        placement="bottom"
+        onClose={onClose6}
+        isCentered
+      >
+        <ModalOverlay backdropFilter="blur(10px)" />
+        <ModalContent 
+          alignContent={"center"}
+          textAlign={"center"}
+          alignItems={"center"}
+          position={"relative"}
+          justifyContent={"space-between"}
+        >
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            bg={"black"}
+            p={"10%"}
+            py={"15%"}
+            // px={"30%"}
+            w={"90%"}
+            borderRadius={"30px"}
+            position={"absolute"}
+            top={"50%"}
+            left={"50%"}
+            transform="translate(-50%, -50%)"
+          >
+          <ModalCloseButton
+            color={"white"}
+            fontSize={"10px"}
+            borderRadius={"100%"}
+            border={"2px solid white"}
+            ml={"288px"}
+            mt={"12px"}
+            fontWeight={"bold"}
+          />
+          <div className="boost1 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
+            <img
+              src="/images/PotionMountain.png"
+              alt="lightning"
+              className="mt-2 pmx:w-[70px] pmx:mt-4 pmx:h-24 spm:w-[70px] spm:h-24"
+            />
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
+              mountain potion
+            </h3>
+            <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white text-center">
+              Use potions to rank up your creatures. The higher the rank the more prizes you will get
+            </p>
+            <p className="text-[10px] mb-2 pmx:text-[12px] spm:text-[12px] spm:my-3 text-gray-300">
+              Note: Can only be activated directly on the creatures tapping screen. Go to creatures page and open inventory
+            </p>
+          </div>
+          </Box>
+        </ModalContent>
+      </Modal>
+      <Modal
+        isOpen={isOpen7}
+        placement="bottom"
+        onClose={onClose7}
+        isCentered
+      >
+        <ModalOverlay backdropFilter="blur(10px)" />
+        <ModalContent 
+          alignContent={"center"}
+          textAlign={"center"}
+          alignItems={"center"}
+          position={"relative"}
+          justifyContent={"space-between"}
+        >
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            bg={"black"}
+            p={"10%"}
+            py={"15%"}
+            // px={"30%"}
+            w={"90%"}
+            borderRadius={"30px"}
+            position={"absolute"}
+            top={"50%"}
+            left={"50%"}
+            transform="translate(-50%, -50%)"
+          >
+          <ModalCloseButton
+            color={"white"}
+            fontSize={"10px"}
+            borderRadius={"100%"}
+            border={"2px solid white"}
+            ml={"288px"}
+            mt={"12px"}
+            fontWeight={"bold"}
+          />
+          <div className="boost1 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
+            <img
+              src="/images/PotionSea.png"
+              alt="lightning"
+              className="mt-2 pmx:w-[70px] pmx:mt-4 pmx:h-24 spm:w-[70px] spm:h-24"
+            />
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
+              sea potion
+            </h3>
+            <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white text-center">
+              Use potions to rank up your creatures. The higher the rank the more prizes you will get
+            </p>
+            <p className="text-[10px] mb-2 pmx:text-[12px] spm:text-[12px] spm:my-3 text-gray-300">
+              Note: Can only be activated directly on the creatures tapping screen. Go to creatures page and open inventory
+            </p>
           </div>
           </Box>
         </ModalContent>
