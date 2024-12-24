@@ -155,7 +155,7 @@ const Landing = () => {
             <img
               src="/images/NewLightningNB.png"
               alt="lightning"
-              className="w-12"
+              className="w-24 h-24"
             />
             <Box
               width={"70%"}
@@ -182,7 +182,7 @@ const Landing = () => {
               <img
                 src="/images/furnace.png"
                 alt="furnace"
-                className="w-16 h-20"
+                className="w-24 h-24"
               />
             </Link>
           </Flex>

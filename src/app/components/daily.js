@@ -1,11 +1,22 @@
+"use client"
 import React from 'react'
 import { BsYoutube } from "react-icons/bs";
 import { FaTwitter } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import {
+  Box,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalCloseButton,
+  useDisclosure,
+} from "@chakra-ui/react";
 
 const Daily = () => {
+  const { isOpen: isOpen1, onOpen: onOpen1, onClose: onClose1  } = useDisclosure()
   return (
+    <>
     <div className="mt-5 p-4 w-[100%] uppercase text-[14px] font-semibold flex flex-col gap-5 text-white">
       <div className="bg-gray-800 rounded-full border-2 border-orange-600 py-2 px-5  flex items-center justify-between ">
         <div className="flex items-center gap-2">
@@ -22,7 +33,7 @@ const Daily = () => {
             </div>
           </div>
         </div>
-        <MdKeyboardArrowRight className="text-[20px] text-white" />
+        <MdKeyboardArrowRight className="text-[20px] text-white" onClick={onOpen1} />
       </div>
       <div className="bg-gray-800 rounded-full border-2 border-orange-600 py-2 px-5  flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -59,6 +70,47 @@ const Daily = () => {
         <MdKeyboardArrowRight className="text-[20px] text-white" />
       </div>
     </div>
+    <Modal
+            isOpen={isOpen1}
+            placement="bottom"
+            onClose={onClose1}
+            isCentered
+          >
+            <ModalOverlay backdropFilter="blur(10px)" />
+            <ModalContent 
+              alignContent={"center"}
+              textAlign={"center"}
+              alignItems={"center"}
+              position={"relative"}
+              justifyContent={"space-between"}
+            >
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                bg={"white"}
+                p={"1%"}
+                // px={"30%"}
+                w={"70%"}
+                borderRadius={"10px"}
+                position={"absolute"}
+                top={"50%"}
+                left={"50%"}
+                transform="translate(-50%, -50%)"
+              >
+              <div className="boost1 bg-white rounded-t-3xl flex flex-col pt-5">
+                <h3 className="text-black text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
+                  Daily Task
+                </h3>
+                <p className="font-bold mb-12">Do you want to proceed?</p>
+                <div className='flex justify-between gap-2 border'>
+                  <button className='text-blue-500 text-lg text-center border-r px-10 pb-1' onClick={onClose1}>Cancel</button>
+                  <button className='text-blue-600 text-lg mr-8'>Accept</button>
+                </div>
+              </div>
+              </Box>
+            </ModalContent>
+          </Modal>
+          </>
   );
 }
 

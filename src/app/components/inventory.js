@@ -1,10 +1,6 @@
 "use client"
 
 import React from 'react'
-import { PiHandTap } from "react-icons/pi";
-import { MdKeyboardArrowRight } from "react-icons/md";
-import { BsFillLightningChargeFill } from "react-icons/bs";
-import { FcChargeBattery } from "react-icons/fc";
 
 //drawer
 
