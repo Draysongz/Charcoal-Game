@@ -307,7 +307,7 @@ export const Inventory = () => {
               Use potions to rank up your creatures. The higher the rank the more prizes you will get
             </p>
             <p className="text-[10px] mb-2 pmx:text-[12px] spm:text-[12px] spm:my-3 text-gray-300">
-              Note: Can only be activated directly on the creatures tapping screen. Go to creatures page and open inventory
+              Note: Can only be activated directly on each individual creature information page
             </p>
           </div>
           </Box>
@@ -363,7 +363,7 @@ export const Inventory = () => {
               Use potions to rank up your creatures. The higher the rank the more prizes you will get
             </p>
             <p className="text-[10px] mb-2 pmx:text-[12px] spm:text-[12px] spm:my-3 text-gray-300">
-              Note: Can only be activated directly on the creatures tapping screen. Go to creatures page and open inventory
+            Note: Can only be activated directly on each individual creature information page
             </p>
           </div>
           </Box>
@@ -419,7 +419,7 @@ export const Inventory = () => {
               Use potions to rank up your creatures. The higher the rank the more prizes you will get
             </p>
             <p className="text-[10px] mb-2 pmx:text-[12px] spm:text-[12px] spm:my-3 text-gray-300">
-              Note: Can only be activated directly on the creatures tapping screen. Go to creatures page and open inventory
+            Note: Can only be activated directly on each individual creature information page
             </p>
           </div>
           </Box>
@@ -475,7 +475,7 @@ export const Inventory = () => {
               Use potions to rank up your creatures. The higher the rank the more prizes you will get
             </p>
             <p className="text-[10px] mb-2 pmx:text-[12px] spm:text-[12px] spm:my-3 text-gray-300">
-              Note: Can only be activated directly on the creatures tapping screen. Go to creatures page and open inventory
+            Note: Can only be activated directly on each individual creature information page
             </p>
           </div>
           </Box>
