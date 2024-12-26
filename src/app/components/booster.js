@@ -22,6 +22,7 @@ import {
     ModalCloseButton,
     useDisclosure,
   } from "@chakra-ui/react";
+import Image from 'next/image';
 
 export const Booster = () => {
     const { isOpen: isOpen1, onOpen: onOpen1, onClose: onClose1  } = useDisclosure()
@@ -114,7 +115,7 @@ export const Booster = () => {
           >
             <div className="flex items-center w-[60%]">
               <div className="me-4 text-[30px]">
-                <BsFillLightningChargeFill className=" text-indigo-400 p-[3px] w-8 h-8" />
+                <Image src={"/images/CharcoalNB.png"} width={30} height={30} alt='hello' />
               </div>
               <div className="w-[70%] flex flex-col">
                 <span className="text-orange-600 text-[14px]">
@@ -137,11 +138,11 @@ export const Booster = () => {
           >
             <div className="flex items-center w-[60%]">
               <div className="me-4 text-[30px]">
-                <BsFillLightningChargeFill className=" text-indigo-400 p-[3px] w-8 h-8" />
+              <Image src={"/images/NewLightningNB.png"} width={30} height={30} alt='hello' />
               </div>
               <div className="w-[70%] flex flex-col">
                 <span className="text-orange-600 text-[14px]">
-                  energy boost
+                  ember burst
                 </span>
                 <div className="flex items-center gap-2">
                   <img src="/images/CoinCNB.png" className=" w-5 h-4 " />
@@ -199,19 +200,19 @@ export const Booster = () => {
               alt="charcoal"
               className="mt-2 pmx:w-[170px] pmx:mt-4 pmx:h-44 spm:w-[160px] spm:h-44 ImgO"
             />
-            <h3 className="text-orange-600 text-[20px] pmx:text-[22px] spm:text-[22px] uppercase font-bold">
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
               charcoal turbo
             </h3>
-            <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white">
-              Give your creatures an instant boost
+            <p className="text-[12px] pmx:text-[16px] spm:mt-2 spm:text-[16px] text-white">
+              Multiply your tapping power for 10 seconds to power-up your creatures faster
             </p>
-            <p className="text-[12px] mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
-              +1 coin tap per level
+            <p className="text-[12px] spm:mt-2 mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
+              +1X multiplier per level
             </p>
             <span className="text-[11px]">
               <div className="border-2 border-orange-600 bg-gray-700 rounded-xl w-24 relative py-1 mb-5 flex gap-2">
                 <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6 mr-2" />
-                <span className=" text-[11px] text-white mt-1">30,000</span>
+                <span className=" text-[11px] text-white mt-1">20,000</span>
               </div>
             </span>
             <div className="bg-orange-600 border-2 border-white px-32 h-10 rounded-full uppercase text-[13px] flex items-center text-white">
@@ -264,21 +265,19 @@ export const Booster = () => {
               alt="lightning"
               className="mt-2 pmx:w-[170px] pmx:mt-4 pmx:h-44 spm:w-[160px] spm:h-44 ImgO"
             />
-            <h3 className="text-orange-600 text-[20px] pmx:text-[24px] spm:text-[24px] uppercase font-bold">
-              energy boost
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
+              ember burst
             </h3>
-            <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white">
-              increase your energy limit, so you
-              <br />
-              can combat the enemy more
+            <p className="text-[12px] spm:mt-2 pmx:text-[16px] spm:text-[16px] text-white">
+              Give your creatures an instant boost of fire to power it up faster
             </p>
-            <p className="text-[12px] mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
-              +500 energy per level
+            <p className="text-[12px] spm:mt-2 mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
+              +500 boost per level
             </p>
             <span className="text-[11px]">
               <div className="border-2 border-orange-600 rounded-xl bg-gray-700 w-24 relative py-2 mb-5 flex items-center justify-center">
                 <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6 mr-2" />
-                <span className=" text-[11px] text-white mt-1">4,000</span>
+                <span className=" text-[11px] text-white mt-1">20,000</span>
               </div>
             </span>
             <div className="bg-orange-600 border-2 border-white px-32 h-10 rounded-full uppercase text-[13px] flex items-center text-white">
@@ -327,21 +326,19 @@ export const Booster = () => {
           />
           <div className="boost1 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
             <PiHandTap className="text-[100px] mt-2 pmx:w-[130px] pmx:mt-4 pmx:h-40 spm:w-[160px] spm:h-44 ImgI text-white" />
-            <h3 className="text-orange-600 text-[20px] pmx:text-[24px] spm:text-[24px] uppercase font-bold">
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
               multi tap
             </h3>
-            <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white text-center">
-              increase the amount of coins
-              <br />
-              earned by tap
+            <p className="text-[12px] spm:mt-2 pmx:text-[16px] spm:text-[16px] text-white text-center">
+              increase the amount of coins earned for each tap
             </p>
-            <p className="text-[12px] mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
-              +1 coin tap per level
+            <p className="text-[12px] spm:mt-2 mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
+              +1 tap per level
             </p>
             <span className="text-[11px]">
               <div className="border-2 border-orange-600 bg-gray-700 rounded-xl w-24 relative py-2 mb-5 flex items-center justify-center">
                 <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6 mr-2" />
-                <span className=" text-[11px] text-white mt-1">4,000</span>
+                <span className=" text-[11px] text-white mt-1">20,000</span>
               </div>
             </span>
             <div className="bg-orange-600 border-2 border-white px-32 h-10 rounded-full uppercase text-[13px] flex items-center text-white">
@@ -393,18 +390,16 @@ export const Booster = () => {
             <h3 className="text-orange-600 text-[20px] pmx:text-[24px] spm:text-[24px] uppercase font-bold">
               energy limit
             </h3>
-            <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white text-center">
-              increase your energy limit, so you
-              <br />
-              can combat the enemy more
+            <p className="text-[12px] spm:mt-2 pmx:text-[16px] spm:text-[16px] text-white text-center">
+              Increase your energy limit
             </p>
-            <p className="text-[12px] mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
+            <p className="text-[12px] mb-2 spm:mt-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
               +500 energy per level
             </p>
             <span className="text-[11px]">
               <div className="border-2 border-orange-600 bg-gray-700 rounded-xl w-24 relative py-2 mb-5 flex items-center justify-center">
                 <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6 mr-2" />
-                <span className=" text-[11px] text-white mt-1">4,000</span>
+                <span className=" text-[11px] text-white mt-1">30,000</span>
               </div>
             </span>
             <div className="bg-orange-600 border-2 border-white px-32 h-10 rounded-full uppercase text-[13px] flex items-center text-white">
@@ -453,19 +448,19 @@ export const Booster = () => {
           />
           <div className="boost1 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
             <FcChargeBattery className="text-indigo-400 text-[100px] mt-2 pmx:w-[130px] pmx:mt-4 pmx:h-40 spm:w-[160px] spm:h-44 ImgN" />
-            <h3 className="text-orange-600 text-[20px] pmx:text-[24px] spm:text-[24px] uppercase font-bold">
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
               recharge
             </h3>
-            <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white text-center">
-              Charge up your creature
+            <p className="text-[12px] spm:mt-2 pmx:text-[16px] spm:text-[16px] text-white text-center">
+              Decrease your full energy recharge time.
             </p>
-            <p className="text-[12px] mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
-              +1 coin tap per level
+            <p className="text-[12px] mb-2 spm:mt-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
+              -0.1x per level
             </p>
             <span className="text-[11px]">
               <div className="border-2 border-orange-600 bg-gray-700 rounded-xl w-24 relative py-2 mb-5 flex justify-center">
                 <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6 mr-2" />
-                <span className=" text-[11px] text-white mt-1">4,000</span>
+                <span className=" text-[11px] text-white mt-1">20,000</span>
               </div>
             </span>
             <div className="bg-orange-600 border-2 border-white px-32 h-10 rounded-full uppercase text-[13px] flex items-center text-white">

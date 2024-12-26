@@ -9,13 +9,15 @@ const Creature = () => {
   const components = [
     { 
       name: "Frog King", 
+      icon: "/images/PotionForest.png",
       // component: <FrogKing />, 
       image: '/images/Frog2.png', 
-      timer: "play",
+      timer: "Rank Up",
       timerStyle: { backgroundColor: "#F15B06", color: "#FFF", border: "1px solid #FEFEFF" }
     },
     { 
-      name: "Fire Creature", 
+      name: "Fire Creature",
+      icon: "/images/PotionAerial.png", 
       // component: <FireCreature />, 
       image: '/images/Flameexpand2.png', 
       timer: "level 10 required",
@@ -23,6 +25,7 @@ const Creature = () => {
     },
     { 
       name: "Water Creature", 
+      icon: "/images/PotionSea.png",
       // component: <WaterCreature />, 
       image: '/images/WaterFairy.png', 
       timer: "you own this creature",
@@ -30,6 +33,7 @@ const Creature = () => {
     },
     { 
       name: "Earth Creature", 
+      icon: "/images/PotionMountain.png",
       // component: <EarthCreature />, 
       image: '/images/antenna.png', 
       timer: "you own this creature",
@@ -37,6 +41,7 @@ const Creature = () => {
     },
     { 
       name: "Air Creature", 
+      icon: "/images/PotionMountain.png",
       // component: <AirCreature />, 
       image: '/images/seadragon.png', 
       timer: "level 5 required",
@@ -44,6 +49,7 @@ const Creature = () => {
     },
     { 
       name: "Shadow Creature", 
+      icon: "/images/PotionAerial.png",
       // component: <ShadowCreature />, 
       image: '/images/ghost.png', 
       timer: "02:39:50",
@@ -51,6 +57,7 @@ const Creature = () => {
     },
     { 
       name: "Lightning Creature", 
+      icon: "/images/PotionAerial.png",
       // component: <LightningCreature />, 
       image: '/images/sojo.png', 
       timer: "play",
@@ -58,13 +65,15 @@ const Creature = () => {
     },
     { 
       name: "Ice Creature", 
+      icon: "/images/PotionSea.png",
       // component: <IceCreature />, 
       image: '/images/wolf.png', 
       timer: "level 10 required",
       timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF", width: "180px" }
     },
     { 
-      name: "Nature Creature", 
+      name: "Nature Creature",
+      icon: "/images/PotionForest.png", 
       // component: <NatureCreature />, 
       image: '/images/EarthFairy.png', 
       timer: "level 2 required",
@@ -72,6 +81,7 @@ const Creature = () => {
     },
     { 
       name: "Metal Creature", 
+      icon: "/images/PotionMountain.png",
       // component: <MetalCreature />, 
       image: '/images/batGurl.png', 
       timer: "02:39:50",
@@ -97,7 +107,8 @@ const Creature = () => {
       className="play h-screen w-screen"
       // style={{ height: "calc(100vh - 100px)" }}
     >
-      <div className="h-[100vh] w-[100%] bg-red flex flex-col items-center -mt-12">
+      <div className="h-[100vh] w-[100%] bg-red -mt-12">
+        <div className='flex flex-col items-center'>
         <div
           className="p-3 w-[90%] rounded-lg mt-16"
           style={{ background: "linear-gradient(to bottom, #5FBB98, #2B5545)" }}
@@ -243,20 +254,24 @@ const Creature = () => {
             </p>
           </div>
         </Box>
+        </div>
 
         {/* Timer Section */}
-        <div
-          className={`w-[80px] rounded-full mt-3 pmx:mt-4 uppercase timer-container  flex flex-col items-center ${
-            selectedIndex === 1 ? "level-timer" : ""
-          } ${selectedIndex === 2 ? "own-timer" : ""} ${
-            selectedIndex === 3 ? "own-timer" : ""
-          } ${selectedIndex === 4 ? "level-timer" : ""} ${
-            selectedIndex === 7 ? "level-timer" : ""
-          } ${selectedIndex === 8 ? "level-timer" : ""}`}
-          style={components[selectedIndex].timerStyle}
-        >
-          <div className="p-2 font-bold text-[12px] text-center">
-            <p>{components[selectedIndex].timer}</p>
+        <div className="flex">
+          <img src={components[selectedIndex].icon} width={29} height={29} alt='image' className='' />
+          <div
+            className={`w-[80px] rounded-md mt-3 pmx:mt-4 uppercase mx-auto timer-container ${
+              selectedIndex === 1 ? "level-timer" : ""
+            } ${selectedIndex === 2 ? "own-timer" : ""} ${
+              selectedIndex === 3 ? "own-timer" : ""
+            } ${selectedIndex === 4 ? "level-timer" : ""} ${
+              selectedIndex === 7 ? "level-timer" : ""
+            } ${selectedIndex === 8 ? "level-timer" : ""}`}
+            style={components[selectedIndex].timerStyle}
+          >
+            <div className="p-2 font-bold text-[12px] text-center">
+              <p>{components[selectedIndex].timer}</p>
+            </div>
           </div>
         </div>
       </div>
