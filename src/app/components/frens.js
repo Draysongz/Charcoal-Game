@@ -69,7 +69,7 @@ const Frends = () => {
           <span className="text-[13px] leading-6 text-white">20k</span>
         </div>
 
-        <div className="flex">
+        <div className="flex fixed w-full bottom-0 pb-24 justify-center">
           <div className="bg-orange-600 border-2 border-white uppercase rounded-full w-[292px] mt-2 py-2 pmx:mt-5 pmx:w-[300px] pmx:py-2 spm:mt-5 spm:py-2 spm:w-[280px]">
             <span className="p- ms-[100px] text-center font-bold text-[13px] pmx:text-[14px] spm:text-[14px] flex flex-1 items-center">
               invite friends

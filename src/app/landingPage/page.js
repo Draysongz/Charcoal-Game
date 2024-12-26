@@ -2,8 +2,9 @@
 
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Header from "../components/header";
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text, Button } from "@chakra-ui/react";
 import { GoHome } from "react-icons/go";
 import { LiaDollarSignSolid } from "react-icons/lia";
 import { IoGameControllerOutline } from "react-icons/io5";
@@ -22,6 +23,7 @@ import {
 } from "@chakra-ui/react";
 
 const Landing = () => {
+  const router = useRouter()
   const {
     isOpen: isOpen1,
     onOpen: onOpen1,
@@ -47,6 +49,9 @@ const Landing = () => {
   // if (loading) {
   //   return <LoadingPage />;
   // }
+  const handleSpin = () => {
+    router.push("/SlotMachine2")
+  }
 
   return (
     <div
@@ -72,7 +77,49 @@ const Landing = () => {
           "@media (min-height: 1030px)": { h: "93.5vh" },
         }}
       >
-        <Header />
+        <div className="flex h-8 justify-around mb-8">
+        <Link href="/coin" className="relative">
+          <img
+            src="/images/CoinCNB.png"
+            alt="coin"
+            className="z-1 w-14 absolute pmx:w-16"
+          />
+          <div
+            className="rounded-e-full text-white bg-orange-600 z-10  mt-4 pmx:mt-5
+            ms-6 pmx:ms-8 text-[12px] pe-10 ps-6 py-[2px] flex-grow-1"
+          >
+            500,000,000
+          </div>
+        </Link>
+
+        <div className="relative">
+          <img
+            src="/images/CharcoalNB.png"
+            alt="charcoal"
+            className="w-14 absolute pmx:w-16"
+          />
+          <div
+            className="bg-transparent border-2 border-white bg-opacity-10 px-3 py-[2px] pmx:mt-5
+            rounded-e-full text-[12px] mt-4 ms-8 pmx:ms-10 ps-5 text-white"
+          >
+            1,000+
+          </div>
+        </div>
+
+        <div className="relative">
+          <img
+            src="/images/EmberNB.png"
+            alt="ember"
+            className="w-14 h-14 absolute pmx:w-16 pmx:h-16"
+          />
+          <div
+            className="bg-transparent border-2 border-white bg-opacity-10 px-3 py-[2px] pmx:mt-5
+            rounded-e-full text-[12px] mt-4 ms-8 pmx:ms-10 ps-5 text-white"
+          >
+            1,000+
+          </div>
+        </div>
+      </div>
         <Box
           display={"flex"}
           flexDirection={"column"}
@@ -105,7 +152,7 @@ const Landing = () => {
               <img
                 src="/images/OG.png"
                 alt="OG"
-                className="pmx:w-32 pmx:h-24 spm:w-32 p4m:w-32 spm:h-20 p4m:h-25"
+                className="pmx:w-32 pmx:h-24 pt-3 spm:w-32 p4m:w-32 spm:h-20 p4m:h-25"
                 onClick={onOpen1}
               />
             </div>
@@ -180,7 +227,7 @@ const Landing = () => {
             </Box>
             <Link href="/SlotMachine2">
               <img
-                src="/images/furnace.png"
+                src="/images/spinnershot.png"
                 alt="furnace"
                 className="w-24 h-24"
               />

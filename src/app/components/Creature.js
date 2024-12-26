@@ -107,7 +107,7 @@ const Creature = () => {
       className="play h-screen w-screen"
       // style={{ height: "calc(100vh - 100px)" }}
     >
-      <div className="h-[100vh] w-[100%] bg-red -mt-12">
+      <div className="h-[100vh] w-[95%] mx-auto bg-red -mt-12">
         <div className='flex flex-col items-center'>
         <div
           className="p-3 w-[90%] rounded-lg mt-16"
