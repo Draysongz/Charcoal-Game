@@ -2,9 +2,10 @@
 
 import { Box } from '@chakra-ui/react';
 import React, { useState } from 'react'
+import { StarRating } from "./StarRatings"
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const Creature = () => {
+const Creature = ({rating}) => {
   // List of components with their names, images, and JSX elements
   const components = [
     { 
@@ -110,9 +111,12 @@ const Creature = () => {
       <div className="h-[100vh] w-[95%] mx-auto bg-red -mt-12">
         <div className='flex flex-col items-center'>
         <div
-          className="p-3 w-[90%] rounded-lg mt-16"
+          className="p-2.5 w-[90%] rounded-lg mt-16"
           style={{ background: "linear-gradient(to bottom, #5FBB98, #2B5545)" }}
         >
+          <div className='flex justify-center'>
+            <StarRating rating={2} maxRating={3} />
+          </div>
           <div className="flex uppercase text-[14px] pmx:text-[15px] font-bold bg-orange-600 p-[1px] spm:text-[15px] text-white justify-between">
             <div className='flex ms-6'>
               <img

@@ -14,7 +14,7 @@ export function CreatureCard({ rating, text, image, texting, background, classNa
       style={{ background: background }}
     >
       <div className="relative">
-        <div className="flex justify-center border px-4 mx-auto w-8/12 bg-blue-400 border-transparent py-1">
+        <div className="flex justify-center">
           <StarRating rating={rating} maxRating={3} />
         </div>
         <img
@@ -26,9 +26,6 @@ export function CreatureCard({ rating, text, image, texting, background, classNa
       <div className="text-center text-orange-600 font-bold uppercase pmx:text-[20px] pmx:mb-1 spm:text-[20px] spm:mb-1 textH">
         <p>{text}</p>
         <p className="-mt-[8px]">{texting}</p>
-      </div>
-      <div className="text-center uppercase bg-gray-500 bg-opacity-45 w-[95px] py-[2px] rounded-full text-[9px] ms-6 mb-2 pmx:ms-[25px] pmx:text-[12px] pmx:w-[120px] spm:ms-[16px] spm:w-[120px] spm:text-[12px] textT">
-        lvl 10 required
       </div>
       <button
         variant="secondary"
