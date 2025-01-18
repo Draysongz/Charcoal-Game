@@ -94,8 +94,8 @@ const Creature = () => {
 
   return (
     <div
-      className="play h-screen w-screen"
-      // style={{ height: "calc(100vh - 100px)" }}
+      className="play h-screen w-screen overflow-y-auto"
+       style={{ height: "calc(98vh - 130px)" }}
     >
       <div className="h-[100vh] w-[100%] bg-red flex flex-col items-center -mt-12">
         <div
@@ -119,7 +119,7 @@ const Creature = () => {
             bgRepeat={"no-repeat"}
             bgSize={"100% 100%"}
             w={"100%"}
-            h={"100px"}
+            h={"195px"}
             sx={{
               "@media (min-height: 780px) and (max-height: 852px)": {
                 h: "195px",
@@ -138,8 +138,6 @@ const Creature = () => {
               },
             }}
           />
-
-          {/* </Box> */}
         </div>
 
         {/* Navigation Section */}
@@ -234,7 +232,7 @@ const Creature = () => {
             description
           </p>
           <div>
-            <p className="text-[13px] text-white">
+            <p className="text-[15px] text-white">
               {components[selectedIndex].name} is a mighty creature, full of
               power and potential. This creature thrives in its environment and
               brings forth elemental magic. Legends say that these creatures can

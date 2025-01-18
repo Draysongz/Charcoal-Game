@@ -34,7 +34,7 @@ export const Booster = () => {
         <h3 className="text-center font-bold text-[20px]">free daily boost</h3>
         <div className="p-4 w-[375px] pmx:w-[411px] text-[13px] flex gap-8 pmx:p-8">
           <div
-            className="bg-gray-800 rounded-full border-2 border-orange-600 p-3 flex w-40"
+            className="bg-gray-800 rounded-full border-2 border-orange-600 p-3 flex w-40 cursor-pointer"
             onClick={onOpen1}
           >
             <div className="me-1 text-[25px]">
@@ -52,7 +52,7 @@ export const Booster = () => {
           </div>
 
           <div
-            className="bg-gray-800 rounded-full border-2 border-orange-600 p-3 flex w-40"
+            className="bg-gray-800 rounded-full border-2 border-orange-600 p-3 flex w-40 cursor-pointer"
             onClick={onOpen2}
           >
             <div className="me-1 text-[25px]">
@@ -73,7 +73,7 @@ export const Booster = () => {
         <div className="w-[375px] pmx:w-[411px] p-4 pmx:p-8">
           <h3 className="text-center text-[20px] font-bold">boosters</h3>
           <div
-            className="bg-gray-800 rounded-full border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between"
+            className="bg-gray-800 rounded-full border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between cursor-pointer"
             onClick={onOpen3}
           >
             <div className="flex items-center w-[60%]">
@@ -96,7 +96,7 @@ export const Booster = () => {
             </div>
           </div>
           <div
-            className="bg-gray-800 rounded-full border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between"
+            className="bg-gray-800 rounded-full border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between cursor-pointer"
             onClick={onOpen4}
           >
             <div className="flex items-center w-[60%]">
@@ -119,7 +119,7 @@ export const Booster = () => {
             </div>
           </div>
           <div
-            className="bg-gray-800 rounded-full border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between"
+            className="bg-gray-800 rounded-full border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between cursor-pointer"
             onClick={onOpen5}
           >
             <div className="flex items-center  w-[60%]">
@@ -141,6 +141,7 @@ export const Booster = () => {
           </div>
         </div>
       </div>
+
       <Drawer
         isOpen={isOpen1}
         placement="bottom"
@@ -185,6 +186,7 @@ export const Booster = () => {
           </div>
         </DrawerContent>
       </Drawer>
+
       <Drawer
         isOpen={isOpen2}
         placement="bottom"

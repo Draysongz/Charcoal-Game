@@ -61,7 +61,7 @@ const Header = () => {
       <Box display={"flex"} alignItems={"center"}>
         <Image
           src="/images/EmberNB.png"
-          w={{ base: "40px", sm: "40px" }}
+          w={{ base: "50px", sm: "50px" }}
           zIndex={1}
           p={0}
         />

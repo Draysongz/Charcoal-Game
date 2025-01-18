@@ -6,7 +6,7 @@ const PlayMount = () => {
   return (
     <div className="mt-4 forest text-white">
       <div className="w-[100%] flex flex-col items-center justify-center">
-        <div className="flex space-x-3 spm:space-x-4 p4m:space-x-5">
+        <div className="flex space-x-2 spm:space-x-3 p4m:space-x-3">
           <div
             className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
             style={{

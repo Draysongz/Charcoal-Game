@@ -4,7 +4,7 @@ import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react'
 
 const PlayForest = () => {
   return (
-    <div className="flex mt-4 space-x-3 spm:space-x-4 p4m:space-x-5 forest w-[100%] flex-auto justify-center text-white">
+    <div className="flex mt-4 space-x-2 spm:space-x-3 p4m:space-x-3 forest w-[100%] flex-auto justify-center text-white">
       <div
         className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
         style={{ background: "linear-gradient(to bottom, #5FBB98, #2B5545)" }}
@@ -82,6 +82,6 @@ const PlayForest = () => {
       </div>
     </div>
   );
-}
+};
 
-export default PlayForest
+export default PlayForest;

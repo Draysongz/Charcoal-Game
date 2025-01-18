@@ -95,7 +95,7 @@ const leaderBoard = () => {
         {/* Level Price */}
         <div className="flex items-center gap-2 justify-center bg-[#666666] mt-3 w-[330px] rounded-full p-2 pmx:mt-5 pmx:p-3 pmx:w-[370px] spm:w-[345px] mb-2">
           <span className="">
-            <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-5" />
+            <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6" />
           </span>
           <span className="text-[12px]">100 / 2000</span>
         </div>
@@ -108,17 +108,17 @@ const leaderBoard = () => {
             </h3>
           </div>
           <div className="bg-[#F15B06] mt-3 w-[90%] rounded-full border-2 border-white flex items-center px-5 justify-between">
-            <div className="p-[3px]">
-              <p className="text-[14px] pmx:text-[16px]">
-                you currently rank at
+            <div className="p-[7px]">
+              <p className="text-[13px] pmx:text-[14px]">
+                You Currently rank at
               </p>
               <div className="flex items-center">
                 <img
                   src="/images/CoinCNB.png"
                   alt="coin"
-                  className="w-5 h-4 pmx:w-6 pmx:h-5"
+                  className="w-5 h-5 pmx:w-6 pmx:h-5"
                 />
-                <span className="coinBal">100 coin</span>
+                <span className="coinBal text-[12px] pmx:text-[12px]">100 coin</span>
               </div>
             </div>
             <span className="text-[12px] font-bold coinBal2">120</span>

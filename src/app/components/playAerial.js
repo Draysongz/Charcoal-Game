@@ -6,7 +6,7 @@ const PlayAerial = () => {
   return (
     <div className="mt-4 forest flex text-white">
       <div className='flex w-[100%] flex-col items-center justify-center'>
-        <div className="flex space-x-3 spm:space-x-4 p4m:space-x-5">
+        <div className="flex space-x-2 spm:space-x-3 p4m:space-x-3">
           <div
             className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
             style={{

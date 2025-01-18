@@ -73,6 +73,7 @@ const Landing = () => {
         }}
       >
         <Header />
+
         <Box
           display={"flex"}
           flexDirection={"column"}
@@ -105,7 +106,7 @@ const Landing = () => {
               <img
                 src="/images/OG.png"
                 alt="OG"
-                className="pmx:w-32 pmx:h-24 spm:w-32 p4m:w-32 spm:h-20 p4m:h-25"
+                className="w-[75px] h-[70px] pmx:w-32 pmx:h-24 spm:w-[120px] p4m:w-32 spm:h-20 p4m:h-25"
                 onClick={onOpen1}
               />
             </div>
@@ -149,7 +150,7 @@ const Landing = () => {
             justifyContent={"space-between"}
             px={4}
             sx={{
-              "@media (height: 667px)": { mt: "5px", pb: 5 },
+              "@media (height: 667px)": { mt: "5px" },
             }}
           >
             <img
@@ -180,7 +181,7 @@ const Landing = () => {
             </Box>
             <Link href="/SlotMachine2">
               <img
-                src="/images/furnace.png"
+                src="/images/spinno.png"
                 alt="furnace"
                 className="w-16 h-20"
               />
@@ -189,6 +190,7 @@ const Landing = () => {
         </Box>
       </Box>
 
+      {/* Navigation */}
       <div className="bg-black flex p-[16.7px] uppercase fixed bottom-0 w-screen justify-between">
         <div className="underline decoration-orange-600 decoration-4 underline-offset-[18px]">
           <Link href="/" className="text-white">
@@ -222,6 +224,7 @@ const Landing = () => {
         </div>
       </div>
 
+      {/* OG Modal */}
       <Modal isOpen={isOpen1} onClose={onClose1} isCentered>
         <ModalOverlay backdropFilter="blur(10px)" />
         <ModalContent
@@ -285,6 +288,7 @@ const Landing = () => {
         </ModalContent>
       </Modal>
 
+      {/* OG Modal */}
       <Modal isOpen={isOpen2} onClose={onClose2} isCentered>
         <ModalOverlay backdropFilter="blur(10px)" />
         <ModalContent
