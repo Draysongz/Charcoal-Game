@@ -1,8 +1,4 @@
 import React from 'react'
-<<<<<<< HEAD
-=======
-import { CreatureCard } from "./CreaturesCard"
->>>>>>> 84608e139995d711615403fc490b51babd812913
 import { MdOutlineTimer } from "react-icons/md";
 import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react'
 
@@ -10,7 +6,6 @@ const PlayAerial = () => {
   return (
     <div className="mt-4 forest flex text-white">
       <div className='flex w-[100%] flex-col items-center justify-center'>
-<<<<<<< HEAD
         <div className="flex space-x-2 spm:space-x-3 p4m:space-x-3">
           <div
             className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
@@ -130,11 +125,6 @@ const PlayAerial = () => {
             />
             <span className="mt-[5px] ">20k</span>
           </div>
-=======
-        <div className="flex space-x-3 spm:space-x-4 p4m:space-x-5">
-          <CreatureCard rating={2} text={"fire"} texting={"creature"} image={"/images/Flameexpand2.png"} background={"linear-gradient(to bottom, #96B4B4, #414E4E)"} />
-          <CreatureCard rating={1} text={"shadow"} texting={"creature"} image={"/images/ghost.png"} background={"linear-gradient(to bottom, #96B4B4, #414E4E)"} />
->>>>>>> 84608e139995d711615403fc490b51babd812913
         </div>
       </div>
     </div>

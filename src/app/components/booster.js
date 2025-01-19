@@ -8,29 +8,13 @@ import { FcChargeBattery } from "react-icons/fc";
 
 //drawer
 import {
-<<<<<<< HEAD
-=======
-    Box,
->>>>>>> 84608e139995d711615403fc490b51babd812913
     Button,
     Drawer,
     DrawerOverlay,
     DrawerContent,
     DrawerCloseButton,
-<<<<<<< HEAD
     useDisclosure
   } from '@chakra-ui/react'
-=======
-  } from '@chakra-ui/react'
-  import {
-    Modal,
-    ModalOverlay,
-    ModalContent,
-    ModalCloseButton,
-    useDisclosure,
-  } from "@chakra-ui/react";
-import Image from 'next/image';
->>>>>>> 84608e139995d711615403fc490b51babd812913
 
 export const Booster = () => {
     const { isOpen: isOpen1, onOpen: onOpen1, onClose: onClose1  } = useDisclosure()
@@ -47,7 +31,6 @@ export const Booster = () => {
   return (
     <>
       <div className="mt-10 uppercase font-semibold w-[100%] flex flex-col items-center text-white">
-<<<<<<< HEAD
         <h3 className="text-center font-bold text-[20px]">free daily boost</h3>
         <div className="p-4 w-[375px] pmx:w-[411px] text-[13px] flex gap-8 pmx:p-8">
           <div
@@ -91,13 +74,6 @@ export const Booster = () => {
           <h3 className="text-center text-[20px] font-bold">boosters</h3>
           <div
             className="bg-gray-800 rounded-full border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between cursor-pointer"
-=======
-        <div className="w-[375px] pmx:w-[411px] p-4 pmx:p-8">
-          <h3 className="text-center text-[20px] font-bold mb-2">upgrades</h3>
-          <hr className="border-2"/>
-          <div
-            className="bg-gray-800 rounded-3xl border-2 border-orange-600 p-2 flex mt-4 items-center w-[100%] justify-between"
->>>>>>> 84608e139995d711615403fc490b51babd812913
             onClick={onOpen3}
           >
             <div className="flex items-center w-[60%]">
@@ -120,11 +96,7 @@ export const Booster = () => {
             </div>
           </div>
           <div
-<<<<<<< HEAD
             className="bg-gray-800 rounded-full border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between cursor-pointer"
-=======
-            className="bg-gray-800 rounded-3xl border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between"
->>>>>>> 84608e139995d711615403fc490b51babd812913
             onClick={onOpen4}
           >
             <div className="flex items-center w-[60%]">
@@ -147,11 +119,7 @@ export const Booster = () => {
             </div>
           </div>
           <div
-<<<<<<< HEAD
             className="bg-gray-800 rounded-full border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between cursor-pointer"
-=======
-            className="bg-gray-800 rounded-3xl border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between"
->>>>>>> 84608e139995d711615403fc490b51babd812913
             onClick={onOpen5}
           >
             <div className="flex items-center  w-[60%]">
@@ -171,7 +139,6 @@ export const Booster = () => {
               <MdKeyboardArrowRight className="text-[25px]" />
             </div>
           </div>
-<<<<<<< HEAD
         </div>
       </div>
 
@@ -184,85 +151,6 @@ export const Booster = () => {
         <DrawerOverlay className="backdrop-blur-md" />
         <DrawerContent className="p-0 rounded-t-3xl">
           <DrawerCloseButton
-=======
-          <div
-            className="bg-gray-800 rounded-3xl border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between"
-            onClick={onOpen1}
-          >
-            <div className="flex items-center w-[60%]">
-              <div className="me-4 text-[30px]">
-                <Image src={"/images/CharcoalNB.png"} width={30} height={30} alt='hello' />
-              </div>
-              <div className="w-[70%] flex flex-col">
-                <span className="text-orange-600 text-[14px]">
-                  charcoal turbo
-                </span>
-                <div className="flex items-center gap-2">
-                  <img src="/images/CoinCNB.png" className=" w-5 h-4 " />
-                  <span className="text-[13px]">20k</span>
-                </div>
-              </div>
-            </div>
-            <div className="text-[14px] flex items-center">
-              <span className=" text-orange-600">level 1</span>
-              <MdKeyboardArrowRight className="text-[25px]" />
-            </div>
-          </div>
-          <div
-            className="bg-gray-800 rounded-3xl border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between"
-            onClick={onOpen2}
-          >
-            <div className="flex items-center w-[60%]">
-              <div className="me-4 text-[30px]">
-              <Image src={"/images/NewLightningNB.png"} width={30} height={30} alt='hello' />
-              </div>
-              <div className="w-[70%] flex flex-col">
-                <span className="text-orange-600 text-[14px]">
-                  ember burst
-                </span>
-                <div className="flex items-center gap-2">
-                  <img src="/images/CoinCNB.png" className=" w-5 h-4 " />
-                  <span className="text-[13px]">20k</span>
-                </div>
-              </div>
-            </div>
-            <div className="text-[14px] flex items-center">
-              <span className=" text-orange-600">level 1</span>
-              <MdKeyboardArrowRight className="text-[25px]" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <Modal
-        isOpen={isOpen1}
-        placement="bottom"
-        onClose={onClose1}
-        isCentered
-      >
-        <ModalOverlay backdropFilter="blur(10px)" />
-        <ModalContent 
-          alignContent={"center"}
-          textAlign={"center"}
-          alignItems={"center"}
-          position={"relative"}
-          justifyContent={"space-between"}
-        >
-          <Box
-            display={"flex"}
-            flexDirection={"column"}
-            bg={"black"}
-            p={"10%"}
-            py={"15%"}
-            // px={"30%"}
-            w={"90%"}
-            borderRadius={"30px"}
-            position={"absolute"}
-            top={"50%"}
-            left={"50%"}
-            transform="translate(-50%, -50%)"
-          >
-          <ModalCloseButton
->>>>>>> 84608e139995d711615403fc490b51babd812913
             color={"white"}
             fontSize={"10px"}
             borderRadius={"100%"}
@@ -277,7 +165,6 @@ export const Booster = () => {
               alt="charcoal"
               className="mt-2 pmx:w-[170px] pmx:mt-4 pmx:h-44 spm:w-[160px] spm:h-44 ImgO"
             />
-<<<<<<< HEAD
             <h3 className="text-orange-600 text-[20px] pmx:text-[30px] spm:text-[30px] uppercase font-bold">
               charcoal
             </h3>
@@ -291,28 +178,12 @@ export const Booster = () => {
               <div className="border-2 border-orange-600 rounded-full w-40 relative py-2 mb-5 flex items-center justify-center">
                 <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6" />
                 <span className=" text-[11px] text-white">4,000</span>
-=======
-            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
-              charcoal turbo
-            </h3>
-            <p className="text-[12px] pmx:text-[16px] spm:mt-2 spm:text-[16px] text-white">
-              Multiply your tapping power for 10 seconds to power-up your creatures faster
-            </p>
-            <p className="text-[12px] spm:mt-2 mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
-              +1X multiplier per level
-            </p>
-            <span className="text-[11px]">
-              <div className="border-2 border-orange-600 bg-gray-700 rounded-xl w-24 relative py-1 mb-5 flex gap-2">
-                <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6 mr-2" />
-                <span className=" text-[11px] text-white mt-1">20,000</span>
->>>>>>> 84608e139995d711615403fc490b51babd812913
               </div>
             </span>
             <div className="bg-orange-600 border-2 border-white px-32 h-10 rounded-full uppercase text-[13px] flex items-center text-white">
               <div className="">get</div>
             </div>
           </div>
-<<<<<<< HEAD
         </DrawerContent>
       </Drawer>
 
@@ -325,40 +196,6 @@ export const Booster = () => {
         <DrawerOverlay className="backdrop-blur-md" />
         <DrawerContent className="p-0 rounded-t-3xl">
           <DrawerCloseButton
-=======
-          </Box>
-        </ModalContent>
-      </Modal>
-      <Modal
-        isOpen={isOpen2}
-        placement="bottom"
-        onClose={onClose2}
-        isCentered
-      >
-        <ModalOverlay backdropFilter="blur(10px)" />
-        <ModalContent 
-          alignContent={"center"}
-          textAlign={"center"}
-          alignItems={"center"}
-          position={"relative"}
-          justifyContent={"space-between"}
-        >
-          <Box
-            display={"flex"}
-            flexDirection={"column"}
-            bg={"black"}
-            p={"10%"}
-            py={"15%"}
-            // px={"30%"}
-            w={"90%"}
-            borderRadius={"30px"}
-            position={"absolute"}
-            top={"50%"}
-            left={"50%"}
-            transform="translate(-50%, -50%)"
-          >
-          <ModalCloseButton
->>>>>>> 84608e139995d711615403fc490b51babd812913
             color={"white"}
             fontSize={"10px"}
             borderRadius={"100%"}
@@ -373,7 +210,6 @@ export const Booster = () => {
               alt="lightning"
               className="mt-2 pmx:w-[170px] pmx:mt-4 pmx:h-44 spm:w-[160px] spm:h-44 ImgO"
             />
-<<<<<<< HEAD
             <h3 className="text-orange-600 text-[20px] pmx:text-[30px] spm:text-[30px] uppercase font-bold">
               energy
             </h3>
@@ -389,28 +225,12 @@ export const Booster = () => {
               <div className="border-2 border-orange-600 rounded-full w-40 relative py-2 mb-5 flex items-center justify-center">
                 <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6" />
                 <span className=" text-[11px] text-white">4,000</span>
-=======
-            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
-              ember burst
-            </h3>
-            <p className="text-[12px] spm:mt-2 pmx:text-[16px] spm:text-[16px] text-white">
-              Give your creatures an instant boost of fire to power it up faster
-            </p>
-            <p className="text-[12px] spm:mt-2 mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
-              +500 boost per level
-            </p>
-            <span className="text-[11px]">
-              <div className="border-2 border-orange-600 rounded-xl bg-gray-700 w-24 relative py-2 mb-5 flex items-center justify-center">
-                <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6 mr-2" />
-                <span className=" text-[11px] text-white mt-1">20,000</span>
->>>>>>> 84608e139995d711615403fc490b51babd812913
               </div>
             </span>
             <div className="bg-orange-600 border-2 border-white px-32 h-10 rounded-full uppercase text-[13px] flex items-center text-white">
               <div className="">get</div>
             </div>
           </div>
-<<<<<<< HEAD
         </DrawerContent>
       </Drawer>
       <Drawer
@@ -422,40 +242,6 @@ export const Booster = () => {
         <DrawerOverlay className="backdrop-blur-md" />
         <DrawerContent className="p-0 rounded-t-3xl">
           <DrawerCloseButton
-=======
-          </Box>
-        </ModalContent>
-      </Modal>
-      <Modal
-        isOpen={isOpen3}
-        placement="bottom"
-        onClose={onClose3}
-        isCentered
-      >
-        <ModalOverlay backdropFilter="blur(10px)" />
-        <ModalContent 
-          alignContent={"center"}
-          textAlign={"center"}
-          alignItems={"center"}
-          position={"relative"}
-          justifyContent={"space-between"}
-        >
-          <Box
-            display={"flex"}
-            flexDirection={"column"}
-            bg={"black"}
-            p={"10%"}
-            py={"15%"}
-            // px={"30%"}
-            w={"90%"}
-            borderRadius={"30px"}
-            position={"absolute"}
-            top={"50%"}
-            left={"50%"}
-            transform="translate(-50%, -50%)"
-          >
-          <ModalCloseButton
->>>>>>> 84608e139995d711615403fc490b51babd812913
             color={"white"}
             fontSize={"10px"}
             borderRadius={"100%"}
@@ -466,7 +252,6 @@ export const Booster = () => {
           />
           <div className="boost1 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
             <PiHandTap className="text-[100px] mt-2 pmx:w-[130px] pmx:mt-4 pmx:h-40 spm:w-[160px] spm:h-44 ImgI text-white" />
-<<<<<<< HEAD
             <h3 className="text-orange-600 text-[20px] pmx:text-[30px] spm:text-[30px] uppercase font-bold">
               multi tap
             </h3>
@@ -482,28 +267,12 @@ export const Booster = () => {
               <div className="border-2 border-orange-600 rounded-full w-40 relative py-2 mb-5 flex items-center justify-center">
                 <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6" />
                 <span className=" text-[11px] text-white">4,000</span>
-=======
-            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
-              multi tap
-            </h3>
-            <p className="text-[12px] spm:mt-2 pmx:text-[16px] spm:text-[16px] text-white text-center">
-              increase the amount of coins earned for each tap
-            </p>
-            <p className="text-[12px] spm:mt-2 mb-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
-              +1 tap per level
-            </p>
-            <span className="text-[11px]">
-              <div className="border-2 border-orange-600 bg-gray-700 rounded-xl w-24 relative py-2 mb-5 flex items-center justify-center">
-                <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6 mr-2" />
-                <span className=" text-[11px] text-white mt-1">20,000</span>
->>>>>>> 84608e139995d711615403fc490b51babd812913
               </div>
             </span>
             <div className="bg-orange-600 border-2 border-white px-32 h-10 rounded-full uppercase text-[13px] flex items-center text-white">
               <div className="">get</div>
             </div>
           </div>
-<<<<<<< HEAD
         </DrawerContent>
       </Drawer>
       <Drawer
@@ -515,40 +284,6 @@ export const Booster = () => {
         <DrawerOverlay className="backdrop-blur-md" />
         <DrawerContent className="p-0 rounded-t-3xl">
           <DrawerCloseButton
-=======
-          </Box>
-        </ModalContent>
-      </Modal>
-      <Modal
-        isOpen={isOpen4}
-        placement="bottom"
-        onClose={onClose4}
-        isCentered
-      >
-        <ModalOverlay backdropFilter="blur(10px)" />
-        <ModalContent 
-          alignContent={"center"}
-          textAlign={"center"}
-          alignItems={"center"}
-          position={"relative"}
-          justifyContent={"space-between"}
-        >
-          <Box
-            display={"flex"}
-            flexDirection={"column"}
-            bg={"black"}
-            p={"10%"}
-            py={"15%"}
-            // px={"30%"}
-            w={"90%"}
-            borderRadius={"30px"}
-            position={"absolute"}
-            top={"50%"}
-            left={"50%"}
-            transform="translate(-50%, -50%)"
-          >
-          <ModalCloseButton
->>>>>>> 84608e139995d711615403fc490b51babd812913
             color={"white"}
             fontSize={"10px"}
             borderRadius={"100%"}
@@ -559,7 +294,6 @@ export const Booster = () => {
           />
           <div className="boost1 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
             <BsFillLightningChargeFill className="text-indigo-400 text-[100px] mt-2 pmx:w-[130px] pmx:mt-4 pmx:h-40 spm:w-[160px] spm:h-44 ImgI" />
-<<<<<<< HEAD
             <h3 className="text-orange-600 text-[20px] pmx:text-[30px] spm:text-[30px] uppercase font-bold">
               energy limit
             </h3>
@@ -575,28 +309,12 @@ export const Booster = () => {
               <div className="border-2 border-orange-600 rounded-full w-40 relative py-2 mb-5 flex items-center justify-center">
                 <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6" />
                 <span className=" text-[11px] text-white">4,000</span>
-=======
-            <h3 className="text-orange-600 text-[20px] pmx:text-[24px] spm:text-[24px] uppercase font-bold">
-              energy limit
-            </h3>
-            <p className="text-[12px] spm:mt-2 pmx:text-[16px] spm:text-[16px] text-white text-center">
-              Increase your energy limit
-            </p>
-            <p className="text-[12px] mb-2 spm:mt-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
-              +500 energy per level
-            </p>
-            <span className="text-[11px]">
-              <div className="border-2 border-orange-600 bg-gray-700 rounded-xl w-24 relative py-2 mb-5 flex items-center justify-center">
-                <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6 mr-2" />
-                <span className=" text-[11px] text-white mt-1">30,000</span>
->>>>>>> 84608e139995d711615403fc490b51babd812913
               </div>
             </span>
             <div className="bg-orange-600 border-2 border-white px-32 h-10 rounded-full uppercase text-[13px] flex items-center text-white">
               <div className="">get</div>
             </div>
           </div>
-<<<<<<< HEAD
         </DrawerContent>
       </Drawer>
       <Drawer
@@ -608,40 +326,6 @@ export const Booster = () => {
         <DrawerOverlay className="backdrop-blur-md" />
         <DrawerContent className="p-0 rounded-t-3xl">
           <DrawerCloseButton
-=======
-          </Box>
-        </ModalContent>
-      </Modal>
-      <Modal
-        isOpen={isOpen5}
-        placement="bottom"
-        onClose={onClose5}
-        isCentered
-      >
-        <ModalOverlay backdropFilter="blur(10px)" />
-        <ModalContent 
-          alignContent={"center"}
-          textAlign={"center"}
-          alignItems={"center"}
-          position={"relative"}
-          justifyContent={"space-between"}
-        >
-          <Box
-            display={"flex"}
-            flexDirection={"column"}
-            bg={"black"}
-            p={"10%"}
-            py={"15%"}
-            // px={"30%"}
-            w={"90%"}
-            borderRadius={"30px"}
-            position={"absolute"}
-            top={"50%"}
-            left={"50%"}
-            transform="translate(-50%, -50%)"
-          >
-          <ModalCloseButton
->>>>>>> 84608e139995d711615403fc490b51babd812913
             color={"white"}
             fontSize={"10px"}
             borderRadius={"100%"}
@@ -652,7 +336,6 @@ export const Booster = () => {
           />
           <div className="boost1 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
             <FcChargeBattery className="text-indigo-400 text-[100px] mt-2 pmx:w-[130px] pmx:mt-4 pmx:h-40 spm:w-[160px] spm:h-44 ImgN" />
-<<<<<<< HEAD
             <h3 className="text-orange-600 text-[20px] pmx:text-[30px] spm:text-[30px] uppercase font-bold">
               recharge
             </h3>
@@ -666,35 +349,14 @@ export const Booster = () => {
               <div className="border-2 border-orange-600 rounded-full w-40 relative py-2 mb-5 flex items-center justify-center">
                 <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6" />
                 <span className=" text-[11px] text-white">4,000</span>
-=======
-            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
-              recharge
-            </h3>
-            <p className="text-[12px] spm:mt-2 pmx:text-[16px] spm:text-[16px] text-white text-center">
-              Decrease your full energy recharge time.
-            </p>
-            <p className="text-[12px] mb-2 spm:mt-2 pmx:text-[16px] spm:text-[16px] spm:mb-3 text-white">
-              -0.1x per level
-            </p>
-            <span className="text-[11px]">
-              <div className="border-2 border-orange-600 bg-gray-700 rounded-xl w-24 relative py-2 mb-5 flex justify-center">
-                <img src="/images/CoinCNB.png" alt="coin" className="w-7 h-6 mr-2" />
-                <span className=" text-[11px] text-white mt-1">20,000</span>
->>>>>>> 84608e139995d711615403fc490b51babd812913
               </div>
             </span>
             <div className="bg-orange-600 border-2 border-white px-32 h-10 rounded-full uppercase text-[13px] flex items-center text-white">
               <div className="">get</div>
             </div>
           </div>
-<<<<<<< HEAD
         </DrawerContent>
       </Drawer>
-=======
-          </Box>
-        </ModalContent>
-      </Modal>
->>>>>>> 84608e139995d711615403fc490b51babd812913
     </>
   );
 }

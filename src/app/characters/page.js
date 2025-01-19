@@ -19,10 +19,7 @@ const Characters = () => {
         <Creature />
       </div>
 
-<<<<<<< HEAD
       {/* Navigation */}
-=======
->>>>>>> 84608e139995d711615403fc490b51babd812913
       <div className='bg-black flex p-[16.7px] uppercase fixed bottom-0 w-screen justify-between'>
        <div>
          <Link href="/" className='text-white'> <GoHome className='text-[20px] ms-3'/> home</Link>
