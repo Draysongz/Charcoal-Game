@@ -181,7 +181,7 @@ const Landing = () => {
             </Box>
             <Link href="/SlotMachine2">
               <img
-                src="/images/spinno.png"
+                src="/images/furnace.png"
                 alt="furnace"
                 className="w-16 h-20"
               />
