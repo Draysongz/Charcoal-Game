@@ -1,4 +1,8 @@
 import React from 'react'
+<<<<<<< HEAD
+=======
+import { CreatureCard } from "./CreaturesCard"
+>>>>>>> 84608e139995d711615403fc490b51babd812913
 
 const PlaySea = () => {
   return (
@@ -6,6 +10,7 @@ const PlaySea = () => {
       className="w-[100%] mt-4 forest text-white"
     >
       <div className='flex flex-1 items-center justify-center space-x-2 spm:space-x-3 p4m:space-x-3'>
+<<<<<<< HEAD
         <div
           className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
           style={{ background: "linear-gradient(to bottom, #6AE5F3, #1D4D53)" }}
@@ -65,6 +70,10 @@ const PlaySea = () => {
             <span className="mt-[5px]">20k</span>
           </div>
         </div>
+=======
+        <CreatureCard rating={3} text={"ice"} texting={"creature"} image={"/images/wolf.png"} background={"linear-gradient(to bottom, #6AE5F3, #1D4D53)"} />
+        <CreatureCard rating={1} text={"water"} texting={"creature"} image={"/images/WaterFairy.png"} background={"linear-gradient(to bottom, #6AE5F3, #1D4D53)"} />
+>>>>>>> 84608e139995d711615403fc490b51babd812913
       </div>
     </div>
   );

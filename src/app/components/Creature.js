@@ -2,13 +2,21 @@
 
 import { Box } from '@chakra-ui/react';
 import React, { useState } from 'react'
+<<<<<<< HEAD
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Creature = () => {
+=======
+import { StarRating } from "./StarRatings"
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
+const Creature = ({rating}) => {
+>>>>>>> 84608e139995d711615403fc490b51babd812913
   // List of components with their names, images, and JSX elements
   const components = [
     { 
       name: "Frog King", 
+<<<<<<< HEAD
       // component: <FrogKing />, 
       image: '/images/Frog2.png', 
       timer: "play",
@@ -16,6 +24,17 @@ const Creature = () => {
     },
     { 
       name: "Fire Creature", 
+=======
+      icon: "/images/PotionForest.png",
+      // component: <FrogKing />, 
+      image: '/images/Frog2.png', 
+      timer: "Rank Up",
+      timerStyle: { backgroundColor: "#F15B06", color: "#FFF", border: "1px solid #FEFEFF" }
+    },
+    { 
+      name: "Fire Creature",
+      icon: "/images/PotionAerial.png", 
+>>>>>>> 84608e139995d711615403fc490b51babd812913
       // component: <FireCreature />, 
       image: '/images/Flameexpand2.png', 
       timer: "level 10 required",
@@ -23,6 +42,10 @@ const Creature = () => {
     },
     { 
       name: "Water Creature", 
+<<<<<<< HEAD
+=======
+      icon: "/images/PotionSea.png",
+>>>>>>> 84608e139995d711615403fc490b51babd812913
       // component: <WaterCreature />, 
       image: '/images/WaterFairy.png', 
       timer: "you own this creature",
@@ -30,6 +53,10 @@ const Creature = () => {
     },
     { 
       name: "Earth Creature", 
+<<<<<<< HEAD
+=======
+      icon: "/images/PotionMountain.png",
+>>>>>>> 84608e139995d711615403fc490b51babd812913
       // component: <EarthCreature />, 
       image: '/images/antenna.png', 
       timer: "you own this creature",
@@ -37,6 +64,10 @@ const Creature = () => {
     },
     { 
       name: "Air Creature", 
+<<<<<<< HEAD
+=======
+      icon: "/images/PotionMountain.png",
+>>>>>>> 84608e139995d711615403fc490b51babd812913
       // component: <AirCreature />, 
       image: '/images/seadragon.png', 
       timer: "level 5 required",
@@ -44,6 +75,10 @@ const Creature = () => {
     },
     { 
       name: "Shadow Creature", 
+<<<<<<< HEAD
+=======
+      icon: "/images/PotionAerial.png",
+>>>>>>> 84608e139995d711615403fc490b51babd812913
       // component: <ShadowCreature />, 
       image: '/images/ghost.png', 
       timer: "02:39:50",
@@ -51,6 +86,10 @@ const Creature = () => {
     },
     { 
       name: "Lightning Creature", 
+<<<<<<< HEAD
+=======
+      icon: "/images/PotionAerial.png",
+>>>>>>> 84608e139995d711615403fc490b51babd812913
       // component: <LightningCreature />, 
       image: '/images/sojo.png', 
       timer: "play",
@@ -58,13 +97,22 @@ const Creature = () => {
     },
     { 
       name: "Ice Creature", 
+<<<<<<< HEAD
+=======
+      icon: "/images/PotionSea.png",
+>>>>>>> 84608e139995d711615403fc490b51babd812913
       // component: <IceCreature />, 
       image: '/images/wolf.png', 
       timer: "level 10 required",
       timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF", width: "180px" }
     },
     { 
+<<<<<<< HEAD
       name: "Nature Creature", 
+=======
+      name: "Nature Creature",
+      icon: "/images/PotionForest.png", 
+>>>>>>> 84608e139995d711615403fc490b51babd812913
       // component: <NatureCreature />, 
       image: '/images/EarthFairy.png', 
       timer: "level 2 required",
@@ -72,6 +120,10 @@ const Creature = () => {
     },
     { 
       name: "Metal Creature", 
+<<<<<<< HEAD
+=======
+      icon: "/images/PotionMountain.png",
+>>>>>>> 84608e139995d711615403fc490b51babd812913
       // component: <MetalCreature />, 
       image: '/images/batGurl.png', 
       timer: "02:39:50",
@@ -94,6 +146,7 @@ const Creature = () => {
 
   return (
     <div
+<<<<<<< HEAD
       className="play h-screen w-screen overflow-y-auto"
        style={{ height: "calc(98vh - 130px)" }}
     >
@@ -102,6 +155,20 @@ const Creature = () => {
           className="p-3 w-[90%] rounded-lg mt-16"
           style={{ background: "linear-gradient(to bottom, #5FBB98, #2B5545)" }}
         >
+=======
+      className="play h-screen w-screen"
+      // style={{ height: "calc(100vh - 100px)" }}
+    >
+      <div className="h-[100vh] w-[95%] mx-auto bg-red -mt-12">
+        <div className='flex flex-col items-center'>
+        <div
+          className="p-2.5 w-[90%] rounded-lg mt-16"
+          style={{ background: "linear-gradient(to bottom, #5FBB98, #2B5545)" }}
+        >
+          <div className='flex justify-center'>
+            <StarRating rating={2} maxRating={3} />
+          </div>
+>>>>>>> 84608e139995d711615403fc490b51babd812913
           <div className="flex uppercase text-[14px] pmx:text-[15px] font-bold bg-orange-600 p-[1px] spm:text-[15px] text-white justify-between">
             <div className='flex ms-6'>
               <img
@@ -119,7 +186,11 @@ const Creature = () => {
             bgRepeat={"no-repeat"}
             bgSize={"100% 100%"}
             w={"100%"}
+<<<<<<< HEAD
             h={"195px"}
+=======
+            h={"100px"}
+>>>>>>> 84608e139995d711615403fc490b51babd812913
             sx={{
               "@media (min-height: 780px) and (max-height: 852px)": {
                 h: "195px",
@@ -138,6 +209,11 @@ const Creature = () => {
               },
             }}
           />
+<<<<<<< HEAD
+=======
+
+          {/* </Box> */}
+>>>>>>> 84608e139995d711615403fc490b51babd812913
         </div>
 
         {/* Navigation Section */}
@@ -232,7 +308,11 @@ const Creature = () => {
             description
           </p>
           <div>
+<<<<<<< HEAD
             <p className="text-[15px] text-white">
+=======
+            <p className="text-[13px] text-white">
+>>>>>>> 84608e139995d711615403fc490b51babd812913
               {components[selectedIndex].name} is a mighty creature, full of
               power and potential. This creature thrives in its environment and
               brings forth elemental magic. Legends say that these creatures can
@@ -241,6 +321,7 @@ const Creature = () => {
             </p>
           </div>
         </Box>
+<<<<<<< HEAD
 
         {/* Timer Section */}
         <div
@@ -255,6 +336,26 @@ const Creature = () => {
         >
           <div className="p-2 font-bold text-[12px] text-center">
             <p>{components[selectedIndex].timer}</p>
+=======
+        </div>
+
+        {/* Timer Section */}
+        <div className="flex">
+          <img src={components[selectedIndex].icon} width={29} height={29} alt='image' className='' />
+          <div
+            className={`w-[80px] rounded-md mt-3 pmx:mt-4 uppercase mx-auto timer-container ${
+              selectedIndex === 1 ? "level-timer" : ""
+            } ${selectedIndex === 2 ? "own-timer" : ""} ${
+              selectedIndex === 3 ? "own-timer" : ""
+            } ${selectedIndex === 4 ? "level-timer" : ""} ${
+              selectedIndex === 7 ? "level-timer" : ""
+            } ${selectedIndex === 8 ? "level-timer" : ""}`}
+            style={components[selectedIndex].timerStyle}
+          >
+            <div className="p-2 font-bold text-[12px] text-center">
+              <p>{components[selectedIndex].timer}</p>
+            </div>
+>>>>>>> 84608e139995d711615403fc490b51babd812913
           </div>
         </div>
       </div>

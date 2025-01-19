@@ -9,7 +9,10 @@ import { HiMiniUserGroup } from "react-icons/hi2";
 import { BsShopWindow } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import { Box, Flex, Button, Text, Input, Image } from "@chakra-ui/react";
+<<<<<<< HEAD
 import Header from "../components/header";
+=======
+>>>>>>> 84608e139995d711615403fc490b51babd812913
 
 const SlotMachine2 = () => {
   const items = [
@@ -129,15 +132,21 @@ const SlotMachine2 = () => {
         position={"relative"}
         sx={{
           "@media (height: 780px)": { h: "90.5%" },
+<<<<<<< HEAD
           "@media (height: 800px)": { h: "90.5%" },
           "@media (height: 812px)": { h: "91%" },
           "@media (height: 820px)": { h: "91%" },
           "@media (height: 822px)": { h: "91%" },
+=======
+          "@media (height: 812px)": { h: "91%" },
+          "@media (height: 820px)": { h: "91%" },
+>>>>>>> 84608e139995d711615403fc490b51babd812913
           "@media (height: 926px)": { h: "92%" },
           "@media (height: 932px)": { h: "92%" },
           "@media (min-height: 1100px)": { h: "93.5%" },
         }}
       >
+<<<<<<< HEAD
       <Flex
       w={"100vw"}
       justifyContent={"space-between"}
@@ -215,6 +224,51 @@ const SlotMachine2 = () => {
       </Box>
       </Flex>
 
+=======
+        <div className="flex h-8 justify-around">
+          <Link href="/coin" className="relative">
+            <img
+              src="/images/CoinCNB.png"
+              alt="coin"
+              className="z-1 w-14 absolute pmx:w-16"
+            />
+            <div
+              className="rounded-e-full text-white bg-orange-600 z-10  mt-4 pmx:mt-5
+            ms-6 pmx:ms-8 text-[12px] pe-10 ps-6 py-[2px] flex-grow-1"
+            >
+              500,000,000
+            </div>
+          </Link>
+
+          <div className="relative">
+            <img
+              src="/images/CharcoalNB.png"
+              alt="charcoal"
+              className="w-14 absolute pmx:w-16"
+            />
+            <div
+              className="bg-gray-400 border-[3px] border-white bg-opacity-10 px-3 py-[2px] pmx:mt-5
+            rounded-e-full text-[12px] mt-4 ms-8 pmx:ms-10 ps-5 text-white font-bold"
+            >
+              1,000+
+            </div>
+          </div>
+
+          <div className="relative">
+            <img
+              src="/images/EmberNB.png"
+              alt="ember"
+              className="w-14 h-14 absolute pmx:w-16 pmx:h-16"
+            />
+            <div
+              className="bg-gray-400 border-2 border-white bg-opacity-10 px-3 py-[2px] pmx:mt-5
+            rounded-e-full text-[12px] mt-4 ms-8 pmx:ms-10 ps-5 text-white font-bold"
+            >
+              1,000+
+            </div>
+          </div>
+        </div>
+>>>>>>> 84608e139995d711615403fc490b51babd812913
         <Image
           src="/images/WIN.png"
           alt="win"
@@ -226,21 +280,35 @@ const SlotMachine2 = () => {
         />
         <Flex
           position={"absolute"}
+<<<<<<< HEAD
+=======
+          width={"70%"}
+>>>>>>> 84608e139995d711615403fc490b51babd812913
           top={"65%"}
           left={"50%"}
           transform="translate(-50%, -50%)"
           justifyContent={"space-between"}
           alignItems={"center"}
+<<<<<<< HEAD
           className="w-[85%] pmx:w-[80%] spm:w-[83%]"
         >
           <img src="/images/Pointer1.png" alt="pointer" className="w-[80px]" />
           <img src="/images/Pointer2.png" alt="pointer" className="w-[80px]" />
+=======
+        >
+          <img src="/images/Pointer1.png" alt="pointer" className="w-[60px]" />
+          <img src="/images/Pointer2.png" alt="pointer" className="w-[60px]" />
+>>>>>>> 84608e139995d711615403fc490b51babd812913
         </Flex>
 
         {/* Slot */}
 
         <Box
           textAlign="center"
+<<<<<<< HEAD
+=======
+          // bg={"red"}
+>>>>>>> 84608e139995d711615403fc490b51babd812913
           position={"absolute"}
           top={"63.5%"}
           left={"50%"}
@@ -251,6 +319,7 @@ const SlotMachine2 = () => {
               <Box
                 key={i}
                 overflow="hidden"
+<<<<<<< HEAD
                 w={{ base: "66px", sm: "67px", md: "77px", lg: "100px" }}
                 top={{ base: "10px", sm: "10px", md: "10px", lg: "10px" }}
                 h={{ base: "180px", sm: "200px", md: "250px", lg: "300px" }}
@@ -263,6 +332,25 @@ const SlotMachine2 = () => {
                    top: "5px",
                    left: "20px"
                  },
+=======
+                w="70px"
+                top={"5%"}
+                h="190px" // Height to show 3 items
+                position="relative"
+                sx={{
+                  "@media (min-height: 1035px)": {
+                    h: "260px",
+                    // bg: "red",
+                    w: "80px",
+                    top: "5px",
+                  },
+                  "@media (min-height: 1175px)": {
+                    h: "260px",
+                    // bg: "red",
+                    w: "135px",
+                    top: "5px",
+                  },
+>>>>>>> 84608e139995d711615403fc490b51babd812913
                 }}
               >
                 <Box
@@ -270,7 +358,10 @@ const SlotMachine2 = () => {
                   top={0}
                   left={0}
                   w="100%"
+<<<<<<< HEAD
                   h="100%"
+=======
+>>>>>>> 84608e139995d711615403fc490b51babd812913
                   display="flex"
                   flexDirection="column"
                   animation={
@@ -283,19 +374,37 @@ const SlotMachine2 = () => {
                     <Box
                       key={j}
                       fontSize="4xl"
+<<<<<<< HEAD
                       display="flex"
                       alignItems="center"
                       justifyContent="center"
                       w={{ base: "50px", sm: "60px", md: "70px", lg: "100px" }}
                       h={{ base: "50px", sm: "60px", md: "70px", lg: "100px" }}
                       mb={{ base: "10px", sm: "15px", md: "20px" }}
+=======
+                      h="70px"
+                      // bg={"black"}
+                      display="flex"
+                      alignItems="center"
+                      justifyContent="center"
+                      sx={{
+                        "@media (min-height: 1035px)": {
+                          h: "90px",
+                        },
+                      }}
+>>>>>>> 84608e139995d711615403fc490b51babd812913
                     >
                       <img
                         src={items[index].img}
                         alt=""
                         style={{
+<<<<<<< HEAD
                           width: "100%",
                           height: "100%",
+=======
+                          width: "70%",
+                          height: "80%",
+>>>>>>> 84608e139995d711615403fc490b51babd812913
                           objectFit: "contain",
                         }}
                       />
@@ -305,7 +414,10 @@ const SlotMachine2 = () => {
               </Box>
             ))}
           </Box>
+<<<<<<< HEAD
             
+=======
+>>>>>>> 84608e139995d711615403fc490b51babd812913
           {winDetails && (
             <Box
               // mt={"-175%"}
@@ -313,7 +425,11 @@ const SlotMachine2 = () => {
               p={10}
               w={"180%"}
               borderRadius={10}
+<<<<<<< HEAD
               h={"180px"}
+=======
+              h={'180px'}
+>>>>>>> 84608e139995d711615403fc490b51babd812913
               textAlign="center"
               position="absolute"
               bg="black"
@@ -388,9 +504,15 @@ const SlotMachine2 = () => {
             src={spinning ? "/images/stop.png" : "/images/SPIN.png"}
             alt={spinning ? "Stop" : "Spin"}
             position={"absolute"}
+<<<<<<< HEAD
             top={"30%"}
             left={"25%"}
             w={"50%"}
+=======
+            top={"24%"}
+            left={"13%"}
+            w={"75%"}
+>>>>>>> 84608e139995d711615403fc490b51babd812913
             // transform="translate(-50%, -50%)"
             // _hover={{bg: 'transparent'}}
           />
@@ -445,6 +567,12 @@ const SlotMachine2 = () => {
       </div>
     </Box>
   );
+<<<<<<< HEAD
 };
 
 export default SlotMachine2;
+=======
+
+}
+export default SlotMachine2
+>>>>>>> 84608e139995d711615403fc490b51babd812913

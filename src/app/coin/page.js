@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+"use client"
+>>>>>>> 84608e139995d711615403fc490b51babd812913
 import React from 'react'
 import { GoHome } from "react-icons/go";
 import { LiaDollarSignSolid } from "react-icons/lia";
@@ -6,7 +10,45 @@ import { HiMiniUserGroup } from "react-icons/hi2";
 import { BsShopWindow } from "react-icons/bs";
 import Link from 'next/link';
 
+<<<<<<< HEAD
 const Coin = () => {
+=======
+import {
+  Box,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalCloseButton,
+  useDisclosure,
+} from "@chakra-ui/react";
+
+const Coin = () => {
+
+  const {
+      isOpen: isOpen1,
+      onOpen: onOpen1,
+      onClose: onClose1,
+    } = useDisclosure();
+  
+    const {
+      isOpen: isOpen2,
+      onOpen: onOpen2,
+      onClose: onClose2,
+    } = useDisclosure();
+
+    const {
+        isOpen: isOpen3,
+        onOpen: onOpen3,
+        onClose: onClose3,
+      } = useDisclosure();
+    
+      const {
+        isOpen: isOpen4,
+        onOpen: onOpen4,
+        onClose: onClose4,
+      } = useDisclosure();
+
+>>>>>>> 84608e139995d711615403fc490b51babd812913
   return (
     <div className='min-h-screen' style={{backgroundImage: "url('/images/Flameexpand1.png')", objectFit: "cover", backgroundPosition: "center", backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
 
@@ -61,6 +103,7 @@ const Coin = () => {
                  p-1 w-16 h-16 pmx:w-20 pmx:h-20 pmx:p-2' />
                  <span className='border-orange-800 border-e-2'></span>
                  <img src='/images/EmberNB.png' alt='ember' className='border-2 border-orange-800 rounded-full 
+<<<<<<< HEAD
                  p-1 w-16 h-16 pmx:w-20 pmx:h-20 pmx:p-2' />
                  <img src='/images/charcoalNB.png' alt='charcoal' className='border-2 border-orange-800 rounded-full 
                  p-1 w-16 h-16 pmx:w-20 pmx:h-20 pmx:p-2' />
@@ -68,6 +111,184 @@ const Coin = () => {
                  p-1 w-16 h-16 pmx:w-20 pmx:h-20 pmx:p-2' />
              </div>
            </div>
+=======
+                 p-1 w-16 h-16 pmx:w-20 pmx:h-20 pmx:p-2' onClick={onOpen1} />
+                 <img src='/images/charcoalNB.png' alt='charcoal' className='border-2 border-orange-800 rounded-full 
+                 p-1 w-16 h-16 pmx:w-20 pmx:h-20 pmx:p-2' onClick={onOpen2} />
+                 <img src='/images/NewLightningNB.png' alt='lightning' className='border-2 border-orange-800 rounded-full 
+                 p-1 w-16 h-16 pmx:w-20 pmx:h-20 pmx:p-2' onClick={onOpen3} />
+             </div>
+           </div>
+
+                <Modal
+                   isOpen={isOpen1}
+                   placement="bottom"
+                   onClose={onClose1}
+                   isCentered
+                 >
+                   <ModalOverlay backdropFilter="blur(10px)" />
+                   <ModalContent 
+                     alignContent={"center"}
+                     textAlign={"center"}
+                     alignItems={"center"}
+                     position={"relative"}
+                     justifyContent={"space-between"}
+                   >
+                     <Box
+                       display={"flex"}
+                       flexDirection={"column"}
+                       bg={"black"}
+                       p={"8%"}
+                       py={"8%"}
+                       // px={"30%"}
+                       w={"80%"}
+                       borderRadius={"20px"}
+                       position={"absolute"}
+                       top={"50%"}
+                       left={"50%"}
+                       transform="translate(-50%, -50%)"
+                     >
+                     <ModalCloseButton
+                       color={"white"}
+                       fontSize={"10px"}
+                       borderRadius={"100%"}
+                       border={"2px solid white"}
+                       ml={"288px"}
+                       mt={"12px"}
+                       fontWeight={"bold"}
+                     />
+                     <div className="boost1 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
+                       <img
+                         src="/images/EmberNB.png"
+                         alt="charcoal"
+                         className="mt-2 pmx:w-[70px] pmx:mt-4 pmx:h-16 spm:w-[70px] spm:h-16 ImgO"
+                       />
+                       <h3 className="text-orange-600 text-[20px] pmx:text-[22px] spm:text-[22px] uppercase font-bold">
+                         ember burst
+                       </h3>
+                       <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white mb-8">
+                         Give your creatures an instant boost of fire to power it up faster
+                       </p>
+                       <div className="bg-orange-600 border-2 border-white px-12 h-10 rounded-md uppercase text-[13px] flex items-center text-white">
+                         <div className="">let's go</div>
+                       </div>
+                     </div>
+                     </Box>
+                   </ModalContent>
+                 </Modal>
+                 <Modal
+                   isOpen={isOpen2}
+                   placement="bottom"
+                   onClose={onClose2}
+                   isCentered
+                 >
+                   <ModalOverlay backdropFilter="blur(10px)" />
+                   <ModalContent 
+                     alignContent={"center"}
+                     textAlign={"center"}
+                     alignItems={"center"}
+                     position={"relative"}
+                     justifyContent={"space-between"}
+                   >
+                     <Box
+                       display={"flex"}
+                       flexDirection={"column"}
+                       bg={"black"}
+                       p={"10%"}
+                       py={"8%"}
+                       // px={"30%"}
+                       w={"80%"}
+                       borderRadius={"20px"}
+                       position={"absolute"}
+                       top={"50%"}
+                       left={"50%"}
+                       transform="translate(-50%, -50%)"
+                     >
+                     <ModalCloseButton
+                       color={"white"}
+                       fontSize={"10px"}
+                       borderRadius={"100%"}
+                       border={"2px solid white"}
+                       ml={"288px"}
+                       mt={"12px"}
+                       fontWeight={"bold"}
+                     />
+                     <div className="boost1 mb-4 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
+                       <img
+                         src="/images/CharcoalNB.png"
+                         alt="charcoal"
+                         className="mt-2 pmx:w-[70px] pmx:mt-4 pmx:h-16 spm:w-[70px] spm:h-16 ImgO"
+                       />
+                       <h3 className="text-orange-600 mb-4 text-[20px] pmx:text-[18px] spm:text-[18px] uppercase font-bold">
+                         charcoal turbo
+                       </h3>
+                       <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white mb-8">
+                         Increase your tapping power by X factor for 10 seconds to power-up your creatures faster.
+                       </p>
+                       <div className="bg-orange-600 border-2 border-white px-12 h-10 rounded-md uppercase text-[13px] flex items-center text-white">
+                         <div className="">let's go</div>
+                       </div>
+                     </div>
+                     </Box>
+                   </ModalContent>
+                 </Modal>
+                 <Modal
+                   isOpen={isOpen3}
+                   placement="bottom"
+                   onClose={onClose3}
+                   isCentered
+                 >
+                   <ModalOverlay backdropFilter="blur(10px)" />
+                   <ModalContent 
+                     alignContent={"center"}
+                     textAlign={"center"}
+                     alignItems={"center"}
+                     position={"relative"}
+                     justifyContent={"space-between"}
+                   >
+                     <Box
+                       display={"flex"}
+                       flexDirection={"column"}
+                       bg={"black"}
+                       p={"10%"}
+                       py={"8%"}
+                       // px={"30%"}
+                       w={"80%"}
+                       borderRadius={"20px"}
+                       position={"absolute"}
+                       top={"50%"}
+                       left={"50%"}
+                       transform="translate(-50%, -50%)"
+                     >
+                     <ModalCloseButton
+                       color={"white"}
+                       fontSize={"10px"}
+                       borderRadius={"100%"}
+                       border={"2px solid white"}
+                       ml={"288px"}
+                       mt={"12px"}
+                       fontWeight={"bold"}
+                     />
+                     <div className="boost1 mb-4 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
+                       <img
+                         src="/images/NewLightningNB.png"
+                         alt="charcoal"
+                         className="mt-2 pmx:w-[70px] pmx:mt-4 pmx:h-16 spm:w-[70px] spm:h-16 ImgO"
+                       />
+                       <h3 className="text-orange-600 mb-4 text-[20px] pmx:text-[18px] spm:text-[18px] uppercase font-bold">
+                         energy recharge
+                       </h3>
+                       <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white mb-8">
+                         Fully replenish your energy counter so you may continue to power up your creature
+                       </p>
+                       <div className="bg-orange-600 border-2 border-white px-12 h-10 rounded-md uppercase text-[13px] flex items-center text-white">
+                         <div className="">let's go</div>
+                       </div>
+                     </div>
+                     </Box>
+                   </ModalContent>
+                 </Modal>
+>>>>>>> 84608e139995d711615403fc490b51babd812913
       </div>
     </div>
   )
