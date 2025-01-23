@@ -62,7 +62,7 @@ const Coin = () => {
                  <span className='border-orange-800 border-e-2'></span>
                  <img src='/images/EmberNB.png' alt='ember' className='border-2 border-orange-800 rounded-full 
                  p-1 w-16 h-16 pmx:w-20 pmx:h-20 pmx:p-2' />
-                 <img src='/images/charcoalNB.png' alt='charcoal' className='border-2 border-orange-800 rounded-full 
+                 <img src='/images/CharcoalNB.png' alt='charcoal' className='border-2 border-orange-800 rounded-full 
                  p-1 w-16 h-16 pmx:w-20 pmx:h-20 pmx:p-2' />
                  <img src='/images/NewLightningNB.png' alt='lightning' className='border-2 border-orange-800 rounded-full 
                  p-1 w-16 h-16 pmx:w-20 pmx:h-20 pmx:p-2' />

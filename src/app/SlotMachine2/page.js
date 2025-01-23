@@ -308,18 +308,20 @@ const SlotMachine2 = () => {
             
           {winDetails && (
             <Box
-              // mt={"-175%"}
-              ms={"95%"}
-              p={10}
-              w={"180%"}
+              mt={"-50%"}
+              ms={"49%"}
+              p={5}
+              w={"100%"}
               borderRadius={10}
-              h={"180px"}
+              h={"200px"}
               textAlign="center"
               position="absolute"
+              textColor={"white"}
+              transform="translate(-50%, -50%)"
               bg="black"
               id="winni"
             >
-              <Text fontSize="32px" fontWeight="bold" mb={10}>
+              <Text fontSize="32px" fontWeight="bold" mb={2}>
                 {winDetails.name}
               </Text>
               <Image
@@ -328,7 +330,7 @@ const SlotMachine2 = () => {
                 boxSize="40px"
                 mx="auto"
                 my={2}
-                mb={10}
+                mb={2}
                 id="WinImg"
               />
               <Text fontSize="30px" fontWeight="bold">

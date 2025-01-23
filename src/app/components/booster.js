@@ -86,7 +86,7 @@ export const Booster = () => {
                 </span>
                 <div className="flex items-center gap-2">
                   <img src="/images/CoinCNB.png" className=" w-5 h-4 " />
-                  <span className="text-[13px">20k</span>
+                  <span className="text-[13px]">20k</span>
                 </div>
               </div>
             </div>
