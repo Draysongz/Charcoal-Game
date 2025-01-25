@@ -44,16 +44,16 @@ const Header = () => {
           p={0}
         />
         <Text
-          bg={"#f15b0626"}
+          border="1px solid #fff"
           borderRightRadius={"100px"}
           py={1}
           px={3}
-          ml={-3}
+          ml={-5}
           zIndex={0}
           mt={1}
           fontSize={"10px"}
           textAlign={"left"}
-          color={"#F15B06"}
+          color={"#Fff"}
         >
           1,000+
         </Text>
@@ -66,16 +66,16 @@ const Header = () => {
           p={0}
         />
         <Text
-          bg={"#f15b0626"}
+          border="1px solid #fff"
           borderRightRadius={"100px"}
           py={1}
           px={3}
-          ml={-3}
+          ml={-5}
           zIndex={0}
           mt={1}
           fontSize={"10px"}
           textAlign={"left"}
-          color={"#F15B06"}
+          color={"#Fff"}
         >
           1,000+
         </Text>

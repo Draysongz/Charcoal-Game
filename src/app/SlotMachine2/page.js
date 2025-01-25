@@ -180,7 +180,7 @@ const SlotMachine2 = () => {
           border="1px solid #fff"
           borderRightRadius={"100px"}
           py={1}
-          px={2}
+          px={3}
           ml={-5}
           zIndex={0}
           mt={1}
@@ -202,7 +202,7 @@ const SlotMachine2 = () => {
           border="1px solid #fff"
           borderRightRadius={"100px"}
           py={1}
-          px={2}
+          px={3}
           ml={-5}
           zIndex={0}
           mt={1}

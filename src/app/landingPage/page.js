@@ -91,10 +91,10 @@ const Landing = () => {
               daily reward
             </Link>
             <Link href="/boost" className="">
-              boost
+              inventory
             </Link>
             <Link href="/leaderBoard" className="">
-              leaderboard
+              upgrades
             </Link>
             <Link href="/setting" className="">
               setting
@@ -178,7 +178,7 @@ const Landing = () => {
             </Box>
             <Link href="/SlotMachine2">
               <img
-                src="/images/furnace.png"
+                src="/images/spinno.png"
                 alt="furnace"
                 className="w-16 h-20"
               />
