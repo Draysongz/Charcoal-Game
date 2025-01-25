@@ -15,6 +15,9 @@ const Settings = () => {
             <Link href="">
               <div class="bg-gray-800 p-4 border-[0.5px] border-white hover:bg-orange-500">stat</div>
             </Link>
+            <Link href="/leaderBoard">
+              <div class="bg-gray-800 p-4 border-[0.5px] border-white hover:bg-orange-500">leaderboard</div>
+            </Link>
             <Link href="">
               <div class="bg-gray-800 p-4 border-[0.5px] border-white hover:bg-orange-500">skins</div>
             </Link>

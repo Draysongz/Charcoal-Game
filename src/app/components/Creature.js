@@ -3,6 +3,7 @@
 import { Box } from '@chakra-ui/react';
 import React, { useState } from 'react'
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { StarRating } from './StarRatings';
 
 const Creature = () => {
   // List of components with their names, images, and JSX elements
@@ -102,6 +103,7 @@ const Creature = () => {
           className="p-3 w-[90%] rounded-lg mt-16"
           style={{ background: "linear-gradient(to bottom, #5FBB98, #2B5545)" }}
         >
+          <StarRating />
           <div className="flex uppercase text-[14px] pmx:text-[15px] font-bold bg-orange-600 p-[1px] spm:text-[15px] text-white justify-between">
             <div className='flex ms-6'>
               <img

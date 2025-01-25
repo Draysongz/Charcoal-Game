@@ -1,6 +1,8 @@
 import React from 'react'
 import { MdOutlineTimer } from "react-icons/md";
 import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react'
+import { FaStar } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa";
 
 const PlayAerial = () => {
   return (
@@ -13,6 +15,12 @@ const PlayAerial = () => {
               background: "linear-gradient(to bottom, #96B4B4, #414E4E)",
             }}
           >
+            <div className="flex justify-center gap-1">
+              <FaStar />
+              <FaRegStar />
+              <FaRegStar />
+            </div>
+
             <div className="">
               <img
                 src="/images/Flameexpand2.png"
@@ -53,6 +61,12 @@ const PlayAerial = () => {
               background: "linear-gradient(to bottom, #96B4B4, #414E4E)",
             }}
           >
+            <div className="flex justify-center gap-1">
+              <FaStar />
+              <FaRegStar />
+              <FaRegStar />
+            </div>
+
             <div className="rounded-md">
               <img
                 src="/images/ghost.png"
@@ -93,6 +107,12 @@ const PlayAerial = () => {
           id="light"
           style={{ background: "linear-gradient(to bottom, #96B4B4, #414E4E)" }}
         >
+          <div className="flex justify-center gap-1">
+            <FaStar />
+            <FaRegStar />
+            <FaRegStar />
+          </div>
+
           <div className="">
             <img
               src="/images/sojo.png"

@@ -16,7 +16,7 @@ import {
     useDisclosure
   } from '@chakra-ui/react'
 
-export const Booster = () => {
+export const Upgrade = () => {
     const { isOpen: isOpen1, onOpen: onOpen1, onClose: onClose1  } = useDisclosure()
 
     const { isOpen: isOpen2, onOpen: onOpen2, onClose: onClose2  } = useDisclosure()
@@ -30,7 +30,7 @@ export const Booster = () => {
 
   return (
     <>
-      <div className="mt-10 uppercase font-semibold w-[100%] flex flex-col items-center text-white">
+      {/* <div className="mt-10 uppercase font-semibold w-[100%] flex flex-col items-center text-white">
         <h3 className="text-center font-bold text-[20px]">free daily boost</h3>
         <div className="p-4 w-[375px] pmx:w-[411px] text-[13px] flex gap-8 pmx:p-8">
           <div
@@ -68,10 +68,15 @@ export const Booster = () => {
               <span className="text-[13px]">3/3</span>
             </div>
           </div>
+        </div> */}
+
+        <div className="mt-5 uppercase font-semibold w-[100%] flex flex-col items-center text-white">
+        <div className="w-[375px] pmx:w-[411px] p-4 pmx:p-8">
+          <h3 className="text-center text-[20px] font-bold mb-2">upgrade</h3>
+          <hr className="border-2"/>
         </div>
 
         <div className="w-[375px] pmx:w-[411px] p-4 pmx:p-8">
-          <h3 className="text-center text-[20px] font-bold">boosters</h3>
           <div
             className="bg-gray-800 rounded-full border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between cursor-pointer"
             onClick={onOpen3}
@@ -95,6 +100,7 @@ export const Booster = () => {
               <MdKeyboardArrowRight className="text-[25px]" />
             </div>
           </div>
+
           <div
             className="bg-gray-800 rounded-full border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between cursor-pointer"
             onClick={onOpen4}
@@ -118,6 +124,7 @@ export const Booster = () => {
               <MdKeyboardArrowRight className="text-[25px]" />
             </div>
           </div>
+
           <div
             className="bg-gray-800 rounded-full border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between cursor-pointer"
             onClick={onOpen5}
@@ -139,10 +146,62 @@ export const Booster = () => {
               <MdKeyboardArrowRight className="text-[25px]" />
             </div>
           </div>
+
+          <div
+            className="bg-gray-800 rounded-full border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between cursor-pointer"
+            onClick={onOpen5}
+          >
+            <div className="flex items-center  w-[60%]">
+              <div className="me-1">
+                <img
+                  src="/images/CharcoalNB.png"
+                  alt="charcoal"
+                  className=" w-11 h-10 p-[3px]"
+                />
+              </div>
+              <div className="w-[70%] flex flex-col">
+                <span className="text-orange-600 text-[14px]">charcoal turbo</span>
+                <div className="flex items-center gap-2">
+                  <img src="/images/CoinCNB.png" className=" w-5 h-4 " />
+                  <span className="text-[13px]">20k</span>
+                </div>
+              </div>
+            </div>
+            <div className="text-[14px] flex items-center">
+              <span className=" text-orange-600">level 1</span>
+              <MdKeyboardArrowRight className="text-[25px]" />
+            </div>
+          </div>
+
+          <div
+            className="bg-gray-800 rounded-full border-2 border-orange-600 p-2 flex mt-3 items-center w-[100%] justify-between cursor-pointer"
+            onClick={onOpen5}
+          >
+            <div className="flex items-center  w-[60%]">
+              <div className="me-1">
+                <img
+                src="/images/EmberNB.png"
+                alt="ember"
+                className=" w-11 h-10 p-[3px]"
+                />
+              </div>
+              <div className="w-[70%] flex flex-col">
+                <span className="text-orange-600 text-[14px]">ember burst</span>
+                <div className="flex items-center gap-2">
+                  <img src="/images/CoinCNB.png" className=" w-5 h-4 " />
+                  <span className="text-[13px]">20k</span>
+                </div>
+              </div>
+            </div>
+            <div className="text-[14px] flex items-center">
+              <span className=" text-orange-600">level 1</span>
+              <MdKeyboardArrowRight className="text-[25px]" />
+            </div>
+          </div>
         </div>
       </div>
 
-      <Drawer
+      {/* <Drawer
         isOpen={isOpen1}
         placement="bottom"
         onClose={onClose1}
@@ -356,7 +415,7 @@ export const Booster = () => {
             </div>
           </div>
         </DrawerContent>
-      </Drawer>
+      </Drawer> */}
     </>
   );
 }

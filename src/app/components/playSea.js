@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaStar } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa";
 
 const PlaySea = () => {
   return (
@@ -10,6 +12,12 @@ const PlaySea = () => {
           className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
           style={{ background: "linear-gradient(to bottom, #6AE5F3, #1D4D53)" }}
         >
+          <div className="flex justify-center gap-1">
+            <FaStar />
+            <FaRegStar />
+            <FaRegStar />
+          </div>
+
           <div className="">
             <img
               src="/images/WaterFairy.png"
@@ -40,6 +48,12 @@ const PlaySea = () => {
           className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
           style={{ background: "linear-gradient(to bottom, #6AE5F3, #1D4D53)" }}
         >
+          <div className="flex justify-center gap-1">
+            <FaStar />
+            <FaRegStar />
+            <FaRegStar />
+          </div>
+
           <div className="rounded-md">
             <img
               src="/images/wolf.png"

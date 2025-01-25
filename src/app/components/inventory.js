@@ -83,10 +83,10 @@ export const Inventory = () => {
                 <p className='text-xs mt-1 text-center text-gray-300'>1000+</p>
             </div>
           </div>
-          <div className='bottom-0 left-0 mt-48 flex justify-center'>
+          {/* <div className='bottom-0 left-0 mt-48 flex justify-center'>
             <button className='mr-4 border px-4 py-2 uppercase font-light text-black bg-white rounded-md'>Toggle</button>
             <button className='border px-6 py-2 uppercase font-light text-black rounded-md bg-white'>Next</button>
-          </div>
+          </div> */}
         </div>
       </div>
       <Modal

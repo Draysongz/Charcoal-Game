@@ -90,10 +90,10 @@ const Landing = () => {
             >
               daily reward
             </Link>
-            <Link href="/boost" className="">
+            <Link href="/inventory" className="">
               inventory
             </Link>
-            <Link href="/leaderBoard" className="">
+            <Link href="/upgrade" className="">
               upgrades
             </Link>
             <Link href="/setting" className="">

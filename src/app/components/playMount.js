@@ -1,6 +1,8 @@
 import React from 'react'
 import { MdOutlineTimer } from "react-icons/md";
 import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react'
+import { FaStar } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa";
 
 const PlayMount = () => {
   return (
@@ -13,6 +15,12 @@ const PlayMount = () => {
               background: "linear-gradient(to bottom, #D98480, #734644)",
             }}
           >
+            <div className="flex justify-center gap-1">
+              <FaStar />
+              <FaRegStar />
+              <FaRegStar />
+            </div>
+
             <div className="">
               <img
                 src="/images/antenna.png"
@@ -53,6 +61,12 @@ const PlayMount = () => {
               background: "linear-gradient(to bottom, #D98480, #734644)",
             }}
           >
+            <div className="flex justify-center gap-1">
+              <FaStar />
+              <FaRegStar />
+              <FaRegStar />
+            </div>
+
             <div className="rounded-md">
               <img
                 src="/images/seadragon.png"
@@ -93,6 +107,12 @@ const PlayMount = () => {
           id='metal'
           style={{ background: "linear-gradient(to bottom, #D98480, #734644)" }}
         >
+          <div className="flex justify-center gap-1">
+            <FaStar />
+            <FaRegStar />
+            <FaRegStar />
+          </div>
+
           <div className="">
             <img
               src="/images/batGurl.png"

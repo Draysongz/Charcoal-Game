@@ -3,6 +3,10 @@
 import React from "react";
 import { MdOutlineTimer } from "react-icons/md";
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
+import { StarRating } from "./StarRatings";
+import { FaStar } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa";
+
 
 const PlayAll = () => {
   return (
@@ -18,6 +22,12 @@ const PlayAll = () => {
           className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
           style={{ background: "linear-gradient(to bottom, #5FBB98, #2B5545)" }}
         >
+          <div className="flex justify-center gap-1">
+            <FaStar />
+            <FaRegStar />
+            <FaRegStar />
+          </div>
+
           <div className=" relative">
             <img
               src="/images/Frog2.png"
@@ -64,6 +74,12 @@ const PlayAll = () => {
           className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
           style={{ background: "linear-gradient(to bottom, #6AE5F3, #1D4D53)" }}
         >
+          <div className="flex justify-center gap-1">
+            <FaStar />
+            <FaRegStar />
+            <FaRegStar />
+          </div>
+
           <div className="relative">
             <img
               src="/images/WaterFairy.png"
@@ -111,6 +127,12 @@ const PlayAll = () => {
           className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
           style={{ background: "linear-gradient(to bottom, #6AE5F3, #1D4D53)" }}
         >
+          <div className="flex justify-center gap-1">
+            <FaStar />
+            <FaRegStar />
+            <FaRegStar />
+          </div>
+
           <div className="rounded-md relative">
             <img
               src="/images/wolf.png"
@@ -156,6 +178,12 @@ const PlayAll = () => {
           className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
           style={{ background: "linear-gradient(to bottom, #5FBB98, #2B5545)" }}
         >
+          <div className="flex justify-center gap-1">
+            <FaStar />
+            <FaRegStar />
+            <FaRegStar />
+          </div>
+
           <div className="rounded-md relative">
             <img
               src="/images/EarthFairy.png"
@@ -205,6 +233,12 @@ const PlayAll = () => {
           className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
           style={{ background: "linear-gradient(to bottom, #D98480, #734644)" }}
         >
+          <div className="flex justify-center gap-1">
+            <FaStar />
+            <FaRegStar />
+            <FaRegStar />
+          </div>
+
           <div className="relative">
             <img
               src="/images/antenna.png"
@@ -250,6 +284,12 @@ const PlayAll = () => {
           className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
           style={{ background: "linear-gradient(to bottom, #96B4B4, #414E4E)" }}
         >
+          <div className="flex justify-center gap-1">
+            <FaStar />
+            <FaRegStar />
+            <FaRegStar />
+          </div>
+
           <div className="relative">
             <img
               src="/images/Flameexpand2.png"
@@ -297,6 +337,12 @@ const PlayAll = () => {
           className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
           style={{ background: "linear-gradient(to bottom, #96B4B4, #414E4E)" }}
         >
+          <div className="flex justify-center gap-1">
+            <FaStar />
+            <FaRegStar />
+            <FaRegStar />
+          </div>
+
           <div className="relative">
             <img
               src="/images/sojo.png"
@@ -342,6 +388,12 @@ const PlayAll = () => {
           className="rounded-xl p-3 w-[170px] pmx:w-[190px]"
           style={{ background: "linear-gradient(to bottom, #D98480, #734644)" }}
         >
+          <div className="flex justify-center gap-1">
+            <FaStar />
+            <FaRegStar />
+            <FaRegStar />
+          </div>
+
           <div className="relative">
             <img
               src="/images/batGurl.png"
@@ -389,6 +441,12 @@ const PlayAll = () => {
           className="rounded-xl p-3 w-[170px] pmx:w-[190px]"
           style={{ background: "linear-gradient(to bottom, #D98480, #734644)" }}
         >
+          <div className="flex justify-center gap-1">
+            <FaStar />
+            <FaRegStar />
+            <FaRegStar />
+          </div>
+
           <div className="rounded-md relative">
             <img
               src="/images/seadragon.png"
@@ -434,6 +492,12 @@ const PlayAll = () => {
           className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
           style={{ background: "linear-gradient(to bottom, #96B4B4, #414E4E)" }}
         >
+          <div className="flex justify-center gap-1">
+            <FaStar />
+            <FaRegStar />
+            <FaRegStar />
+          </div>
+          
           <div className="rounded-md relative">
             <img
               src="/images/ghost.png"
