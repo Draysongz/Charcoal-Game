@@ -86,11 +86,6 @@ const SlotMachine2 = () => {
       });
       setMessage(`🎉 You win ${winAmount}!`);
     } else {
-      setWinDetails({
-        name: "potion mountain",
-        img: "/images/potionMountain.png",
-        amount: 4,
-      });
       setMessage("Better luck next time!");
     }
   };
@@ -326,8 +321,11 @@ const SlotMachine2 = () => {
               transform="translate(-50%, -50%)"
               bg="black"
               id="winni"
+              display={"flex"}
+              flexDirection={"column"}
+              gap={3}
             >
-              <Text fontSize="32px" fontWeight="bold" mb={2}>
+              <Text fontSize="25px" fontWeight="bold">
                 {winDetails.name}
               </Text>
               <Image
@@ -336,7 +334,6 @@ const SlotMachine2 = () => {
                 boxSize="40px"
                 mx="auto"
                 my={2}
-                mb={2}
                 id="WinImg"
               />
               <Text fontSize="30px" fontWeight="bold">
