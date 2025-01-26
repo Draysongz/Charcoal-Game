@@ -86,6 +86,11 @@ const SlotMachine2 = () => {
       });
       setMessage(`🎉 You win ${winAmount}!`);
     } else {
+      setWinDetails({
+        name: "potion mountain",
+        img: "/images/potionMountain.png",
+        amount: 4,
+      });
       setMessage("Better luck next time!");
     }
   };
@@ -232,6 +237,7 @@ const SlotMachine2 = () => {
           justifyContent={"space-between"}
           alignItems={"center"}
           className="w-[85%] pmx:w-[80%] spm:w-[83%]"
+          zIndex={"10"}
         >
           <img src="/images/Pointer1.png" alt="pointer" className="w-[80px]" />
           <img src="/images/Pointer2.png" alt="pointer" className="w-[80px]" />
@@ -308,9 +314,9 @@ const SlotMachine2 = () => {
             
           {winDetails && (
             <Box
-              mt={"-50%"}
+              mt={"-45%"}
               ms={"49%"}
-              p={5}
+              p={1}
               w={"100%"}
               borderRadius={10}
               h={"200px"}
