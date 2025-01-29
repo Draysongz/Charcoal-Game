@@ -246,17 +246,18 @@ const Creature = () => {
 
         {/* Timer Section */}
         <div
-          className={`w-[80px] rounded-full mt-3 pmx:mt-4 uppercase timer-container  flex flex-col items-center ${
+          className={`w-[80px] rounded-lg mt-3 pmx:mt-4 uppercase timer-container  flex flex-col items-center bg-[#F15B06] border-white border-2 text-white ${
             selectedIndex === 1 ? "level-timer" : ""
           } ${selectedIndex === 2 ? "own-timer" : ""} ${
             selectedIndex === 3 ? "own-timer" : ""
           } ${selectedIndex === 4 ? "level-timer" : ""} ${
             selectedIndex === 7 ? "level-timer" : ""
           } ${selectedIndex === 8 ? "level-timer" : ""}`}
-          style={components[selectedIndex].timerStyle}
+          // style={components[selectedIndex].timerStyle}
         >
-          <div className="p-2 font-bold text-[12px] text-center">
-            <p>{components[selectedIndex].timer}</p>
+          <div className="p-2 font-bold text-[13px] text-center">
+            {/* <p>{components[selectedIndex].timer}</p> */}
+            <p>rank up</p>
           </div>
         </div>
       </div>
