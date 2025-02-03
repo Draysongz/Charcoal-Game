@@ -97,7 +97,7 @@ const Landing = () => {
               upgrades
             </Link>
             <Link href="/setting" className="">
-              setting
+              settings
             </Link>
           </div>
 

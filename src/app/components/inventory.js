@@ -38,21 +38,24 @@ export const Inventory = () => {
           <hr className="border-2"/>
           <p className="text-orange-600 text-center mt-8 mb-8">Boosters</p>
           <div className='flex gap-4 justify-center'>
-            <div className="border border-gray-300 bg-neutral-800 w-3/12 rounded-xl" onClick={onOpen1}>
+
+            <div className="border border-gray-300 bg-neutral-800 w-3/12 rounded-xl cursor-pointer" onClick={onOpen1}>
                 <p className='text-orange-600 text-xs text-center'>Charcoal Turbo</p>
                 <div className='flex justify-center'>
                     <Image src={"/images/CharcoalNB.png"} width={30} height={30} alt="image" />
                     <p className='text-xs mt-1 text-gray-300'>1000+</p>
                 </div>
             </div>
-            <div className="border border-gray-300 bg-neutral-800 w-3/12 rounded-xl" onClick={onOpen2}>
+
+            <div className="border border-gray-300 bg-neutral-800 w-3/12 rounded-xl cursor-pointer" onClick={onOpen2}>
                 <p className='text-orange-600 text-xs text-center'>Ember<br/> Burst</p>
                 <div className='flex gap-1 justify-center'>
                     <Image src={"/images/EmberNB.png"} width={22} height={22} alt="image" className='ml-1' />
                     <p className='text-xs mt-1 text-gray-300'>1000+</p>
                 </div>
             </div>
-            <div className="border border-gray-300 bg-neutral-800 w-3/12 rounded-xl" onClick={onOpen3}>
+
+            <div className="border border-gray-300 bg-neutral-800 w-3/12 rounded-xl cursor-pointer" onClick={onOpen3}>
                 <p className='text-orange-600 text-xs text-center'>Energy Replenish</p>
                 <div className='flex justify-center'>
                     <Image src={"/images/NewLightningNB.png"} width={25} height={25} alt="image" />
@@ -60,35 +63,37 @@ export const Inventory = () => {
                 </div>
             </div>
           </div>
+
             <p className='text-center text-orange-600 mt-16'>Potions</p>
+
             <div className='flex gap-4 justify-center mt-8'>
-            <div className="border border-gray-300 bg-neutral-800 w-2.5/12 rounded-xl" onClick={onOpen6}>
+            <div className="border border-gray-300 bg-neutral-800 w-2.5/12 rounded-xl cursor-pointer" onClick={onOpen6}>
                 <p className='text-orange-600 text-xs text-center px-1'>Mountain</p>
                 <Image src={"/images/PotionMountain.png"} width={30} height={30} alt="image" className='flex justify-center mx-auto' />
                 <p className='text-xs text-center text-gray-300'>1000+</p>
             </div>
-            <div className="border border-gray-300 bg-neutral-800 w-2/12 rounded-xl" onClick={onOpen5}>
+
+            <div className="border border-gray-300 bg-neutral-800 w-2/12 rounded-xl cursor-pointer" onClick={onOpen5}>
                 <p className='text-orange-600 text-xs text-center'>Forest</p>
                 <Image src={"/images/PotionForest.png"} width={22} height={22} alt="image" className='flex justify-center mx-auto' />
                 <p className='text-xs pt-1 text-center text-gray-300'>1000+</p>
             </div>
-            <div className="border border-gray-300 bg-neutral-800 w-2/12 rounded-xl" onClick={onOpen4}>
+
+            <div className="border border-gray-300 bg-neutral-800 w-2/12 rounded-xl cursor-pointer" onClick={onOpen4}>
                 <p className='text-orange-600 text-xs text-center'>Aerial</p>
                 <Image src={"/images/PotionAerial.png"} width={25} height={25} alt="image" className='flex justify-center mx-auto' />
                 <p className='text-xs mt-1 text-center text-gray-300'>1000+</p>
             </div>
-            <div className="border border-gray-300 bg-neutral-800 w-2/12 rounded-xl" onClick={onOpen7}>
+
+            <div className="border border-gray-300 bg-neutral-800 w-2/12 rounded-xl cursor-pointer" onClick={onOpen7}>
                 <p className='text-orange-600 text-xs text-center'>Sea</p>
                 <Image src={"/images/PotionSea.png"} width={25} height={25} alt="image" className='flex justify-center mx-auto' />
                 <p className='text-xs mt-1 text-center text-gray-300'>1000+</p>
             </div>
           </div>
-          {/* <div className='bottom-0 left-0 mt-48 flex justify-center'>
-            <button className='mr-4 border px-4 py-2 uppercase font-light text-black bg-white rounded-md'>Toggle</button>
-            <button className='border px-6 py-2 uppercase font-light text-black rounded-md bg-white'>Next</button>
-          </div> */}
         </div>
       </div>
+
       <Modal
         isOpen={isOpen1}
         placement="bottom"
@@ -132,7 +137,7 @@ export const Inventory = () => {
               alt="charcoal"
               className="mt-2 pmx:w-[170px] pmx:mt-4 pmx:h-44 spm:w-[160px] spm:h-44 ImgO"
             />
-            <h3 className="text-orange-600 text-[20px] pmx:text-[22px] spm:text-[22px] uppercase font-bold">
+            <h3 className="text-orange-600 text-[20px] pmx:text-[22px] spm:text-[22px] uppercase font-bold mb-2">
               charcoal turbo
             </h3>
             <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white">
@@ -145,6 +150,7 @@ export const Inventory = () => {
           </Box>
         </ModalContent>
       </Modal>
+
       <Modal
         isOpen={isOpen2}
         placement="bottom"
@@ -188,7 +194,7 @@ export const Inventory = () => {
               alt="lightning"
               className="mt-2 pmx:w-[170px] pmx:mt-4 pmx:h-44 spm:w-[160px] spm:h-44 ImgO"
             />
-            <h3 className="text-orange-600 text-[20px] pmx:text-[24px] spm:text-[24px] uppercase font-bold">
+            <h3 className="text-orange-600 text-[20px] pmx:text-[24px] spm:text-[24px] uppercase font-bold mb-2">
               ember burst
             </h3>
             <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white">
@@ -201,6 +207,7 @@ export const Inventory = () => {
           </Box>
         </ModalContent>
       </Modal>
+
       <Modal
         isOpen={isOpen3}
         placement="bottom"
@@ -244,7 +251,7 @@ export const Inventory = () => {
               alt="lightning"
               className="mt-2 pmx:w-[170px] pmx:mt-4 pmx:h-44 spm:w-[160px] spm:h-44 ImgO"
             />
-            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold mb-2">
               energy recharge
             </h3>
             <p className="text-[12px] pmx:text-[16px] spm:text-[16px] spm:mt-2 text-white text-center">
@@ -257,6 +264,7 @@ export const Inventory = () => {
           </Box>
         </ModalContent>
       </Modal>
+
       <Modal
         isOpen={isOpen4}
         placement="bottom"
@@ -300,7 +308,7 @@ export const Inventory = () => {
               alt="lightning"
               className="mt-2 pmx:w-[70px] pmx:mt-4 pmx:h-24 spm:w-[70px] spm:h-24"
             />
-            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold mb-2">
               aerial potion
             </h3>
             <p className="text-[12px] pmx:text-[16px] spm:text-[16px] spm:mt-2 text-white text-center">
@@ -313,6 +321,7 @@ export const Inventory = () => {
           </Box>
         </ModalContent>
       </Modal>
+
       <Modal
         isOpen={isOpen5}
         placement="bottom"
@@ -356,7 +365,7 @@ export const Inventory = () => {
               alt="lightning"
               className="mt-2 pmx:w-[70px] pmx:mt-4 pmx:h-24 spm:w-[70px] spm:h-24"
             />
-            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold mb-2">
               forest potion
             </h3>
             <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white text-center">
@@ -369,6 +378,7 @@ export const Inventory = () => {
           </Box>
         </ModalContent>
       </Modal>
+
       <Modal
         isOpen={isOpen6}
         placement="bottom"
@@ -412,7 +422,7 @@ export const Inventory = () => {
               alt="lightning"
               className="mt-2 pmx:w-[70px] pmx:mt-4 pmx:h-24 spm:w-[70px] spm:h-24"
             />
-            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold mb-2">
               mountain potion
             </h3>
             <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white text-center">
@@ -425,6 +435,7 @@ export const Inventory = () => {
           </Box>
         </ModalContent>
       </Modal>
+
       <Modal
         isOpen={isOpen7}
         placement="bottom"
@@ -468,7 +479,7 @@ export const Inventory = () => {
               alt="lightning"
               className="mt-2 pmx:w-[70px] pmx:mt-4 pmx:h-24 spm:w-[70px] spm:h-24"
             />
-            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold mb-2">
               sea potion
             </h3>
             <p className="text-[12px] pmx:text-[16px] spm:text-[16px] text-white text-center">

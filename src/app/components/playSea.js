@@ -12,7 +12,7 @@ const PlaySea = () => {
           className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
           style={{ background: "linear-gradient(to bottom, #6AE5F3, #1D4D53)" }}
         >
-          <div className="flex justify-center gap-1">
+          <div className="flex justify-center gap-1 ratings mb-1">
             <FaStar />
             <FaRegStar />
             <FaRegStar />
@@ -29,18 +29,18 @@ const PlaySea = () => {
             <p>water</p>
             <p className="-mt-[8px]">creature</p>
           </div>
-          <div className="text-center uppercase bg-gray-500 bg-opacity-45 w-[60px] py-[2px] rounded-full text-[9px] ms-10 mb-2 pmx:ms-[52px] pmx:text-[12px] spm:ms-[44px] spm:text-[12px] textT">
-            owned
+          <div className="text-center uppercase bg-gray-500 bg-opacity-45 w-[70px] py-[2px] px-2 rounded-full text-[9px] mb-2 pmx:text-[12px] spm:text-[12px] flex-1 justify-self-center cursor-pointer">
+            rank up
           </div>
           <div className="flex uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB justify-center">
-            <span className="text-orange-600 me-3 mt-1 span1">pwr 1/ 10</span>
+            <span className="text-orange-600 me-3 mt-1 pwr">pwr 10 / 10</span>
             <span className="border-e-2 border-white me-4 h-4 mt-1"></span>
             <img
               src="/images/targetNB.png"
               alt="target"
               className="w-5 h-5 mt-1 me-1"
             />
-            <span className="mt-[5px]">20k</span>
+            <span className="mt-[5px]">50k</span>
           </div>
         </div>
 
@@ -48,8 +48,9 @@ const PlaySea = () => {
           className="rounded-xl p-3 w-[170px] pmx:w-[190px] spm:w-[175px]"
           style={{ background: "linear-gradient(to bottom, #6AE5F3, #1D4D53)" }}
         >
-          <div className="flex justify-center gap-1">
-            <FaStar />
+          <div className="flex justify-center gap-1 ratings mb-1">
+            {/* <FaStar /> */}
+            <FaRegStar />
             <FaRegStar />
             <FaRegStar />
           </div>
@@ -65,18 +66,18 @@ const PlaySea = () => {
             <p>ice</p>
             <p className="-mt-[8px]">creature</p>
           </div>
-          <div className="text-center uppercase bg-gray-500 bg-opacity-45 w-[95px] py-[2px] rounded-full text-[9px] ms-6 mb-2 pmx:ms-[25px] pmx:text-[12px] pmx:w-[120px] spm:ms-[16px] spm:w-[120px] spm:text-[12px] textT">
-            lvl 10 required
+          <div className="text-center bg-gray-500 bg-opacity-45 w-[90px] py-[2px] rounded-full text-[9px] mb-2 pmx:text-[12px] pmx:w-[110px] spm:w-[110px] spm:text-[12px] flex-1 justify-self-center cursor-pointer">
+            LVL X Required
           </div>
           <div className="flex uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB justify-center">
-            <span className="text-orange-600 me-3 mt-1 span1">pwr 1/ 10</span>
+            <span className="text-orange-600 me-3 mt-1 pwr">pwr 0 / 10</span>
             <span className="border-e-2 border-white me-4 h-4 mt-1"></span>
             <img
               src="/images/targetNB.png"
               alt="target"
               className="w-5 h-5 mt-1 me-1"
             />
-            <span className="mt-[5px]">20k</span>
+            <span className="mt-[5px]">100k</span>
           </div>
         </div>
       </div>
