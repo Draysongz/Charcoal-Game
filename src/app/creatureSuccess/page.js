@@ -6,29 +6,31 @@ import { HiMiniUserGroup } from "react-icons/hi2";
 import { BsShopWindow } from "react-icons/bs";
 import Link from 'next/link';
 import Header from '../components/header';
+import { StarRating } from '../components/StarRatings';
 
 const CreatureSuccess = () => {
   return (
     <div className="bg-black min-h-screen w-screen text-white">
-      <div className="flex flex-col items-center h-[92vh]">
         <Header />
-
+      <div className="flex flex-col items-center h-[92vh] overflow-y-auto" style={{ height: "calc(98vh - 130px)" }}>
+        <StarRating />
         <div
-          className="p-3 w-[350px] -mb-10 pmx:-mb-14 pmx:w-[390px] rounded-lg mt-7 pmx:mt-10"
+          className="p-3 w-[350px] -mb-10 pmx:-mb-14 pmx:w-[390px] rounded-lg"
           style={{ background: "linear-gradient(to bottom, #5FBB98, #2B5545)" }}
         >
           <div>
             <img
               src="/images/Frog2.png"
               alt="frog king"
-              className="w-full h-[250px] pmx:h-[350px] rounded-md"
+              className="w-full h-[350px] rounded-md"
+              style={{ backgroundSize: "100% 100%" }}
             />
           </div>
         </div>
 
         <div className="grid-row-3 w-[350px] pmx:w-[390px] text-[45px] pmx:text-[60px] mt-1 p-1 pmx:p-2 text-center">
           <span className="text-[12px] pmx:text-[13px] uppercase">
-            you have successfully upgraded
+            you have successfully ranked up
           </span>
           <p className="grid font-bold -mt-7 pmx:-mt-10 text-orange-600 uppercase">
             frog king
@@ -38,7 +40,7 @@ const CreatureSuccess = () => {
           </span>
         </div>
 
-        <div className="w-[350px] pmx:w-[390px] ms-[12px] uppercase mt-2">
+        {/* <div className="w-[350px] pmx:w-[390px] ms-[12px] uppercase mt-2">
           <p className="uppercase text-orange-800 pmx:text-[17px] font-bold mb-2">
             prices
           </p>
@@ -85,11 +87,11 @@ const CreatureSuccess = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="bg-[#8E9BB3] w-[100px] rounded-full mt-7 pmx:mt-16">
+        <div className="bg-[#8E9BB3] w-[150px] rounded-full mt-7">
           <div className="p-2 font-bold text-[12px] text-center uppercase">
-            <p>claim price</p>
+            <p>continue</p>
           </div>
         </div>
       </div>

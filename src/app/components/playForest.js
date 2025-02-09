@@ -34,7 +34,7 @@ const PlayForest = () => {
         </div>
         <div className="flex uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB justify-center">
           <span className="text-orange-600 me-3 mt-1">pwr 5 / 10</span>
-          <span className="border-e-2 border-white me-4 h-4 mt-1"></span>
+          <span className="border-e-2 border-white me-3 h-4 mt-1"></span>
           <img
             src="/images/targetNB.png"
             alt="target"
@@ -85,9 +85,9 @@ const PlayForest = () => {
         <div className="text-center bg-gray-500 bg-opacity-45 w-[95px] py-[2px] rounded-full text-[9px] mb-2 pmx:text-[12px] pmx:w-[110px] spm:w-[110px] spm:text-[12px] flex-1 justify-self-center cursor-pointer">
           LVL X Required
         </div>
-        <div className="flex uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB justify-center">
+        <div className="flex uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white justify-center">
           <span className="text-orange-600 me-3 mt-1 span1">pwr 0 / 10</span>
-          <span className="border-e-2 border-white me-4 h-4 mt-1"></span>
+          <span className="border-e-2 border-white me-3 h-4 mt-1"></span>
           <img
             src="/images/targetNB.png"
             alt="target"

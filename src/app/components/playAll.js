@@ -7,8 +7,19 @@ import { StarRating } from "./StarRatings";
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
 
+import {
+  Box,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalCloseButton,
+  useDisclosure,
+} from "@chakra-ui/react";
+
 
 const PlayAll = () => {
+  const { isOpen: isOpen1, onOpen: onOpen1, onClose: onClose1  } = useDisclosure()
+  const { isOpen: isOpen2, onOpen: onOpen2, onClose: onClose2  } = useDisclosure()
   return (
     <div
       className="w-[100%] flex flex-col items-center overflow-y-auto text-white"
@@ -58,9 +69,9 @@ const PlayAll = () => {
           <div className="text-center bg-gray-500 bg-opacity-45 w-[95px] py-[2px] rounded-full text-[9px] mb-2 pmx:text-[12px] pmx:w-[120px] spm:w-[120px] spm:text-[12px] flex-1 justify-self-center cursor-pointer">
             Available for Play
           </div>
-          <div className="flex uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
-            <span className="text-orange-600 me-5 mt-1">pwr 5 / 10</span>
-            <span className="border-e-2 border-white me-5 h-4 mt-1"></span>
+          <div className="flex justify-center uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
+            <span className="text-orange-600 me-3 mt-1">pwr 5 / 10</span>
+            <span className="border-e-2 border-white me-3 h-4 mt-1"></span>
             <img
               src="/images/targetNB.png"
               alt="target"
@@ -107,12 +118,12 @@ const PlayAll = () => {
             <p>water</p>
             <p className="-mt-[8px]">creature</p>
           </div>
-          <div className="text-center bg-gray-500 bg-opacity-45 w-[70px] py-[2px] px-2 rounded-full text-[9px] mb-2 pmx:text-[12px] spm:text-[12px] flex-1 justify-self-center cursor-pointer">
+          <div className="text-center bg-gray-500 bg-opacity-45 w-[70px] py-[2px] px-2 rounded-full text-[9px] mb-2 pmx:text-[12px] spm:text-[12px] flex-1 justify-self-center cursor-pointer" onClick={onOpen2}>
             Rand Up
           </div>
-          <div className="flex uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
-            <span className="text-orange-600 me-5 mt-1">pwr 10 / 10</span>
-            <span className="border-e-2 border-white me-5 h-4 mt-1"></span>
+          <div className="flex justify-center uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
+            <span className="text-orange-600 me-3 mt-1">pwr 10 / 10</span>
+            <span className="border-e-2 border-white me-3 h-4 mt-1"></span>
             <img
               src="/images/targetNB.png"
               alt="target"
@@ -164,9 +175,9 @@ const PlayAll = () => {
           <div className="text-center bg-gray-500 bg-opacity-45 w-[90px] py-[2px] rounded-full text-[9px] mb-2 pmx:text-[12px] pmx:w-[110px] spm:w-[110px] spm:text-[12px] flex-1 justify-self-center cursor-pointer">
             LVL X required
           </div>
-          <div className="flex uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
-            <span className="text-orange-600 me-5 mt-1">pwr 0 / 10</span>
-            <span className="border-e-2 border-white me-5 h-4 mt-1"></span>
+          <div className="flex justify-center uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
+            <span className="text-orange-600 me-3 mt-1">pwr 0 / 10</span>
+            <span className="border-e-2 border-white me-3 h-4 mt-1"></span>
             <img
               src="/images/targetNB.png"
               alt="target"
@@ -216,11 +227,11 @@ const PlayAll = () => {
           <div className="text-center bg-gray-500 bg-opacity-45 w-[90px] py-[2px] rounded-full text-[9px] mb-2 pmx:text-[12px] pmx:w-[110px] spm:w-[110px] spm:text-[12px] flex-1 justify-self-center cursor-pointer">
             LVL X required
           </div>
-          <div className="flex uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
+          <div className="flex justify-center uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
             <span className="text-orange-600 me-5 mt-1 pm">
               pwr 0 / 10
             </span>
-            <span className="border-e-2 border-white me-5 h-4 mt-1"></span>
+            <span className="border-e-2 border-white me-3 h-4 mt-1"></span>
             <img
               src="/images/targetNB.png"
               alt="target"
@@ -269,12 +280,12 @@ const PlayAll = () => {
             <p>earth</p>
             <p className="-mt-[8px]">creature</p>
           </div>
-          <div className="text-center uppercase bg-gray-500 bg-opacity-45 w-[70px] py-[2px] rounded-full text-[9px] mb-2 pmx:text-[12px] spm:text-[12px] flex-1 justify-self-center cursor-pointer">
+          <div className="text-center uppercase bg-gray-500 bg-opacity-45 w-[70px] py-[2px] rounded-full text-[9px] mb-2 pmx:text-[12px] spm:text-[12px] flex-1 justify-self-center cursor-pointer" onClick={onOpen1}>
               rank up
           </div>
-          <div className="flex uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
-            <span className="text-orange-600 me-5 mt-1">pwr 10 / 10</span>
-            <span className="border-e-2 border-white me-5 h-4 mt-1"></span>
+          <div className="flex justify-center uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
+            <span className="text-orange-600 me-3 mt-1">pwr 10 / 10</span>
+            <span className="border-e-2 border-white me-3 h-4 mt-1"></span>
             <img
               src="/images/targetNB.png"
               alt="target"
@@ -324,9 +335,9 @@ const PlayAll = () => {
           <div className="text-center bg-gray-500 bg-opacity-45 w-[95px] pmx:w-[110px] spm:w-[110px] py-[2px] rounded-full text-[9px] mb-2 pmx:text-[12px] spm:text-[12px] flex-1 justify-self-center cursor-pointer">
               LVL X Required
           </div>
-          <div className="flex uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
-            <span className="text-orange-600 me-5 mt-1">pwr 0 / 10</span>
-            <span className="border-e-2 border-white me-5 h-4 mt-1"></span>
+          <div className="flex justify-center uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
+            <span className="text-orange-600 me-3 mt-1">pwr 0 / 10</span>
+            <span className="border-e-2 border-white me-3 h-4 mt-1"></span>
             <img
               src="/images/targetNB.png"
               alt="target"
@@ -378,9 +389,9 @@ const PlayAll = () => {
           <div className="text-center bg-gray-500 bg-opacity-45 w-[90px] pmx:w-[120px] spm:w-[120px] py-[2px] rounded-full text-[9px] mb-2 pmx:text-[12px] spm:text-[12px] flex-1 justify-self-center cursor-pointer">
             Available for Play
           </div>
-          <div className="flex uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
-            <span className="text-orange-600 me-5 mt-1">pwr 1 / 10</span>
-            <span className="border-e-2 border-white me-5 h-4 mt-1"></span>
+          <div className="flex justify-center uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
+            <span className="text-orange-600 me-3 mt-1">pwr 1 / 10</span>
+            <span className="border-e-2 border-white me-3 h-4 mt-1"></span>
             <img
               src="/images/targetNB.png"
               alt="target"
@@ -430,9 +441,9 @@ const PlayAll = () => {
           <div className="text-center bg-gray-500 bg-opacity-45 w-[90px] pmx:w-[120px] spm:w-[120px] py-[2px] rounded-full text-[9px] mb-2 pmx:text-[12px] spm:text-[12px] flex-1 justify-self-center cursor-pointer">
             Available for Play
           </div>
-          <div className="flex uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
-            <span className="text-orange-600 me-5 mt-1">pwr 1 / 10</span>
-            <span className="border-e-2 border-white me-5 h-4 mt-1"></span>
+          <div className="flex justify-center uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
+            <span className="text-orange-600 me-3 mt-1">pwr 1 / 10</span>
+            <span className="border-e-2 border-white me-3 h-4 mt-1"></span>
             <img
               src="/images/targetNB.png"
               alt="target"
@@ -484,9 +495,9 @@ const PlayAll = () => {
           <div className="text-center bg-gray-500 bg-opacity-45 w-[95px] py-[2px] rounded-full text-[9px] mb-2 pmx:text-[12px] pmx:w-[110px] spm:w-[110px] spm:text-[12px] flex-1 justify-self-center cursor-pointer">
               LVL X Required
           </div>
-          <div className="flex uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
-            <span className="text-orange-600 me-5 mt-1">pwr 0 / 10</span>
-            <span className="border-e-2 border-white me-5 h-4 mt-1"></span>
+          <div className="flex justify-center uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
+            <span className="text-orange-600 me-3 mt-1">pwr 0 / 10</span>
+            <span className="border-e-2 border-white me-3 h-4 mt-1"></span>
             <img
               src="/images/targetNB.png"
               alt="target"
@@ -536,9 +547,9 @@ const PlayAll = () => {
           <div className="text-center bg-gray-500 bg-opacity-45 w-[90px] py-[2px] rounded-full text-[9px] mb-2 pmx:text-[12px] pmx:w-[120px] spm:w-[120px] spm:text-[12px] flex-1 justify-self-center cursor-pointer">
               Available for Play
           </div>
-          <div className="flex uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
-            <span className="text-orange-600 me-5 mt-1">pwr 6 / 10</span>
-            <span className="border-e-2 border-white me-5 h-4 mt-1"></span>
+          <div className="flex justify-center uppercase text-[11px] pmx:text-[13px] font-bold border-t-2 border-white textB">
+            <span className="text-orange-600 me-3 mt-1">pwr 6 / 10</span>
+            <span className="border-e-2 border-white me-3 h-4 mt-1"></span>
             <img
               src="/images/targetNB.png"
               alt="target"
@@ -548,6 +559,126 @@ const PlayAll = () => {
           </div>
         </div>
       </div>
+
+      <Modal
+        isOpen={isOpen1}
+        placement="bottom"
+        onClose={onClose1}
+        isCentered
+      >
+        <ModalOverlay backdropFilter="blur(10px)" />
+        <ModalContent 
+          alignContent={"center"}
+          textAlign={"center"}
+          alignItems={"center"}
+          position={"relative"}
+          justifyContent={"space-between"}
+        >
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            bg={"black"}
+            p={"10%"}
+            // py={"15%"}
+            // px={"30%"}
+            w={"90%"}
+            borderRadius={"30px"}
+            position={"absolute"}
+            top={"50%"}
+            left={"50%"}
+            transform="translate(-50%, -50%)"
+          >
+          <ModalCloseButton
+            color={"white"}
+            fontSize={"10px"}
+            borderRadius={"100%"}
+            border={"2px solid white"}
+            ml={"288px"}
+            mt={"12px"}
+            fontWeight={"bold"}
+          />
+          <div className="boost1 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
+            <img
+              src="/images/PotionMountain.png"
+              alt="lightning"
+              className="h-24"
+            />
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
+              mountain potion
+            </h3>
+            <p className="text-orange-600 text-[12px] pmx:text-[16px] spm:text-[16px] text-center border-2 border-orange-600 rounded-md px-6 mb-3">
+              4 Required to Rank up
+            </p>
+            <p className="text-[10px] mb-2 pmx:text-[12px] spm:text-[12px] spm:my-3 text-gray-300">
+              Take your creatures to the next level! Rank up your creatures and get better prizes
+            </p>
+            <p className="text-[13px] mb-2 spm:my-3 px-3 py-1 text-gray-300 font-bold bg-[#F15B06] border-2 border-white rounded-md">
+              Let's go!
+            </p>
+          </div>
+          </Box>
+        </ModalContent>
+      </Modal>
+
+      <Modal
+        isOpen={isOpen2}
+        placement="bottom"
+        onClose={onClose2}
+        isCentered
+      >
+        <ModalOverlay backdropFilter="blur(10px)" />
+        <ModalContent 
+          alignContent={"center"}
+          textAlign={"center"}
+          alignItems={"center"}
+          position={"relative"}
+          justifyContent={"space-between"}
+        >
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            bg={"black"}
+            p={"10%"}
+            // py={"15%"}
+            // px={"30%"}
+            w={"90%"}
+            borderRadius={"30px"}
+            position={"absolute"}
+            top={"50%"}
+            left={"50%"}
+            transform="translate(-50%, -50%)"
+          >
+          <ModalCloseButton
+            color={"white"}
+            fontSize={"10px"}
+            borderRadius={"100%"}
+            border={"2px solid white"}
+            ml={"288px"}
+            mt={"12px"}
+            fontWeight={"bold"}
+          />
+          <div className="boost1 bg-black rounded-t-3xl flex flex-col items-center pt-5 pb-10">
+            <img
+              src="/images/PotionSea.png"
+              alt="lightning"
+              className="h-24"
+            />
+            <h3 className="text-orange-600 text-[20px] pmx:text-[20px] spm:text-[20px] uppercase font-bold">
+              sea potion
+            </h3>
+            <p className="text-orange-600 text-[12px] pmx:text-[16px] spm:text-[16px] text-center border-2 border-orange-600 rounded-md px-6 mb-3">
+              2 Required to Rank up
+            </p>
+            <p className="text-[10px] mb-2 pmx:text-[12px] spm:text-[12px] spm:my-3 text-gray-300">
+              Take your creatures to the next level! Rank up your creatures and get better prizes
+            </p>
+            <p className="text-[13px] mb-2 spm:my-3 px-3 py-1 text-gray-300 font-bold bg-[#F15B06] border-2 border-white rounded-md">
+              Let's go!
+            </p>
+          </div>
+          </Box>
+        </ModalContent>
+      </Modal>
     </div>
   );
 };

@@ -341,6 +341,7 @@ const components = [
     pwr: "5",
     potion: "/images/PotionForest.png",
     potionName: "potion forest",
+    status: "Rank Up"
   },
   {
     name: "Fire Creature",
@@ -350,102 +351,87 @@ const components = [
     pwr: "0",
     potion: "/images/PotionAerial.png",
     potionName: "potion aerial",
+    status: "Level X Required"
   },
   { 
     name: "Water Creature",
     imageBg: "linear-gradient(to bottom, #6AE5F3, #1D4D53)",
-    // component: <WaterCreature />, 
     image: '/images/WaterFairy.png',
     price: "50k",
-    pwr: "10", 
-    // timer: "you own this creature",
+    pwr: "10",
     potion: '/images/PotionSea.png',
     potionName: "potion sea",
-    timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF", width: "200px" }
+    status: "You own this creature"
   },
   { 
     name: "Earth Creature",
     imageBg: "linear-gradient(to bottom, #D98480, #734644)",
-    // component: <EarthCreature />, 
     image: '/images/antenna.png',
     price: "20k",
     pwr: "10",
-    // timer: "you own this creature",
     potion: '/images/PotionMountain.png',
     potionName: "potion mountain",
-    timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF", width: "200px" }
+    status: "You own this creature"
   },
   { 
     name: "Air Creature",
     imageBg: "linear-gradient(to bottom, #D98480, #734644)",
-    // component: <AirCreature />, 
     image: '/images/seadragon.png',
     price: "20k",
-    pwr: "0", 
-    // timer: "level 5 required",
+    pwr: "0",
     potion: '/images/PotionMountain.png',
     potionName: "potion mountain",
-    timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF", width: "170px" }
+    status: "Level X Required"
   },
   { 
     name: "Shadow Creature",
     imageBg: "linear-gradient(to bottom, #96B4B4, #414E4E)",
-    // component: <ShadowCreature />, 
     image: '/images/ghost.png',
     price: "20k",
     pwr: "6",
-    // timer: "02:39:50",
     potion: '/images/PotionAerial.png',
     potionName: "potion aerial",
-    timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF" }
+    status: "02:39:50"
   },
   { 
     name: "Lightning Creature",
     imageBg: "linear-gradient(to bottom, #96B4B4, #414E4E)",
-    // component: <LightningCreature />, 
     image: '/images/sojo.png', 
     price: "20k",
     pwr: "1",
-    // timer: "play",
     potion: '/images/PotionAerial.png',
     potionName: "potion mountain",
-    timerStyle: { backgroundColor: "#F15B06", color: "#FFF", border: "1px solid #FEFEFF" }
+    status: "Rank Up"
   },
   { 
     name: "Ice Creature",
     imageBg: "linear-gradient(to bottom, #6AE5F3, #1D4D53)",
-    // component: <IceCreature />, 
     image: '/images/wolf.png',
     price: "100k",
     pwr: "0",
-    // timer: "level 10 required",
     potion: '/images/PotionSea.png',
     potionName: "potion sea",
-    timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF", width: "180px" }
+    status: "Level X Required"
   },
   { 
     name: "Nature Creature",
     imageBg: "linear-gradient(to bottom, #5FBB98, #2B5545)",
-    // component: <NatureCreature />, 
     image: '/images/EarthFairy.png', 
     price: "50k",
     pwr: "0",
-    // timer: "level 2 required",
     potion: '/images/PotionForest.png',
     potionName: "potion forest",
-    timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF", width: "170px" }
+    status: "Level X Required"
   },
   { 
     name: "Metal Creature",
     imageBg: "linear-gradient(to bottom, #D98480, #734644)",
-    // component: <MetalCreature />, 
     image: '/images/batGurl.png',
     price: "20k",
     pwr: "4",
-    // timer: "02:39:50",
     potion: '/images/PotionMountain.png',
     potionName: "potion mountain",
-    timerStyle: { backgroundColor: "#8E9BB3", color: "#FFF", border: "1px solid #FEFEFF" }
+    status: "02:39:50"
   },
 ];
 
@@ -466,9 +452,9 @@ const Creature = () => {
 
   return (
     <div className="play h-screen w-screen overflow-y-auto" style={{ height: "calc(98vh - 130px)" }}>
-      <div className="h-[100vh] w-[100%] flex flex-col items-center -mt-12">
-        <div className="p-3 w-[90%] rounded-lg mt-16" style={{ background: currentCreature.imageBg }}>
+      <div className="h-[100vh] w-[100%] flex flex-col items-center">
           <StarRating />
+        <div className="p-3 w-[90%] rounded-lg" style={{ background: currentCreature.imageBg }}>
           <CreatureDetails creature={currentCreature} />
         </div>
 
@@ -500,7 +486,7 @@ const CreatureDetails = ({ creature }) => (
 );
 
 const NavigationButtons = ({ dispatch, index }) => (
-  <div className="flex justify-between w-[90%] bg-gray-700 mt-2 rounded-full p-1">
+  <div className="flex justify-between w-[90%] bg-gray-800 mt-2 rounded-full p-1">
     <button
       className={`p-1 bg-orange-600 rounded-full ${index === 0 ? 'opacity-50' : ''}`}
       onClick={() => dispatch({ type: "PREV" })}
@@ -568,7 +554,7 @@ const IconsInfo = ({ creature }) => (
        className="w-6 h-6 pmx:w-7 pmx:h-7"
      />
      <img
-       src="/images/EmberNb.png"
+       src="/images/EmberNB.png"
        alt="ember"
        className="w-6 h-6 pmx:w-7 pmx:h-7"
      />
@@ -595,10 +581,21 @@ const Description = ({ creature }) => (
 
 const PotionSection = ({ creature }) => (
   <Box className="potion-container relative flex flex-col items-center w-[100%] mt-3">
-    <img src={creature.potion} alt={creature.potionName} className="w-12 h-9 flex-1 self-start absolute left-4" />
-    <div className="rounded-md absolute bg-[#8E9BB3] py-[0.5px] px-[3px] text-white font-semibold text-[13px] left-[50px] top-6">1000+</div>
-    <div className="p-2 font-bold text-[14px] text-center w-[95px] rounded-full bg-[#F15B06] border-white border-2 text-white">
-      Rank Up
+    {creature.status === "Rank Up" && (
+      <>
+        <img src={creature.potion} alt={creature.potionName} className="w-12 h-9 absolute left-2" />
+        <div className="rounded-md bg-[#8E9BB3] py-[0.5px] px-[3px] text-white font-semibold text-[13px] absolute left-11 top-5">1000+</div>
+      </>
+    )}
+    <div
+      className={`p-2 font-bold text-[14px] text-center uppercase rounded-full border-2 text-white
+        ${creature.status === "You own this creature" ? "bg-[#8E9BB3] border-white w-[250px]" : ""}
+        ${creature.status === "Available for Play" ? "bg-[#8E9BB3] border-white w-[250px]" : ""}
+        ${creature.status === "Rank Up" ? "bg-[#F15B06] border-white w-[120px]" : ""}
+        ${creature.status.includes("02:39:50") ? "bg-[#8E9BB3] border-white w-[250px]" : ""}
+        ${creature.status.includes("Level") ? "bg-[#8E9BB3] border-white w-[250px]" : ""}`}
+    >
+      {creature.status}
     </div>
   </Box>
 );
