@@ -1,10 +1,20 @@
 "use client";
-import Image from "next/image";
+
 import Landing from "./landingPage/page";
 import { useSupabase } from "../hooks/useSupabase";
+import { useEffect } from "react";
+import WebApp from "@twa-dev/sdk";
 
 export default function Home() {
   const { loading, error, authenticateWithTelegram } = useSupabase();
+  
+
+  useEffect(()=>{
+    if(typeof window !== "undefined"){
+      const initData = WebApp.initData
+      alert( initData)
+    }
+  }, [])
 
   const handleTelegramAuth = async (initData) => {
     const user = await authenticateWithTelegram(initData);
