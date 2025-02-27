@@ -12,6 +12,7 @@ export default function Home() {
   useEffect(()=>{
     if(typeof window !== "undefined"){
       const initData = WebApp.initData
+      console.log("initData", initData)
       alert( initData)
     }
   }, [])
